@@ -1,8 +1,22 @@
 ﻿Imports FontAwesome.Sharp
 Public Class AdminView
+    Dim InstitutesControl As InstitutesControl
+
+    Private Sub AdminView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Manager.connect()
+        InstitutesControl = New InstitutesControl()
+
+
+        InstitutesControl.Dock = DockStyle.Fill
+
+
+        InstitutesControl.Controls.Add(InstitutesControl)
+    End Sub
+
     'Field
     Private currentBtn As IconButton
     Private leflBorderBtn As Panel
+    Private currentChildForm As Form
 
     'Constructor
     Public Sub New()
@@ -50,24 +64,47 @@ Public Class AdminView
             currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText
         End If
     End Sub
+
+    Private Sub OpenChildForm(childForm As Form)
+        'Open only form
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+        currentChildForm = childForm
+        'end
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        PanelDesktop.Controls.Add(childForm)
+        PanelDesktop.Tag = childForm
+        childForm.BringToFront()
+        childForm.Show()
+        IblFormTitle.Text = childForm.Text
+    End Sub
+
     'Events
     Private Sub btnEmployees_Click(sender As Object, e As EventArgs) Handles btnEmployees.Click
         ActivateButton(sender, RGBColor.color1)
+        OpenChildForm(New Form)
     End Sub
 
     Private Sub btnInstitutes_Click(sender As Object, e As EventArgs) Handles btnInstitutes.Click
         ActivateButton(sender, RGBColor.color2)
+        OpenChildForm(New Form)
     End Sub
 
     Private Sub btnECUEs_Click(sender As Object, e As EventArgs) Handles btnECUEs.Click
         ActivateButton(sender, RGBColor.color3)
+        OpenChildForm(New Form)
     End Sub
 
     Private Sub btnUEs_Click(sender As Object, e As EventArgs) Handles btnUEs.Click
         ActivateButton(sender, RGBColor.color4)
+        OpenChildForm(New Form)
     End Sub
 
     Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
         ActivateButton(sender, RGBColor.color5)
+        OpenChildForm(New Form)
     End Sub
 End Class

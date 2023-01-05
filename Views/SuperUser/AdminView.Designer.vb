@@ -34,7 +34,7 @@ Partial Class AdminView
         Me.IblFormTitle = New System.Windows.Forms.Label()
         Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.PanelDesktop = New Guna.UI2.WinForms.Guna2Panel()
         Me.PanelMenu.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.ImageHome, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -231,20 +231,20 @@ Partial Class AdminView
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Guna2Panel1
+        'PanelDesktop
         '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.DodgerBlue
-        Me.Guna2Panel1.Location = New System.Drawing.Point(220, 75)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(963, 605)
-        Me.Guna2Panel1.TabIndex = 3
+        Me.PanelDesktop.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PanelDesktop.Location = New System.Drawing.Point(220, 75)
+        Me.PanelDesktop.Name = "PanelDesktop"
+        Me.PanelDesktop.Size = New System.Drawing.Size(963, 605)
+        Me.PanelDesktop.TabIndex = 3
         '
         'AdminView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1184, 680)
-        Me.Controls.Add(Me.Guna2Panel1)
+        Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.PanelTitleBar)
         Me.Controls.Add(Me.PanelMenu)
         Me.Name = "AdminView"
@@ -271,5 +271,5 @@ Partial Class AdminView
     Friend WithEvents IconCurrentForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents IblFormTitle As Label
-    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents PanelDesktop As Guna.UI2.WinForms.Guna2Panel
 End Class
