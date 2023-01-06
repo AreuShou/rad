@@ -1,17 +1,17 @@
 ﻿Imports FontAwesome.Sharp
 Public Class AdminView
-    'Dim InstitutesControl As InstitutesControl
+    Dim InstitutesControl As InstitutesControl
 
-    ' Private Sub AdminView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    ' Manager.connect()
-    'InstitutesControl = New InstitutesControl()
-
-
-    'InstitutesControl.Dock = DockStyle.Fill
+    Private Sub AdminView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Manager.connect()
+        InstitutesControl = New InstitutesControl()
 
 
-    ' Panel_ADMIN.Controls.Add(InstitutesControl)
-    ' End Sub
+        InstitutesControl.Dock = DockStyle.Fill
+
+
+        Panel_ADMIN.Controls.Add(InstitutesControl)
+    End Sub
 
     'Field
     Private currentBtn As IconButton
@@ -83,32 +83,32 @@ Public Class AdminView
     End Sub
 
     'Events
-    Private Sub btnEmployees_Click(sender As Object, e As EventArgs)
+    Private Sub btnEmployees_Click(sender As Object, e As EventArgs) Handles btnEmployees.Click
         ActivateButton(sender, RGBColor.color1)
-        OpenChildForm(New EmployeesView)
+        'OpenChildForm(New EmployeesView)
     End Sub
 
-    Private Sub btnInstitutes_Click(sender As Object, e As EventArgs)
+    Private Sub btnInstitutes_Click(sender As Object, e As EventArgs) Handles btnInstitutes.Click
         ActivateButton(sender, RGBColor.color2)
-        OpenChildForm(New Form)
+        'OpenChildForm(New InstitutesView)
     End Sub
 
-    Private Sub btnECUEs_Click(sender As Object, e As EventArgs)
+    Private Sub btnECUEs_Click(sender As Object, e As EventArgs) Handles btnECUEs.Click
         ActivateButton(sender, RGBColor.color3)
-        OpenChildForm(New InstitutesView)
+        'OpenChildForm(New ECUEsView)
     End Sub
 
-    Private Sub btnUEs_Click(sender As Object, e As EventArgs)
+    Private Sub btnUEs_Click(sender As Object, e As EventArgs) Handles btnUEs.Click
         ActivateButton(sender, RGBColor.color4)
-        OpenChildForm(New UEsView)
+        'OpenChildForm(New UEsView)
     End Sub
 
-    Private Sub btnUser_Click(sender As Object, e As EventArgs)
+    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
         ActivateButton(sender, RGBColor.color5)
-        OpenChildForm(New UserView)
+        'OpenChildForm(New UserView)
     End Sub
 
-    Private Sub ImageHome_Click(sender As Object, e As EventArgs)
+    Private Sub ImageHome_Click(sender As Object, e As EventArgs) Handles ImageHome.Click
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
@@ -118,12 +118,13 @@ Public Class AdminView
 
     Private Sub Reset()
         DisableButton()
-        leflBorderBtn.Visible = True
+        leflBorderBtn.Visible = False
         IconCurrentForm.IconChar = IconChar.Home
         IconCurrentForm.IconColor = Color.Honeydew
         IblFormTitle.Text = "Home"
 
     End Sub
+
 
     'Private Sub Panel_ADMIN_Paint(sender As Object, e As PaintEventArgs) Handles Panel_ADMIN.Paint
 
