@@ -22,6 +22,12 @@ Partial Class AdminView
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Panel_ADMIN = New Guna.UI2.WinForms.Guna2Panel()
+        Me.PanelTitleBar = New Guna.UI2.WinForms.Guna2Panel()
+        Me.IblFormTitle = New System.Windows.Forms.Label()
+        Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.PanelDesktop = New Guna.UI2.WinForms.Guna2Panel()
         Me.PanelMenu = New Guna.UI2.WinForms.Guna2Panel()
         Me.btnUser = New FontAwesome.Sharp.IconButton()
         Me.btnUEs = New FontAwesome.Sharp.IconButton()
@@ -30,18 +36,76 @@ Partial Class AdminView
         Me.btnEmployees = New FontAwesome.Sharp.IconButton()
         Me.PanelLogo = New Guna.UI2.WinForms.Guna2Panel()
         Me.ImageHome = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.PanelTitleBar = New Guna.UI2.WinForms.Guna2Panel()
-        Me.IblFormTitle = New System.Windows.Forms.Label()
-        Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.PanelDesktop = New Guna.UI2.WinForms.Guna2Panel()
-        Me.PanelMenu.SuspendLayout()
-        Me.PanelLogo.SuspendLayout()
-        CType(Me.ImageHome, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_ADMIN.SuspendLayout()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelMenu.SuspendLayout()
+        Me.PanelLogo.SuspendLayout()
+        CType(Me.ImageHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Panel_ADMIN
+        '
+        Me.Panel_ADMIN.Controls.Add(Me.PanelTitleBar)
+        Me.Panel_ADMIN.Controls.Add(Me.PanelDesktop)
+        Me.Panel_ADMIN.Controls.Add(Me.PanelMenu)
+        Me.Panel_ADMIN.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_ADMIN.Name = "Panel_ADMIN"
+        Me.Panel_ADMIN.Size = New System.Drawing.Size(1185, 680)
+        Me.Panel_ADMIN.TabIndex = 0
+        '
+        'PanelTitleBar
+        '
+        Me.PanelTitleBar.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PanelTitleBar.Controls.Add(Me.IblFormTitle)
+        Me.PanelTitleBar.Controls.Add(Me.IconCurrentForm)
+        Me.PanelTitleBar.Controls.Add(Me.Guna2PictureBox1)
+        Me.PanelTitleBar.Location = New System.Drawing.Point(219, 0)
+        Me.PanelTitleBar.Name = "PanelTitleBar"
+        Me.PanelTitleBar.Size = New System.Drawing.Size(966, 75)
+        Me.PanelTitleBar.TabIndex = 5
+        '
+        'IblFormTitle
+        '
+        Me.IblFormTitle.AutoSize = True
+        Me.IblFormTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IblFormTitle.ForeColor = System.Drawing.Color.Gainsboro
+        Me.IblFormTitle.Location = New System.Drawing.Point(53, 21)
+        Me.IblFormTitle.Name = "IblFormTitle"
+        Me.IblFormTitle.Size = New System.Drawing.Size(39, 13)
+        Me.IblFormTitle.TabIndex = 2
+        Me.IblFormTitle.Text = "Home"
+        '
+        'IconCurrentForm
+        '
+        Me.IconCurrentForm.BackColor = System.Drawing.Color.Honeydew
+        Me.IconCurrentForm.ForeColor = System.Drawing.Color.PaleTurquoise
+        Me.IconCurrentForm.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconCurrentForm.IconColor = System.Drawing.Color.PaleTurquoise
+        Me.IconCurrentForm.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconCurrentForm.Location = New System.Drawing.Point(15, 12)
+        Me.IconCurrentForm.Name = "IconCurrentForm"
+        Me.IconCurrentForm.Size = New System.Drawing.Size(32, 32)
+        Me.IconCurrentForm.TabIndex = 1
+        Me.IconCurrentForm.TabStop = False
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(15, 12)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(0, 0)
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
+        '
+        'PanelDesktop
+        '
+        Me.PanelDesktop.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PanelDesktop.Location = New System.Drawing.Point(219, 75)
+        Me.PanelDesktop.Name = "PanelDesktop"
+        Me.PanelDesktop.Size = New System.Drawing.Size(966, 605)
+        Me.PanelDesktop.TabIndex = 6
         '
         'PanelMenu
         '
@@ -56,7 +120,7 @@ Partial Class AdminView
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(220, 680)
-        Me.PanelMenu.TabIndex = 1
+        Me.PanelMenu.TabIndex = 4
         '
         'btnUser
         '
@@ -187,89 +251,38 @@ Partial Class AdminView
         Me.ImageHome.TabIndex = 0
         Me.ImageHome.TabStop = False
         '
-        'PanelTitleBar
-        '
-        Me.PanelTitleBar.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PanelTitleBar.Controls.Add(Me.IblFormTitle)
-        Me.PanelTitleBar.Controls.Add(Me.IconCurrentForm)
-        Me.PanelTitleBar.Controls.Add(Me.Guna2PictureBox1)
-        Me.PanelTitleBar.Location = New System.Drawing.Point(220, 0)
-        Me.PanelTitleBar.Name = "PanelTitleBar"
-        Me.PanelTitleBar.Size = New System.Drawing.Size(984, 75)
-        Me.PanelTitleBar.TabIndex = 2
-        '
-        'IblFormTitle
-        '
-        Me.IblFormTitle.AutoSize = True
-        Me.IblFormTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IblFormTitle.ForeColor = System.Drawing.Color.Gainsboro
-        Me.IblFormTitle.Location = New System.Drawing.Point(53, 21)
-        Me.IblFormTitle.Name = "IblFormTitle"
-        Me.IblFormTitle.Size = New System.Drawing.Size(39, 13)
-        Me.IblFormTitle.TabIndex = 2
-        Me.IblFormTitle.Text = "Home"
-        '
-        'IconCurrentForm
-        '
-        Me.IconCurrentForm.BackColor = System.Drawing.Color.Honeydew
-        Me.IconCurrentForm.ForeColor = System.Drawing.Color.PaleTurquoise
-        Me.IconCurrentForm.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconCurrentForm.IconColor = System.Drawing.Color.PaleTurquoise
-        Me.IconCurrentForm.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconCurrentForm.Location = New System.Drawing.Point(15, 12)
-        Me.IconCurrentForm.Name = "IconCurrentForm"
-        Me.IconCurrentForm.Size = New System.Drawing.Size(32, 32)
-        Me.IconCurrentForm.TabIndex = 1
-        Me.IconCurrentForm.TabStop = False
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(15, 12)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(0, 0)
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
-        '
-        'PanelDesktop
-        '
-        Me.PanelDesktop.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PanelDesktop.Location = New System.Drawing.Point(220, 75)
-        Me.PanelDesktop.Name = "PanelDesktop"
-        Me.PanelDesktop.Size = New System.Drawing.Size(963, 605)
-        Me.PanelDesktop.TabIndex = 3
-        '
         'AdminView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1184, 680)
-        Me.Controls.Add(Me.PanelDesktop)
-        Me.Controls.Add(Me.PanelTitleBar)
-        Me.Controls.Add(Me.PanelMenu)
+        Me.Controls.Add(Me.Panel_ADMIN)
         Me.Name = "AdminView"
         Me.Text = "AdminView"
-        Me.PanelMenu.ResumeLayout(False)
-        Me.PanelLogo.ResumeLayout(False)
-        CType(Me.ImageHome, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_ADMIN.ResumeLayout(False)
         Me.PanelTitleBar.ResumeLayout(False)
         Me.PanelTitleBar.PerformLayout()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelMenu.ResumeLayout(False)
+        Me.PanelLogo.ResumeLayout(False)
+        CType(Me.ImageHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents Panel_ADMIN As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents PanelTitleBar As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents IblFormTitle As Label
+    Friend WithEvents IconCurrentForm As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents PanelDesktop As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents PanelMenu As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents PanelLogo As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents ImageHome As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents btnUser As FontAwesome.Sharp.IconButton
     Friend WithEvents btnUEs As FontAwesome.Sharp.IconButton
     Friend WithEvents btnECUEs As FontAwesome.Sharp.IconButton
     Friend WithEvents btnInstitutes As FontAwesome.Sharp.IconButton
     Friend WithEvents btnEmployees As FontAwesome.Sharp.IconButton
-    Friend WithEvents PanelTitleBar As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents IconCurrentForm As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents IblFormTitle As Label
-    Friend WithEvents PanelDesktop As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents PanelLogo As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents ImageHome As Guna.UI2.WinForms.Guna2PictureBox
 End Class

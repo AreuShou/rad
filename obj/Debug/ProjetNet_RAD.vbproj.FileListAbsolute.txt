@@ -37,3 +37,6 @@ C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.xml
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.pdb
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.AdminView.resources
+C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.EmployeesControl.resources
+C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.InstitutesControl.resources
+C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.EmployeesView.resources
