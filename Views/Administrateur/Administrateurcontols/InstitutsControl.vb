@@ -1,17 +1,14 @@
-﻿Public Class InstitutesControl
+﻿Public Class InstitutsControl
     Private Sub InstitutesControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GR_View.DataSource = InstitutesController.getAll()
     End Sub
     Private Sub ClearForm()
-        BX_Institute1.Text = ""
-        BX_IB.Text = ""
-    End Sub
-    Private Sub BX_IB_TextChanged(sender As Object, e As EventArgs) Handles BX_IB.TextChanged
-
+        BX_LIBELLE.Text = ""
+        BX_SIGLE.Text = ""
     End Sub
 
     Private Sub BTN_Insert_Click(sender As Object, e As EventArgs) Handles BTN_Insert.Click
-        If InstitutesController.store(BX_Institute1.Text, BX_IB.Text) Then
+        If InstitutesController.store(BX_LIBELLE.Text, BX_SIGLE.Text) Then
             ClearForm()
             BTN_Insert_Click(Nothing, Nothing)
         End If
@@ -22,8 +19,8 @@
     End Sub
 
     Private Sub GR_View_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles GR_View.CellContentClick
-        BX_Institute1.Text = GR_View.SelectedRows(0).Cells(1).Value
-        BX_IB.Text = GR_View.SelectedRows(0).Cells(2).Value
+        BX_LIBELLE.Text = GR_View.SelectedRows(0).Cells(1).Value
+        BX_SIGLE.Text = GR_View.SelectedRows(0).Cells(2).Value
     End Sub
 
     Private Sub Box_Recherche_TextChanged(sender As Object, e As EventArgs) Handles Box_Recherche.TextChanged
@@ -36,7 +33,7 @@
             If nbRowSelected = 1 Then
                 Dim selectedRow As DataGridViewRow = GR_View.SelectedRows(0)
                 Dim institutId As Integer = selectedRow.Cells(0).Value
-                If InstitutesController.update(BX_Institute1.Text, BX_IB.Text, institutId) Then
+                If InstitutesController.update(BX_LIBELLE.Text, BX_SIGLE.Text, institutId) Then
                     ClearForm()
                     BTN_Recharge_Click(Nothing, Nothing)
                 End If

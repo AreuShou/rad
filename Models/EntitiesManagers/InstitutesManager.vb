@@ -1,7 +1,7 @@
 ﻿Public Class InstitutesManager
     Inherits Manager
     Private Shared Function getInsitutueGenerique() As Institute
-        Dim insitute As Institute = New Institute(Nothing, Nothing, Nothing)
+        Dim institute As Institute = New Institute(Nothing, Nothing, Nothing)
         Try
             dataAdapater = New MySql.Data.MySqlClient.MySqlDataAdapter(command)
 
@@ -9,14 +9,14 @@
             Manager.dataAdapater.Fill(Manager.dataTable)
 
             For Each row As DataRow In Manager.dataTable.Rows
-                insitute = New Institute(CInt(row("id")), row("libelle"), row("sigle"))
+                institute = New Institute(CInt(row("id")), row("libelle"), row("sigle"))
             Next
             disposeManager()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
 
-        Return insitute
+        Return institute
     End Function
     Public Shared Function getById(id As Integer) As Institute
         command = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM Institutes WHERE id = @id;", Manager.connection)

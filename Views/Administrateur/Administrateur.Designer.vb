@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AdminView
+Partial Class Administrateur
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -22,12 +22,15 @@ Partial Class AdminView
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel_ADMIN = New Guna.UI2.WinForms.Guna2Panel()
         Me.PanelTitleBar = New Guna.UI2.WinForms.Guna2Panel()
+        Me.BT_MAXIMISE = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.BT_MINIMISE = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.BT_CLOSE = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.IblFormTitle = New System.Windows.Forms.Label()
         Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.PanelDesktop = New Guna.UI2.WinForms.Guna2Panel()
         Me.PanelMenu = New Guna.UI2.WinForms.Guna2Panel()
         Me.btnUser = New FontAwesome.Sharp.IconButton()
         Me.btnUEs = New FontAwesome.Sharp.IconButton()
@@ -36,7 +39,8 @@ Partial Class AdminView
         Me.btnEmployees = New FontAwesome.Sharp.IconButton()
         Me.PanelLogo = New Guna.UI2.WinForms.Guna2Panel()
         Me.ImageHome = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Panel_ADMIN.SuspendLayout()
+        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.btnFaculties = New FontAwesome.Sharp.IconButton()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,24 +51,61 @@ Partial Class AdminView
         '
         'Panel_ADMIN
         '
-        Me.Panel_ADMIN.Controls.Add(Me.PanelTitleBar)
-        Me.Panel_ADMIN.Controls.Add(Me.PanelDesktop)
-        Me.Panel_ADMIN.Controls.Add(Me.PanelMenu)
-        Me.Panel_ADMIN.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_ADMIN.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel_ADMIN.Location = New System.Drawing.Point(238, 82)
         Me.Panel_ADMIN.Name = "Panel_ADMIN"
-        Me.Panel_ADMIN.Size = New System.Drawing.Size(1185, 680)
+        Me.Panel_ADMIN.Size = New System.Drawing.Size(744, 475)
         Me.Panel_ADMIN.TabIndex = 0
         '
         'PanelTitleBar
         '
-        Me.PanelTitleBar.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PanelTitleBar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PanelTitleBar.BackColor = System.Drawing.Color.Transparent
+        Me.PanelTitleBar.Controls.Add(Me.BT_MAXIMISE)
+        Me.PanelTitleBar.Controls.Add(Me.BT_MINIMISE)
+        Me.PanelTitleBar.Controls.Add(Me.BT_CLOSE)
         Me.PanelTitleBar.Controls.Add(Me.IblFormTitle)
         Me.PanelTitleBar.Controls.Add(Me.IconCurrentForm)
         Me.PanelTitleBar.Controls.Add(Me.Guna2PictureBox1)
-        Me.PanelTitleBar.Location = New System.Drawing.Point(219, 0)
+        Me.PanelTitleBar.Location = New System.Drawing.Point(238, 1)
         Me.PanelTitleBar.Name = "PanelTitleBar"
-        Me.PanelTitleBar.Size = New System.Drawing.Size(966, 75)
+        Me.PanelTitleBar.Size = New System.Drawing.Size(744, 75)
         Me.PanelTitleBar.TabIndex = 5
+        '
+        'BT_MAXIMISE
+        '
+        Me.BT_MAXIMISE.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BT_MAXIMISE.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox
+        Me.BT_MAXIMISE.FillColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(166, Byte), Integer))
+        Me.BT_MAXIMISE.IconColor = System.Drawing.Color.White
+        Me.BT_MAXIMISE.Location = New System.Drawing.Point(678, 0)
+        Me.BT_MAXIMISE.Name = "BT_MAXIMISE"
+        Me.BT_MAXIMISE.Size = New System.Drawing.Size(30, 30)
+        Me.BT_MAXIMISE.TabIndex = 6
+        '
+        'BT_MINIMISE
+        '
+        Me.BT_MINIMISE.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BT_MINIMISE.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
+        Me.BT_MINIMISE.FillColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(166, Byte), Integer))
+        Me.BT_MINIMISE.IconColor = System.Drawing.Color.White
+        Me.BT_MINIMISE.Location = New System.Drawing.Point(642, 0)
+        Me.BT_MINIMISE.Name = "BT_MINIMISE"
+        Me.BT_MINIMISE.Size = New System.Drawing.Size(30, 30)
+        Me.BT_MINIMISE.TabIndex = 5
+        '
+        'BT_CLOSE
+        '
+        Me.BT_CLOSE.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BT_CLOSE.FillColor = System.Drawing.Color.Red
+        Me.BT_CLOSE.IconColor = System.Drawing.Color.White
+        Me.BT_CLOSE.Location = New System.Drawing.Point(714, 0)
+        Me.BT_CLOSE.Name = "BT_CLOSE"
+        Me.BT_CLOSE.Size = New System.Drawing.Size(30, 30)
+        Me.BT_CLOSE.TabIndex = 4
         '
         'IblFormTitle
         '
@@ -99,27 +140,21 @@ Partial Class AdminView
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
         '
-        'PanelDesktop
-        '
-        Me.PanelDesktop.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PanelDesktop.Location = New System.Drawing.Point(219, 75)
-        Me.PanelDesktop.Name = "PanelDesktop"
-        Me.PanelDesktop.Size = New System.Drawing.Size(966, 605)
-        Me.PanelDesktop.TabIndex = 6
-        '
         'PanelMenu
         '
-        Me.PanelMenu.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PanelMenu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PanelMenu.BackColor = System.Drawing.Color.Transparent
+        Me.PanelMenu.Controls.Add(Me.btnFaculties)
         Me.PanelMenu.Controls.Add(Me.btnUser)
         Me.PanelMenu.Controls.Add(Me.btnUEs)
         Me.PanelMenu.Controls.Add(Me.btnECUEs)
         Me.PanelMenu.Controls.Add(Me.btnInstitutes)
         Me.PanelMenu.Controls.Add(Me.btnEmployees)
         Me.PanelMenu.Controls.Add(Me.PanelLogo)
-        Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMenu.Location = New System.Drawing.Point(2, 1)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(220, 680)
+        Me.PanelMenu.Size = New System.Drawing.Size(230, 556)
         Me.PanelMenu.TabIndex = 4
         '
         'btnUser
@@ -137,9 +172,9 @@ Partial Class AdminView
         Me.btnUser.Location = New System.Drawing.Point(0, 440)
         Me.btnUser.Name = "btnUser"
         Me.btnUser.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
-        Me.btnUser.Size = New System.Drawing.Size(220, 60)
+        Me.btnUser.Size = New System.Drawing.Size(230, 60)
         Me.btnUser.TabIndex = 5
-        Me.btnUser.Text = "UserControl"
+        Me.btnUser.Text = "Utilisateurs"
         Me.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnUser.UseVisualStyleBackColor = True
@@ -159,9 +194,9 @@ Partial Class AdminView
         Me.btnUEs.Location = New System.Drawing.Point(0, 380)
         Me.btnUEs.Name = "btnUEs"
         Me.btnUEs.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
-        Me.btnUEs.Size = New System.Drawing.Size(220, 60)
+        Me.btnUEs.Size = New System.Drawing.Size(230, 60)
         Me.btnUEs.TabIndex = 4
-        Me.btnUEs.Text = "UEsControl"
+        Me.btnUEs.Text = "UEs"
         Me.btnUEs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnUEs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnUEs.UseVisualStyleBackColor = True
@@ -181,9 +216,9 @@ Partial Class AdminView
         Me.btnECUEs.Location = New System.Drawing.Point(0, 320)
         Me.btnECUEs.Name = "btnECUEs"
         Me.btnECUEs.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
-        Me.btnECUEs.Size = New System.Drawing.Size(220, 60)
+        Me.btnECUEs.Size = New System.Drawing.Size(230, 60)
         Me.btnECUEs.TabIndex = 3
-        Me.btnECUEs.Text = "ECUEsControl"
+        Me.btnECUEs.Text = "ECUEs"
         Me.btnECUEs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnECUEs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnECUEs.UseVisualStyleBackColor = True
@@ -203,9 +238,9 @@ Partial Class AdminView
         Me.btnInstitutes.Location = New System.Drawing.Point(0, 260)
         Me.btnInstitutes.Name = "btnInstitutes"
         Me.btnInstitutes.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
-        Me.btnInstitutes.Size = New System.Drawing.Size(220, 60)
+        Me.btnInstitutes.Size = New System.Drawing.Size(230, 60)
         Me.btnInstitutes.TabIndex = 2
-        Me.btnInstitutes.Text = "InstitutesControl"
+        Me.btnInstitutes.Text = "Instituts"
         Me.btnInstitutes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnInstitutes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnInstitutes.UseVisualStyleBackColor = True
@@ -225,9 +260,9 @@ Partial Class AdminView
         Me.btnEmployees.Location = New System.Drawing.Point(0, 200)
         Me.btnEmployees.Name = "btnEmployees"
         Me.btnEmployees.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
-        Me.btnEmployees.Size = New System.Drawing.Size(220, 60)
+        Me.btnEmployees.Size = New System.Drawing.Size(230, 60)
         Me.btnEmployees.TabIndex = 1
-        Me.btnEmployees.Text = "EmployeesControl"
+        Me.btnEmployees.Text = "Employées"
         Me.btnEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEmployees.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnEmployees.UseVisualStyleBackColor = True
@@ -238,7 +273,7 @@ Partial Class AdminView
         Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
         Me.PanelLogo.Name = "PanelLogo"
-        Me.PanelLogo.Size = New System.Drawing.Size(220, 200)
+        Me.PanelLogo.Size = New System.Drawing.Size(230, 200)
         Me.PanelLogo.TabIndex = 0
         '
         'ImageHome
@@ -251,15 +286,46 @@ Partial Class AdminView
         Me.ImageHome.TabIndex = 0
         Me.ImageHome.TabStop = False
         '
-        'AdminView
+        'Guna2Elipse1
+        '
+        Me.Guna2Elipse1.BorderRadius = 0
+        Me.Guna2Elipse1.TargetControl = Me
+        '
+        'btnFaculties
+        '
+        Me.btnFaculties.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnFaculties.FlatAppearance.BorderSize = 0
+        Me.btnFaculties.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnFaculties.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFaculties.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnFaculties.IconChar = FontAwesome.Sharp.IconChar.ChartLine
+        Me.btnFaculties.IconColor = System.Drawing.Color.Gainsboro
+        Me.btnFaculties.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnFaculties.IconSize = 32
+        Me.btnFaculties.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnFaculties.Location = New System.Drawing.Point(0, 500)
+        Me.btnFaculties.Name = "btnFaculties"
+        Me.btnFaculties.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
+        Me.btnFaculties.Size = New System.Drawing.Size(230, 60)
+        Me.btnFaculties.TabIndex = 6
+        Me.btnFaculties.Text = "Facultés"
+        Me.btnFaculties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnFaculties.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnFaculties.UseVisualStyleBackColor = True
+        '
+        'Administrateur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1184, 680)
+        Me.BackColor = System.Drawing.SystemColors.GrayText
+        Me.ClientSize = New System.Drawing.Size(984, 557)
+        Me.Controls.Add(Me.PanelTitleBar)
+        Me.Controls.Add(Me.PanelMenu)
         Me.Controls.Add(Me.Panel_ADMIN)
-        Me.Name = "AdminView"
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "Administrateur"
         Me.Text = "AdminView"
-        Me.Panel_ADMIN.ResumeLayout(False)
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.PanelTitleBar.ResumeLayout(False)
         Me.PanelTitleBar.PerformLayout()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).EndInit()
@@ -276,7 +342,6 @@ Partial Class AdminView
     Friend WithEvents IblFormTitle As Label
     Friend WithEvents IconCurrentForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents PanelDesktop As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents PanelMenu As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnUser As FontAwesome.Sharp.IconButton
     Friend WithEvents btnUEs As FontAwesome.Sharp.IconButton
@@ -285,4 +350,9 @@ Partial Class AdminView
     Friend WithEvents btnEmployees As FontAwesome.Sharp.IconButton
     Friend WithEvents PanelLogo As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents ImageHome As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents BT_MAXIMISE As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents BT_MINIMISE As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents BT_CLOSE As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
+    Friend WithEvents btnFaculties As FontAwesome.Sharp.IconButton
 End Class

@@ -154,94 +154,64 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="RGBColor.vb" />
-    <Compile Include="Views\ECUEsView.Designer.vb">
-      <DependentUpon>ECUEsView.vb</DependentUpon>
+    <Compile Include="Views\Administrateur\Administrateur.Designer.vb">
+      <DependentUpon>Administrateur.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\ECUEsView.vb">
+    <Compile Include="Views\Administrateur\Administrateur.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\EmployeesView.Designer.vb">
-      <DependentUpon>EmployeesView.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EmployeesView.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\EvaluationsView.Designer.vb">
-      <DependentUpon>EvaluationsView.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EvaluationsView.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FacultitesView.Designer.vb">
-      <DependentUpon>FacultitesView.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FacultitesView.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\InstitutesView.Designer.vb">
-      <DependentUpon>InstitutesView.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views\InstitutesView.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\StudentsView.Designer.vb">
-      <DependentUpon>StudentsView.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views\StudentsView.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\SuperUser\AdminView.Designer.vb">
-      <DependentUpon>AdminView.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views\SuperUser\AdminView.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\ECUEsControl.Designer.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\ECUEsControl.Designer.vb">
       <DependentUpon>ECUEsControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\ECUEsControl.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\ECUEsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\EmployeesControl.Designer.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\EmployeesControl.Designer.vb">
       <DependentUpon>EmployeesControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\EmployeesControl.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\EmployeesControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\InstitutesControl.Designer.vb">
-      <DependentUpon>InstitutesControl.vb</DependentUpon>
+    <Compile Include="Views\Administrateur\Administrateurcontols\FacultiesControl.Designer.vb">
+      <DependentUpon>FacultiesControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\InstitutesControl.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\FacultiesControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\UEsControl.Designer.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\InstitutsControl.Designer.vb">
+      <DependentUpon>InstitutsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrateur\Administrateurcontols\InstitutsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Administrateur\Administrateurcontols\UEsControl.Designer.vb">
       <DependentUpon>UEsControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\UEsControl.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\UEsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\UserControl.Designer.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\UserControl.Designer.vb">
       <DependentUpon>UserControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\SuperUser\SUcontols\UserControl.vb">
+    <Compile Include="Views\Administrateur\Administrateurcontols\UserControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\TuitionService\TuitionServiceViews.Designer.vb">
-      <DependentUpon>TuitionServiceViews.vb</DependentUpon>
+    <Compile Include="Views\Connexion.Designer.vb">
+      <DependentUpon>Connexion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\TuitionService\TuitionServiceViews.vb">
+    <Compile Include="Views\Connexion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\UEsView.Designer.vb">
-      <DependentUpon>UEsView.vb</DependentUpon>
+    <Compile Include="Views\Enseignant\Enseignant.Designer.vb">
+      <DependentUpon>Enseignant.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\UEsView.vb">
+    <Compile Include="Views\Enseignant\Enseignant.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\UserView.Designer.vb">
-      <DependentUpon>UserView.vb</DependentUpon>
+    <Compile Include="Views\ServiceScolarité\ServiceScolarite.Designer.vb">
+      <DependentUpon>ServiceScolarite.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserView.vb">
+    <Compile Include="Views\ServiceScolarité\ServiceScolarite.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -252,20 +222,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\EmployeesView.resx">
-      <DependentUpon>EmployeesView.vb</DependentUpon>
+    <EmbeddedResource Include="Views\Administrateur\Administrateur.resx">
+      <DependentUpon>Administrateur.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\SuperUser\AdminView.resx">
-      <DependentUpon>AdminView.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\SuperUser\SUcontols\EmployeesControl.resx">
+    <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\EmployeesControl.resx">
       <DependentUpon>EmployeesControl.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\SuperUser\SUcontols\InstitutesControl.resx">
-      <DependentUpon>InstitutesControl.vb</DependentUpon>
+    <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\InstitutsControl.resx">
+      <DependentUpon>InstitutsControl.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\TuitionService\TuitionServiceViews.resx">
-      <DependentUpon>TuitionServiceViews.vb</DependentUpon>
+    <EmbeddedResource Include="Views\ServiceScolarité\ServiceScolarite.resx">
+      <DependentUpon>ServiceScolarite.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -281,10 +248,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Teacher\TEcontrols\" />
-    <Folder Include="Views\TuitionService\TScontrols\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\img3.jpg" />
   </ItemGroup>

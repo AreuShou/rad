@@ -1,16 +1,19 @@
 ﻿Imports FontAwesome.Sharp
-Public Class AdminView
-    Dim InstitutesControl As InstitutesControl
+Public Class Administrateur
+    Dim institutsControl As InstitutsControl
 
     Private Sub AdminView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Manager.connect()
-        InstitutesControl = New InstitutesControl()
+        institutsControl = New InstitutsControl()
 
 
-        InstitutesControl.Dock = DockStyle.Fill
+
+        institutsControl.Dock = DockStyle.Fill
 
 
-        Panel_ADMIN.Controls.Add(InstitutesControl)
+        Panel_ADMIN.Controls.Add(institutsControl)
+
+        btnInstitutes_Click(Nothing, Nothing)
     End Sub
 
     'Field
@@ -36,7 +39,7 @@ Public Class AdminView
             DisableButton()
             'Button
             currentBtn = CType(senderBtn, IconButton)
-            currentBtn.BackColor = Color.FromArgb(37, 36, 81)
+            'currentBtn.BackColor = Color.FromArgb(37, 36, 81)
             currentBtn.ForeColor = customColor
             currentBtn.IconColor = customColor
             currentBtn.TextAlign = ContentAlignment.MiddleCenter
@@ -56,7 +59,7 @@ Public Class AdminView
 
     Private Sub DisableButton()
         If currentBtn IsNot Nothing Then
-            currentBtn.BackColor = Color.FromArgb(31, 30, 68)
+            'currentBtn.BackColor = Color.FromArgb(31, 30, 68)
             currentBtn.ForeColor = Color.Gainsboro
             currentBtn.IconColor = Color.Gainsboro
             currentBtn.TextAlign = ContentAlignment.MiddleLeft
@@ -75,8 +78,8 @@ Public Class AdminView
         childForm.TopLevel = False
         childForm.FormBorderStyle = FormBorderStyle.None
         childForm.Dock = DockStyle.Fill
-        PanelDesktop.Controls.Add(childForm)
-        PanelDesktop.Tag = childForm
+        PanelMenu.Controls.Add(childForm)
+        PanelMenu.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
         IblFormTitle.Text = childForm.Text
@@ -90,6 +93,7 @@ Public Class AdminView
 
     Private Sub btnInstitutes_Click(sender As Object, e As EventArgs) Handles btnInstitutes.Click
         ActivateButton(sender, RGBColor.color2)
+        institutsControl.Show()
         'OpenChildForm(New InstitutesView)
     End Sub
 
@@ -123,6 +127,10 @@ Public Class AdminView
         IconCurrentForm.IconColor = Color.Honeydew
         IblFormTitle.Text = "Home"
 
+    End Sub
+
+    Private Sub btnFaculties_Click(sender As Object, e As EventArgs) Handles btnFaculties.Click
+        ActivateButton(sender, RGBColor.color6)
     End Sub
 
 

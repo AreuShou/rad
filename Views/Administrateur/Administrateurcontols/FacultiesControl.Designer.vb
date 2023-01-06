@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ECUEsView
-    Inherits System.Windows.Forms.Form
+Partial Class FacultiesControl
+    Inherits System.Windows.Forms.UserControl
 
-    'Form remplace la méthode Dispose pour nettoyer la liste des composants.
+    'UserControl remplace la méthode Dispose pour nettoyer la liste des composants.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -22,9 +22,8 @@ Partial Class ECUEsView
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        components = New System.ComponentModel.Container()
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "ECUEsView"
     End Sub
+
 End Class
