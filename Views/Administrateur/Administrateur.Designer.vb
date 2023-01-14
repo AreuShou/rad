@@ -32,6 +32,7 @@ Partial Class Administrateur
         Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.PanelMenu = New Guna.UI2.WinForms.Guna2Panel()
+        Me.btnFaculties = New FontAwesome.Sharp.IconButton()
         Me.btnUser = New FontAwesome.Sharp.IconButton()
         Me.btnUEs = New FontAwesome.Sharp.IconButton()
         Me.btnECUEs = New FontAwesome.Sharp.IconButton()
@@ -40,7 +41,6 @@ Partial Class Administrateur
         Me.PanelLogo = New Guna.UI2.WinForms.Guna2Panel()
         Me.ImageHome = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.btnFaculties = New FontAwesome.Sharp.IconButton()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,6 +156,28 @@ Partial Class Administrateur
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(230, 556)
         Me.PanelMenu.TabIndex = 4
+        '
+        'btnFaculties
+        '
+        Me.btnFaculties.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnFaculties.FlatAppearance.BorderSize = 0
+        Me.btnFaculties.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnFaculties.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFaculties.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnFaculties.IconChar = FontAwesome.Sharp.IconChar.LayerGroup
+        Me.btnFaculties.IconColor = System.Drawing.Color.Gainsboro
+        Me.btnFaculties.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnFaculties.IconSize = 32
+        Me.btnFaculties.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnFaculties.Location = New System.Drawing.Point(0, 500)
+        Me.btnFaculties.Name = "btnFaculties"
+        Me.btnFaculties.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
+        Me.btnFaculties.Size = New System.Drawing.Size(230, 53)
+        Me.btnFaculties.TabIndex = 6
+        Me.btnFaculties.Text = "Facultés"
+        Me.btnFaculties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnFaculties.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnFaculties.UseVisualStyleBackColor = True
         '
         'btnUser
         '
@@ -290,28 +312,6 @@ Partial Class Administrateur
         '
         Me.Guna2Elipse1.BorderRadius = 0
         Me.Guna2Elipse1.TargetControl = Me
-        '
-        'btnFaculties
-        '
-        Me.btnFaculties.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnFaculties.FlatAppearance.BorderSize = 0
-        Me.btnFaculties.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFaculties.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFaculties.ForeColor = System.Drawing.Color.Gainsboro
-        Me.btnFaculties.IconChar = FontAwesome.Sharp.IconChar.ChartLine
-        Me.btnFaculties.IconColor = System.Drawing.Color.Gainsboro
-        Me.btnFaculties.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btnFaculties.IconSize = 32
-        Me.btnFaculties.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnFaculties.Location = New System.Drawing.Point(0, 500)
-        Me.btnFaculties.Name = "btnFaculties"
-        Me.btnFaculties.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
-        Me.btnFaculties.Size = New System.Drawing.Size(230, 60)
-        Me.btnFaculties.TabIndex = 6
-        Me.btnFaculties.Text = "Facultés"
-        Me.btnFaculties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnFaculties.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnFaculties.UseVisualStyleBackColor = True
         '
         'Administrateur
         '
