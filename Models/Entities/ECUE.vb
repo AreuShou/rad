@@ -58,6 +58,11 @@
             End If
         End Set
     End Property
+    Public ReadOnly Property Name
+        Get
+            Return _id & "-" & _libelle
+        End Get
+    End Property
 
     Public ReadOnly Property Employee
         Get

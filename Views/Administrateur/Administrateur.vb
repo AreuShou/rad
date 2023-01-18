@@ -7,7 +7,14 @@ Public Class Administrateur
     Dim uesControl As UEsControl
     Dim facutltiesControl As FacultiesControl
 
-    Private Sub AdminView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Const employeesIllustrationPath As String = "..\..\assets\Pictures\Illustrations\AdminView\employees_illustration.png"
+    Const institutsIllustrationPath As String = "..\..\assets\Pictures\Illustrations\AdminView\insitute_illustration.png"
+    Const careersIllustrationPath As String = "..\..\assets\Pictures\Illustrations\AdminView\careers_illustration.png"
+    Const uesIllustrationPath As String = "..\..\assets\Pictures\Illustrations\AdminView\ues_illustration.png"
+    Const ecuesIllustrationPath As String = "..\..\assets\Pictures\Illustrations\AdminView\ecues_illustration.png"
+    Const usersIllustrationPath As String = "..\..\assets\Pictures\Illustrations\AdminView\users_illustration.png"
+    Private Sub Administrateur_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Manager.connect()
         usersControl = New UserControl()
         employeesControl = New EmployeesControl()

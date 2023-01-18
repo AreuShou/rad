@@ -43,7 +43,7 @@ Public Class UEsManager
 
 
     Private Shared Function getGenerique() As UE
-        Dim ue As UE = New UE(0, Nothing, Nothing)
+        Dim ue As UE = New UE(Nothing, Nothing, New List(Of Career))
         Try
             dataAdapater = New MySql.Data.MySqlClient.MySqlDataAdapter(command)
 
@@ -85,9 +85,9 @@ Public Class UEsManager
             command.ExecuteNonQuery()
             disposeManager()
 
-            Dim ueInserted As UE = getById(getLastId("UEs"))
-            deleteCareersEUEs(ueInserted.Id)
-            storeCareersUEs(ueInserted.Id, ueInserted.CareerList)
+            ue.Id = getLastId("UEs")
+            deleteCareersUEs(ue.Id)
+            storeCareersUEs(ue.Id, ue.CareerList)
 
             Return True
         Catch ex As Exception
@@ -97,16 +97,15 @@ Public Class UEsManager
     End Function
     Public Shared Function update(ue As UE, id As Integer) As Boolean
         Try
-            command = New MySqlCommand("UPDATE UEs SET libelle = @libelle, semester = @semester, career_id = @career_id WHERE id = @id;", Manager.connection)
+            command = New MySqlCommand("UPDATE UEs SET libelle = @libelle, semester = @semester WHERE id = @id;", Manager.connection)
             command.Parameters.AddWithValue("@libelle", ue.Libelle)
             command.Parameters.AddWithValue("@semester", ue.Semester)
             command.Parameters.AddWithValue("@id", id)
             command.ExecuteNonQuery()
             disposeManager()
 
-            Dim ueInserted As UE = getById(id)
-            deleteCareersEUEs(ueInserted.Id)
-            storeCareersUEs(ueInserted.Id, ueInserted.CareerList)
+            deleteCareersUEs(id)
+            storeCareersUEs(id, ue.CareerList)
 
             Return True
         Catch ex As Exception
@@ -131,19 +130,22 @@ Public Class UEsManager
     End Function
 
 
-    Public Shared Function deleteCareersEUEs(ueId As Integer) As Boolean
+    Public Shared Function deleteCareersUEs(ueId As Integer) As Boolean
         Try
-            command = New MySqlCommand("DELETE FROM CareersUEs WHERE UE_id = @euId;", Manager.connection)
+            command = New MySqlCommand("DELETE FROM CareersUEs WHERE UE_id = @ueId;", Manager.connection)
             command.Parameters.AddWithValue("@ueId", ueId)
             command.ExecuteNonQuery()
             disposeManager()
             Return True
         Catch ex As Exception
-            MessageBox.Show("Erreur durant la supression : " & ex.Message, "ECUESManager", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Erreur durant la supression des liaisons : " & ex.Message, "ECUESManager", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
         Return False
     End Function
     Public Overloads Shared Function delete(id As Integer) As Boolean
-        Return Manager.delete("UEs", id)
+        If (deleteCareersUEs(id)) Then
+            Return Manager.delete("UEs", id)
+        End If
+        Return False
     End Function
 End Class

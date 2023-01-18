@@ -25,10 +25,10 @@ Partial Class Connexion
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.BT_CONNEXION = New Guna.UI2.WinForms.Guna2Button()
         Me.LBL_Login = New System.Windows.Forms.Label()
-        Me.TextBx_Valide = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.passe = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.nom = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.TB_PASSWORD = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.TB_USERNAME = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Lbl_Password = New System.Windows.Forms.Label()
         Me.Lbl_Utilisateur = New System.Windows.Forms.Label()
         Me.Guna2Panel1.SuspendLayout()
@@ -57,10 +57,10 @@ Partial Class Connexion
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.BT_CONNEXION)
         Me.Panel2.Controls.Add(Me.LBL_Login)
-        Me.Panel2.Controls.Add(Me.TextBx_Valide)
-        Me.Panel2.Controls.Add(Me.passe)
-        Me.Panel2.Controls.Add(Me.nom)
+        Me.Panel2.Controls.Add(Me.TB_PASSWORD)
+        Me.Panel2.Controls.Add(Me.TB_USERNAME)
         Me.Panel2.Controls.Add(Me.Lbl_Password)
         Me.Panel2.Controls.Add(Me.Lbl_Utilisateur)
         Me.Panel2.Location = New System.Drawing.Point(459, 88)
@@ -68,6 +68,23 @@ Partial Class Connexion
         Me.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Panel2.Size = New System.Drawing.Size(314, 383)
         Me.Panel2.TabIndex = 3
+        '
+        'BT_CONNEXION
+        '
+        Me.BT_CONNEXION.AutoRoundedCorners = True
+        Me.BT_CONNEXION.BorderRadius = 21
+        Me.BT_CONNEXION.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_CONNEXION.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_CONNEXION.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_CONNEXION.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_CONNEXION.FillColor = System.Drawing.Color.Black
+        Me.BT_CONNEXION.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BT_CONNEXION.ForeColor = System.Drawing.Color.White
+        Me.BT_CONNEXION.Location = New System.Drawing.Point(98, 290)
+        Me.BT_CONNEXION.Name = "BT_CONNEXION"
+        Me.BT_CONNEXION.Size = New System.Drawing.Size(108, 45)
+        Me.BT_CONNEXION.TabIndex = 6
+        Me.BT_CONNEXION.Text = "Valider"
         '
         'LBL_Login
         '
@@ -79,70 +96,47 @@ Partial Class Connexion
         Me.LBL_Login.TabIndex = 5
         Me.LBL_Login.Text = "CONNECTEZ-VOUS"
         '
-        'TextBx_Valide
+        'TB_PASSWORD
         '
-        Me.TextBx_Valide.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.TextBx_Valide.AutoRoundedCorners = True
-        Me.TextBx_Valide.BorderRadius = 19
-        Me.TextBx_Valide.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBx_Valide.DefaultText = "VALIDER"
-        Me.TextBx_Valide.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.TextBx_Valide.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.TextBx_Valide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBx_Valide.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBx_Valide.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBx_Valide.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.TextBx_Valide.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBx_Valide.Location = New System.Drawing.Point(107, 309)
-        Me.TextBx_Valide.Name = "TextBx_Valide"
-        Me.TextBx_Valide.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TextBx_Valide.PlaceholderText = ""
-        Me.TextBx_Valide.SelectedText = ""
-        Me.TextBx_Valide.Size = New System.Drawing.Size(72, 41)
-        Me.TextBx_Valide.TabIndex = 4
+        Me.TB_PASSWORD.AutoRoundedCorners = True
+        Me.TB_PASSWORD.BorderRadius = 17
+        Me.TB_PASSWORD.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TB_PASSWORD.DefaultText = ""
+        Me.TB_PASSWORD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TB_PASSWORD.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TB_PASSWORD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_PASSWORD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_PASSWORD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_PASSWORD.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TB_PASSWORD.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_PASSWORD.Location = New System.Drawing.Point(51, 221)
+        Me.TB_PASSWORD.Name = "TB_PASSWORD"
+        Me.TB_PASSWORD.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TB_PASSWORD.PlaceholderText = ""
+        Me.TB_PASSWORD.SelectedText = ""
+        Me.TB_PASSWORD.Size = New System.Drawing.Size(200, 36)
+        Me.TB_PASSWORD.TabIndex = 3
         '
-        'passe
+        'TB_USERNAME
         '
-        Me.passe.AutoRoundedCorners = True
-        Me.passe.BorderRadius = 17
-        Me.passe.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.passe.DefaultText = ""
-        Me.passe.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.passe.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.passe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.passe.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.passe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.passe.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.passe.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.passe.Location = New System.Drawing.Point(51, 221)
-        Me.passe.Name = "passe"
-        Me.passe.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.passe.PlaceholderText = ""
-        Me.passe.SelectedText = ""
-        Me.passe.Size = New System.Drawing.Size(200, 36)
-        Me.passe.TabIndex = 3
-        '
-        'nom
-        '
-        Me.nom.AutoRoundedCorners = True
-        Me.nom.BorderRadius = 17
-        Me.nom.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.nom.DefaultText = ""
-        Me.nom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.nom.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.nom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.nom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.nom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.nom.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.nom.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.nom.Location = New System.Drawing.Point(51, 123)
-        Me.nom.Name = "nom"
-        Me.nom.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.nom.PlaceholderText = ""
-        Me.nom.SelectedText = ""
-        Me.nom.Size = New System.Drawing.Size(200, 36)
-        Me.nom.TabIndex = 2
+        Me.TB_USERNAME.AutoRoundedCorners = True
+        Me.TB_USERNAME.BorderRadius = 17
+        Me.TB_USERNAME.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TB_USERNAME.DefaultText = ""
+        Me.TB_USERNAME.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TB_USERNAME.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TB_USERNAME.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_USERNAME.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_USERNAME.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_USERNAME.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TB_USERNAME.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_USERNAME.Location = New System.Drawing.Point(51, 123)
+        Me.TB_USERNAME.Name = "TB_USERNAME"
+        Me.TB_USERNAME.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TB_USERNAME.PlaceholderText = ""
+        Me.TB_USERNAME.SelectedText = ""
+        Me.TB_USERNAME.Size = New System.Drawing.Size(200, 36)
+        Me.TB_USERNAME.TabIndex = 2
         '
         'Lbl_Password
         '
@@ -181,11 +175,11 @@ Partial Class Connexion
 
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Private WithEvents Panel2 As Panel
-    Friend WithEvents TextBx_Valide As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents passe As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents nom As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents TB_PASSWORD As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents TB_USERNAME As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Lbl_Password As Label
     Friend WithEvents Lbl_Utilisateur As Label
     Friend WithEvents LBL_Login As Label
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents BT_CONNEXION As Guna.UI2.WinForms.Guna2Button
 End Class

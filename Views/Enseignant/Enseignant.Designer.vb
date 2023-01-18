@@ -37,7 +37,7 @@ Partial Class Enseignant
         Me.CB_Note = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CB_Pourcent = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CB_Type = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.TB_Recherche = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TB_Etudiant = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CB_Etudiant = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.GRD_View = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -193,24 +193,24 @@ Partial Class Enseignant
         Me.CB_Type.Size = New System.Drawing.Size(181, 36)
         Me.CB_Type.TabIndex = 11
         '
-        'Guna2TextBox1
+        'TB_Recherche
         '
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(97, 234)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(826, 36)
-        Me.Guna2TextBox1.TabIndex = 12
+        Me.TB_Recherche.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TB_Recherche.DefaultText = ""
+        Me.TB_Recherche.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TB_Recherche.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TB_Recherche.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_Recherche.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_Recherche.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_Recherche.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TB_Recherche.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_Recherche.Location = New System.Drawing.Point(97, 234)
+        Me.TB_Recherche.Name = "TB_Recherche"
+        Me.TB_Recherche.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TB_Recherche.PlaceholderText = ""
+        Me.TB_Recherche.SelectedText = ""
+        Me.TB_Recherche.Size = New System.Drawing.Size(826, 36)
+        Me.TB_Recherche.TabIndex = 12
         '
         'TB_Etudiant
         '
@@ -377,7 +377,7 @@ Partial Class Enseignant
         Me.Controls.Add(Me.GRD_View)
         Me.Controls.Add(Me.CB_Etudiant)
         Me.Controls.Add(Me.TB_Etudiant)
-        Me.Controls.Add(Me.Guna2TextBox1)
+        Me.Controls.Add(Me.TB_Recherche)
         Me.Controls.Add(Me.CB_Type)
         Me.Controls.Add(Me.CB_Pourcent)
         Me.Controls.Add(Me.CB_Note)
@@ -410,7 +410,7 @@ Partial Class Enseignant
     Friend WithEvents CB_Note As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CB_Pourcent As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CB_Type As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents TB_Recherche As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TB_Etudiant As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CB_Etudiant As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents GRD_View As Guna.UI2.WinForms.Guna2DataGridView

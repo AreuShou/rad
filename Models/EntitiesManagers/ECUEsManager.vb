@@ -25,10 +25,10 @@ Public Class ECUEsManager
         command.Parameters.AddWithValue("@word", "%" & word & "%")
         Return getGeneriqueList()
     End Function
-    Public Shared Function getByEmployeeId(employeeId As Integer) As ECUE
+    Public Shared Function getByEmployeeId(employeeId As Integer) As List(Of ECUE)
         command = New MySqlCommand("SELECT * FROM ECUEs WHERE employee_id = @employee_id;", Manager.connection)
         command.Parameters.AddWithValue("@employee_id", employeeId)
-        Return getGenerique()
+        Return getGeneriqueList()
     End Function
 
 
@@ -61,7 +61,12 @@ Public Class ECUEsManager
     Public Shared Function getByName(name As String) As ECUE
         command = New MySqlCommand("SELECT * FROM ECUEs WHERE CONCAT(id, '-', libelle) = @name;", Manager.connection)
         command.Parameters.AddWithValue("@name", name)
-    Return getGenerique()
+        Return getGenerique()
+    End Function
+    Public Shared Function getByEvaluationId(evaluation As Integer) As ECUE
+        command = New MySqlCommand("SELECT ECUES.id As id, ECUES.libelle As libelle, ECUES.credit As credit, ECUES.employee_id As employee_id FROM ECUEs, ECUEsStudents, Evaluations WHERE ECUEs.id = ECUEsStudents.ECUE_id AND ECUEsStudents.id = Evaluations.ECUEsStudents_id AND Evaluations.id = @evaluationId;", Manager.connection)
+        command.Parameters.AddWithValue("@evaluationId", evaluation)
+        Return getGenerique()
     End Function
 
 

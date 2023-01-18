@@ -1,14 +1,14 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Manager
     Protected Shared connection As MySqlConnection
-    Protected Shared command As MySqlCommand
+    Public Shared command As MySqlCommand
     Protected Shared dataAdapater As MySqlDataAdapter
     Protected Shared dataTable As DataTable
 
     Public Shared Function connect() As Boolean
         Manager.connection = Nothing
         Try
-            Manager.connection = New MySqlConnection("Data Source=localhost;user id=rad;password=rad;port=3306;database=projetnet_rad")
+            Manager.connection = New MySqlConnection("Data Source=localhost;user id=test;password=root;port=3306;database=John;Convert Zero Datetime=True")
             Manager.connection.Open()
             Return True
         Catch ex As Exception

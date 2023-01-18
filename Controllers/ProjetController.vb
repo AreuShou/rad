@@ -1,4 +1,6 @@
-﻿Public Class ProjetController
+﻿Imports System.Web.UI.WebControls
+
+Public Class ProjetController
     Public Shared user As User
     Public Shared dashboard
     Public Shared Function Login(username As String, password As String) As Boolean
