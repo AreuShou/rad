@@ -232,6 +232,9 @@
     <EmbeddedResource Include="Views\Administrateur\Administrateur.resx">
       <DependentUpon>Administrateur.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\ECUEsControl.resx">
+      <DependentUpon>ECUEsControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\EmployeesControl.resx">
       <DependentUpon>EmployeesControl.vb</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\InstitutsControl.resx">
       <DependentUpon>InstitutsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Connexion.resx">
+      <DependentUpon>Connexion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ServiceScolarité\ServiceScolarite.resx">
       <DependentUpon>ServiceScolarite.vb</DependentUpon>
@@ -258,9 +264,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\img1.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

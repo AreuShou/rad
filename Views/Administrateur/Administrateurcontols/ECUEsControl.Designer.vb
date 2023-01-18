@@ -78,7 +78,7 @@ Partial Class ECUEsControl
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(8, 154)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(10, 175)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(150, 27)
         Me.Guna2HtmlLabel4.TabIndex = 55
@@ -97,7 +97,7 @@ Partial Class ECUEsControl
         Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(164, 154)
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(166, 175)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderText = "Ex: FDS"
@@ -119,7 +119,7 @@ Partial Class ECUEsControl
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(89, 112)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(89, 130)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(66, 27)
         Me.Guna2HtmlLabel1.TabIndex = 52
@@ -138,11 +138,13 @@ Partial Class ECUEsControl
         'BTN_Supprime
         '
         Me.BTN_Supprime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTN_Supprime.AutoRoundedCorners = True
+        Me.BTN_Supprime.BorderRadius = 21
         Me.BTN_Supprime.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Supprime.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Supprime.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Supprime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Supprime.FillColor = System.Drawing.Color.Red
+        Me.BTN_Supprime.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Supprime.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Supprime.ForeColor = System.Drawing.Color.White
         Me.BTN_Supprime.Location = New System.Drawing.Point(636, 217)
@@ -154,11 +156,13 @@ Partial Class ECUEsControl
         'BTN_Recharge
         '
         Me.BTN_Recharge.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTN_Recharge.AutoRoundedCorners = True
+        Me.BTN_Recharge.BorderRadius = 21
         Me.BTN_Recharge.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Recharge.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Recharge.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Recharge.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Recharge.FillColor = System.Drawing.Color.Gray
+        Me.BTN_Recharge.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Recharge.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Recharge.ForeColor = System.Drawing.Color.White
         Me.BTN_Recharge.Location = New System.Drawing.Point(822, 217)
@@ -169,10 +173,13 @@ Partial Class ECUEsControl
         '
         'BTN_Ajour
         '
+        Me.BTN_Ajour.AutoRoundedCorners = True
+        Me.BTN_Ajour.BorderRadius = 21
         Me.BTN_Ajour.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Ajour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Ajour.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Ajour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BTN_Ajour.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Ajour.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Ajour.ForeColor = System.Drawing.Color.White
         Me.BTN_Ajour.Location = New System.Drawing.Point(351, 217)
@@ -183,11 +190,13 @@ Partial Class ECUEsControl
         '
         'BTN_Insert
         '
+        Me.BTN_Insert.AutoRoundedCorners = True
+        Me.BTN_Insert.BorderRadius = 21
         Me.BTN_Insert.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Insert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Insert.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Insert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Insert.FillColor = System.Drawing.Color.Green
+        Me.BTN_Insert.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Insert.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Insert.ForeColor = System.Drawing.Color.White
         Me.BTN_Insert.Location = New System.Drawing.Point(165, 217)
@@ -285,7 +294,7 @@ Partial Class ECUEsControl
         Me.BX_Credit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BX_Credit.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BX_Credit.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BX_Credit.Location = New System.Drawing.Point(164, 103)
+        Me.BX_Credit.Location = New System.Drawing.Point(164, 121)
         Me.BX_Credit.Name = "BX_Credit"
         Me.BX_Credit.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BX_Credit.PlaceholderText = "Ex: FDS"
@@ -306,7 +315,7 @@ Partial Class ECUEsControl
         Me.BX_LIBELLE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BX_LIBELLE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BX_LIBELLE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BX_LIBELLE.Location = New System.Drawing.Point(164, 61)
+        Me.BX_LIBELLE.Location = New System.Drawing.Point(161, 61)
         Me.BX_LIBELLE.Name = "BX_LIBELLE"
         Me.BX_LIBELLE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BX_LIBELLE.PlaceholderText = "Ex: Faculté Des Sciences"

@@ -22,9 +22,9 @@ Partial Class UserControl
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -69,7 +69,7 @@ Partial Class UserControl
         Me.Guna2TextBox2.Location = New System.Drawing.Point(164, 8)
         Me.Guna2TextBox2.Name = "Guna2TextBox2"
         Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderText = "Ex: FDS"
+        Me.Guna2TextBox2.PlaceholderText = ""
         Me.Guna2TextBox2.SelectedText = ""
         Me.Guna2TextBox2.Size = New System.Drawing.Size(837, 36)
         Me.Guna2TextBox2.TabIndex = 56
@@ -100,7 +100,7 @@ Partial Class UserControl
         Me.Guna2TextBox1.Location = New System.Drawing.Point(164, 154)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = "Ex: FDS"
+        Me.Guna2TextBox1.PlaceholderText = ""
         Me.Guna2TextBox1.SelectedText = ""
         Me.Guna2TextBox1.Size = New System.Drawing.Size(837, 36)
         Me.Guna2TextBox1.TabIndex = 54
@@ -138,11 +138,13 @@ Partial Class UserControl
         'BTN_Supprime
         '
         Me.BTN_Supprime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTN_Supprime.AutoRoundedCorners = True
+        Me.BTN_Supprime.BorderRadius = 21
         Me.BTN_Supprime.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Supprime.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Supprime.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Supprime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Supprime.FillColor = System.Drawing.Color.Red
+        Me.BTN_Supprime.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Supprime.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Supprime.ForeColor = System.Drawing.Color.White
         Me.BTN_Supprime.Location = New System.Drawing.Point(636, 217)
@@ -154,11 +156,13 @@ Partial Class UserControl
         'BTN_Recharge
         '
         Me.BTN_Recharge.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTN_Recharge.AutoRoundedCorners = True
+        Me.BTN_Recharge.BorderRadius = 21
         Me.BTN_Recharge.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Recharge.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Recharge.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Recharge.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Recharge.FillColor = System.Drawing.Color.Gray
+        Me.BTN_Recharge.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Recharge.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Recharge.ForeColor = System.Drawing.Color.White
         Me.BTN_Recharge.Location = New System.Drawing.Point(822, 217)
@@ -169,10 +173,13 @@ Partial Class UserControl
         '
         'BTN_Ajour
         '
+        Me.BTN_Ajour.AutoRoundedCorners = True
+        Me.BTN_Ajour.BorderRadius = 21
         Me.BTN_Ajour.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Ajour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Ajour.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Ajour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BTN_Ajour.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Ajour.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Ajour.ForeColor = System.Drawing.Color.White
         Me.BTN_Ajour.Location = New System.Drawing.Point(351, 217)
@@ -183,11 +190,13 @@ Partial Class UserControl
         '
         'BTN_Insert
         '
+        Me.BTN_Insert.AutoRoundedCorners = True
+        Me.BTN_Insert.BorderRadius = 21
         Me.BTN_Insert.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Insert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Insert.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Insert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Insert.FillColor = System.Drawing.Color.Green
+        Me.BTN_Insert.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Insert.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Insert.ForeColor = System.Drawing.Color.White
         Me.BTN_Insert.Location = New System.Drawing.Point(165, 217)
@@ -212,7 +221,7 @@ Partial Class UserControl
         Me.Box_Recherche.Location = New System.Drawing.Point(161, 280)
         Me.Box_Recherche.Name = "Box_Recherche"
         Me.Box_Recherche.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Box_Recherche.PlaceholderText = "Ex: FDS"
+        Me.Box_Recherche.PlaceholderText = ""
         Me.Box_Recherche.SelectedText = ""
         Me.Box_Recherche.Size = New System.Drawing.Size(837, 36)
         Me.Box_Recherche.TabIndex = 46
@@ -221,29 +230,29 @@ Partial Class UserControl
         '
         Me.GR_View.AllowUserToAddRows = False
         Me.GR_View.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.GR_View.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.GR_View.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.GR_View.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GR_View.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GR_View.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.GR_View.ColumnHeadersHeight = 30
         Me.GR_View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GR_View.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GR_View.DefaultCellStyle = DataGridViewCellStyle6
         Me.GR_View.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GR_View.Location = New System.Drawing.Point(1, 333)
         Me.GR_View.Name = "GR_View"
@@ -288,7 +297,7 @@ Partial Class UserControl
         Me.BX_SIGLE.Location = New System.Drawing.Point(164, 103)
         Me.BX_SIGLE.Name = "BX_SIGLE"
         Me.BX_SIGLE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.BX_SIGLE.PlaceholderText = "Ex: FDS"
+        Me.BX_SIGLE.PlaceholderText = ""
         Me.BX_SIGLE.SelectedText = ""
         Me.BX_SIGLE.Size = New System.Drawing.Size(837, 36)
         Me.BX_SIGLE.TabIndex = 44
@@ -309,7 +318,7 @@ Partial Class UserControl
         Me.BX_LIBELLE.Location = New System.Drawing.Point(164, 61)
         Me.BX_LIBELLE.Name = "BX_LIBELLE"
         Me.BX_LIBELLE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.BX_LIBELLE.PlaceholderText = "Ex: Faculté Des Sciences"
+        Me.BX_LIBELLE.PlaceholderText = ""
         Me.BX_LIBELLE.SelectedText = ""
         Me.BX_LIBELLE.Size = New System.Drawing.Size(837, 36)
         Me.BX_LIBELLE.TabIndex = 43

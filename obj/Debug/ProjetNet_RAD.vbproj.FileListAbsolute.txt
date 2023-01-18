@@ -81,3 +81,5 @@ C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.Administrate
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.InstitutsControl.resources
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.ServiceScolarite.resources
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.FacultiesControl.resources
+C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.ECUEsControl.resources
+C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.Connexion.resources

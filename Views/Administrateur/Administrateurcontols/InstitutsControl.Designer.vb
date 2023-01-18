@@ -44,11 +44,13 @@ Partial Class InstitutsControl
         'BTN_Supprime
         '
         Me.BTN_Supprime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTN_Supprime.AutoRoundedCorners = True
+        Me.BTN_Supprime.BorderRadius = 21
         Me.BTN_Supprime.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Supprime.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Supprime.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Supprime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Supprime.FillColor = System.Drawing.Color.Red
+        Me.BTN_Supprime.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Supprime.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Supprime.ForeColor = System.Drawing.Color.White
         Me.BTN_Supprime.Location = New System.Drawing.Point(633, 141)
@@ -60,11 +62,13 @@ Partial Class InstitutsControl
         'BTN_Recharge
         '
         Me.BTN_Recharge.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTN_Recharge.AutoRoundedCorners = True
+        Me.BTN_Recharge.BorderRadius = 21
         Me.BTN_Recharge.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Recharge.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Recharge.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Recharge.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Recharge.FillColor = System.Drawing.Color.Gray
+        Me.BTN_Recharge.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Recharge.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Recharge.ForeColor = System.Drawing.Color.White
         Me.BTN_Recharge.Location = New System.Drawing.Point(819, 141)
@@ -75,10 +79,13 @@ Partial Class InstitutsControl
         '
         'BTN_Ajour
         '
+        Me.BTN_Ajour.AutoRoundedCorners = True
+        Me.BTN_Ajour.BorderRadius = 21
         Me.BTN_Ajour.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Ajour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Ajour.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Ajour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BTN_Ajour.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Ajour.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Ajour.ForeColor = System.Drawing.Color.White
         Me.BTN_Ajour.Location = New System.Drawing.Point(348, 141)
@@ -89,11 +96,13 @@ Partial Class InstitutsControl
         '
         'BTN_Insert
         '
+        Me.BTN_Insert.AutoRoundedCorners = True
+        Me.BTN_Insert.BorderRadius = 21
         Me.BTN_Insert.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Insert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BTN_Insert.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BTN_Insert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Insert.FillColor = System.Drawing.Color.Green
+        Me.BTN_Insert.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BTN_Insert.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Insert.ForeColor = System.Drawing.Color.White
         Me.BTN_Insert.Location = New System.Drawing.Point(162, 141)
