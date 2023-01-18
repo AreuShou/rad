@@ -25,38 +25,38 @@ Partial Class Enseignant
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Lbl_Etudiant = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Lbl_Date = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2ComboBox3 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2ComboBox4 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2ComboBox5 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Lbl_Type = New System.Windows.Forms.Label()
+        Me.Lbl_pourcent = New System.Windows.Forms.Label()
+        Me.Lbl_Note = New System.Windows.Forms.Label()
+        Me.CB_Ecues = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CB_Date = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CB_Note = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CB_Pourcent = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CB_Type = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2ComboBox6 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.TB_Etudiant = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.CB_Etudiant = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.btn_Inserer = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_Ajour = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_Supprime = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_Recharge = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'Lbl_Etudiant
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(17, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Ecues"
+        Me.Lbl_Etudiant.AutoSize = True
+        Me.Lbl_Etudiant.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Etudiant.Location = New System.Drawing.Point(17, 9)
+        Me.Lbl_Etudiant.Name = "Lbl_Etudiant"
+        Me.Lbl_Etudiant.Size = New System.Drawing.Size(52, 17)
+        Me.Lbl_Etudiant.TabIndex = 0
+        Me.Lbl_Etudiant.Text = "Ecues"
         '
         'Label2
         '
@@ -68,15 +68,15 @@ Partial Class Enseignant
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Etudiant"
         '
-        'Label3
+        'Lbl_Date
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(27, 113)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 17)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Date"
+        Me.Lbl_Date.AutoSize = True
+        Me.Lbl_Date.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Date.Location = New System.Drawing.Point(27, 113)
+        Me.Lbl_Date.Name = "Lbl_Date"
+        Me.Lbl_Date.Size = New System.Drawing.Size(42, 17)
+        Me.Lbl_Date.TabIndex = 2
+        Me.Lbl_Date.Text = "Date"
         '
         'Label4
         '
@@ -88,110 +88,110 @@ Partial Class Enseignant
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Recherche"
         '
-        'Label5
+        'Lbl_Type
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(271, 116)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(44, 17)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Type"
+        Me.Lbl_Type.AutoSize = True
+        Me.Lbl_Type.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Type.Location = New System.Drawing.Point(271, 116)
+        Me.Lbl_Type.Name = "Lbl_Type"
+        Me.Lbl_Type.Size = New System.Drawing.Size(44, 17)
+        Me.Lbl_Type.TabIndex = 4
+        Me.Lbl_Type.Text = "Type"
         '
-        'Label6
+        'Lbl_pourcent
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(553, 116)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(100, 17)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Pourcentage"
+        Me.Lbl_pourcent.AutoSize = True
+        Me.Lbl_pourcent.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_pourcent.Location = New System.Drawing.Point(553, 116)
+        Me.Lbl_pourcent.Name = "Lbl_pourcent"
+        Me.Lbl_pourcent.Size = New System.Drawing.Size(100, 17)
+        Me.Lbl_pourcent.TabIndex = 5
+        Me.Lbl_pourcent.Text = "Pourcentage"
         '
-        'Label7
+        'Lbl_Note
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(809, 116)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(42, 17)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Note"
+        Me.Lbl_Note.AutoSize = True
+        Me.Lbl_Note.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Note.Location = New System.Drawing.Point(809, 116)
+        Me.Lbl_Note.Name = "Lbl_Note"
+        Me.Lbl_Note.Size = New System.Drawing.Size(42, 17)
+        Me.Lbl_Note.TabIndex = 6
+        Me.Lbl_Note.Text = "Note"
         '
-        'Guna2ComboBox1
+        'CB_Ecues
         '
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(75, 3)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(848, 36)
-        Me.Guna2ComboBox1.TabIndex = 7
+        Me.CB_Ecues.BackColor = System.Drawing.Color.Transparent
+        Me.CB_Ecues.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_Ecues.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_Ecues.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Ecues.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Ecues.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_Ecues.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_Ecues.ItemHeight = 30
+        Me.CB_Ecues.Location = New System.Drawing.Point(75, 3)
+        Me.CB_Ecues.Name = "CB_Ecues"
+        Me.CB_Ecues.Size = New System.Drawing.Size(848, 36)
+        Me.CB_Ecues.TabIndex = 7
         '
-        'Guna2ComboBox2
+        'CB_Date
         '
-        Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox2.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox2.ItemHeight = 30
-        Me.Guna2ComboBox2.Location = New System.Drawing.Point(75, 105)
-        Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
-        Me.Guna2ComboBox2.Size = New System.Drawing.Size(140, 36)
-        Me.Guna2ComboBox2.TabIndex = 8
+        Me.CB_Date.BackColor = System.Drawing.Color.Transparent
+        Me.CB_Date.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_Date.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_Date.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Date.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Date.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_Date.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_Date.ItemHeight = 30
+        Me.CB_Date.Location = New System.Drawing.Point(75, 105)
+        Me.CB_Date.Name = "CB_Date"
+        Me.CB_Date.Size = New System.Drawing.Size(140, 36)
+        Me.CB_Date.TabIndex = 8
         '
-        'Guna2ComboBox3
+        'CB_Note
         '
-        Me.Guna2ComboBox3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox3.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox3.ItemHeight = 30
-        Me.Guna2ComboBox3.Location = New System.Drawing.Point(857, 105)
-        Me.Guna2ComboBox3.Name = "Guna2ComboBox3"
-        Me.Guna2ComboBox3.Size = New System.Drawing.Size(66, 36)
-        Me.Guna2ComboBox3.TabIndex = 9
+        Me.CB_Note.BackColor = System.Drawing.Color.Transparent
+        Me.CB_Note.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_Note.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_Note.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Note.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Note.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_Note.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_Note.ItemHeight = 30
+        Me.CB_Note.Location = New System.Drawing.Point(857, 105)
+        Me.CB_Note.Name = "CB_Note"
+        Me.CB_Note.Size = New System.Drawing.Size(66, 36)
+        Me.CB_Note.TabIndex = 9
         '
-        'Guna2ComboBox4
+        'CB_Pourcent
         '
-        Me.Guna2ComboBox4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox4.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox4.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox4.ItemHeight = 30
-        Me.Guna2ComboBox4.Location = New System.Drawing.Point(659, 105)
-        Me.Guna2ComboBox4.Name = "Guna2ComboBox4"
-        Me.Guna2ComboBox4.Size = New System.Drawing.Size(87, 36)
-        Me.Guna2ComboBox4.TabIndex = 10
+        Me.CB_Pourcent.BackColor = System.Drawing.Color.Transparent
+        Me.CB_Pourcent.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_Pourcent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_Pourcent.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Pourcent.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Pourcent.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_Pourcent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_Pourcent.ItemHeight = 30
+        Me.CB_Pourcent.Location = New System.Drawing.Point(659, 105)
+        Me.CB_Pourcent.Name = "CB_Pourcent"
+        Me.CB_Pourcent.Size = New System.Drawing.Size(87, 36)
+        Me.CB_Pourcent.TabIndex = 10
         '
-        'Guna2ComboBox5
+        'CB_Type
         '
-        Me.Guna2ComboBox5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox5.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox5.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox5.ItemHeight = 30
-        Me.Guna2ComboBox5.Location = New System.Drawing.Point(321, 105)
-        Me.Guna2ComboBox5.Name = "Guna2ComboBox5"
-        Me.Guna2ComboBox5.Size = New System.Drawing.Size(181, 36)
-        Me.Guna2ComboBox5.TabIndex = 11
+        Me.CB_Type.BackColor = System.Drawing.Color.Transparent
+        Me.CB_Type.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_Type.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Type.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Type.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_Type.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_Type.ItemHeight = 30
+        Me.CB_Type.Location = New System.Drawing.Point(321, 105)
+        Me.CB_Type.Name = "CB_Type"
+        Me.CB_Type.Size = New System.Drawing.Size(181, 36)
+        Me.CB_Type.TabIndex = 11
         '
         'Guna2TextBox1
         '
@@ -212,39 +212,39 @@ Partial Class Enseignant
         Me.Guna2TextBox1.Size = New System.Drawing.Size(826, 36)
         Me.Guna2TextBox1.TabIndex = 12
         '
-        'Guna2TextBox2
+        'TB_Etudiant
         '
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = ""
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(75, 54)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderText = ""
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(525, 36)
-        Me.Guna2TextBox2.TabIndex = 13
+        Me.TB_Etudiant.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TB_Etudiant.DefaultText = ""
+        Me.TB_Etudiant.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TB_Etudiant.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TB_Etudiant.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_Etudiant.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_Etudiant.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_Etudiant.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TB_Etudiant.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_Etudiant.Location = New System.Drawing.Point(75, 54)
+        Me.TB_Etudiant.Name = "TB_Etudiant"
+        Me.TB_Etudiant.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TB_Etudiant.PlaceholderText = ""
+        Me.TB_Etudiant.SelectedText = ""
+        Me.TB_Etudiant.Size = New System.Drawing.Size(274, 36)
+        Me.TB_Etudiant.TabIndex = 13
         '
-        'Guna2ComboBox6
+        'CB_Etudiant
         '
-        Me.Guna2ComboBox6.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox6.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox6.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox6.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox6.ItemHeight = 30
-        Me.Guna2ComboBox6.Location = New System.Drawing.Point(685, 54)
-        Me.Guna2ComboBox6.Name = "Guna2ComboBox6"
-        Me.Guna2ComboBox6.Size = New System.Drawing.Size(238, 36)
-        Me.Guna2ComboBox6.TabIndex = 14
+        Me.CB_Etudiant.BackColor = System.Drawing.Color.Transparent
+        Me.CB_Etudiant.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_Etudiant.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_Etudiant.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Etudiant.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_Etudiant.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_Etudiant.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_Etudiant.ItemHeight = 30
+        Me.CB_Etudiant.Location = New System.Drawing.Point(399, 54)
+        Me.CB_Etudiant.Name = "CB_Etudiant"
+        Me.CB_Etudiant.Size = New System.Drawing.Size(524, 36)
+        Me.CB_Etudiant.TabIndex = 14
         '
         'Guna2DataGridView1
         '
@@ -313,56 +313,56 @@ Partial Class Enseignant
         Me.btn_Inserer.TabIndex = 16
         Me.btn_Inserer.Text = "Insérer"
         '
-        'Guna2Button1
+        'btn_Ajour
         '
-        Me.Guna2Button1.AutoRoundedCorners = True
-        Me.Guna2Button1.BorderRadius = 21
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(274, 173)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(180, 45)
-        Me.Guna2Button1.TabIndex = 20
-        Me.Guna2Button1.Text = "Mise à jour"
+        Me.btn_Ajour.AutoRoundedCorners = True
+        Me.btn_Ajour.BorderRadius = 21
+        Me.btn_Ajour.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btn_Ajour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btn_Ajour.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btn_Ajour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btn_Ajour.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btn_Ajour.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btn_Ajour.ForeColor = System.Drawing.Color.White
+        Me.btn_Ajour.Location = New System.Drawing.Point(274, 173)
+        Me.btn_Ajour.Name = "btn_Ajour"
+        Me.btn_Ajour.Size = New System.Drawing.Size(180, 45)
+        Me.btn_Ajour.TabIndex = 20
+        Me.btn_Ajour.Text = "Mise à jour"
         '
-        'Guna2Button2
+        'btn_Supprime
         '
-        Me.Guna2Button2.AutoRoundedCorners = True
-        Me.Guna2Button2.BorderRadius = 21
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.FillColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Location = New System.Drawing.Point(533, 173)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(180, 45)
-        Me.Guna2Button2.TabIndex = 21
-        Me.Guna2Button2.Text = "Supprimer"
+        Me.btn_Supprime.AutoRoundedCorners = True
+        Me.btn_Supprime.BorderRadius = 21
+        Me.btn_Supprime.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btn_Supprime.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btn_Supprime.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btn_Supprime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btn_Supprime.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btn_Supprime.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btn_Supprime.ForeColor = System.Drawing.Color.White
+        Me.btn_Supprime.Location = New System.Drawing.Point(533, 173)
+        Me.btn_Supprime.Name = "btn_Supprime"
+        Me.btn_Supprime.Size = New System.Drawing.Size(180, 45)
+        Me.btn_Supprime.TabIndex = 21
+        Me.btn_Supprime.Text = "Supprimer"
         '
-        'Guna2Button3
+        'btn_Recharge
         '
-        Me.Guna2Button3.AutoRoundedCorners = True
-        Me.Guna2Button3.BorderRadius = 21
-        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button3.FillColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Location = New System.Drawing.Point(743, 173)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(180, 45)
-        Me.Guna2Button3.TabIndex = 22
-        Me.Guna2Button3.Text = "Recharger"
+        Me.btn_Recharge.AutoRoundedCorners = True
+        Me.btn_Recharge.BorderRadius = 21
+        Me.btn_Recharge.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btn_Recharge.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btn_Recharge.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btn_Recharge.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btn_Recharge.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btn_Recharge.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btn_Recharge.ForeColor = System.Drawing.Color.White
+        Me.btn_Recharge.Location = New System.Drawing.Point(743, 173)
+        Me.btn_Recharge.Name = "btn_Recharge"
+        Me.btn_Recharge.Size = New System.Drawing.Size(180, 45)
+        Me.btn_Recharge.TabIndex = 22
+        Me.btn_Recharge.Text = "Recharger"
         '
         'Enseignant
         '
@@ -370,26 +370,26 @@ Partial Class Enseignant
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(927, 544)
-        Me.Controls.Add(Me.Guna2Button3)
-        Me.Controls.Add(Me.Guna2Button2)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.btn_Recharge)
+        Me.Controls.Add(Me.btn_Supprime)
+        Me.Controls.Add(Me.btn_Ajour)
         Me.Controls.Add(Me.btn_Inserer)
         Me.Controls.Add(Me.Guna2DataGridView1)
-        Me.Controls.Add(Me.Guna2ComboBox6)
-        Me.Controls.Add(Me.Guna2TextBox2)
+        Me.Controls.Add(Me.CB_Etudiant)
+        Me.Controls.Add(Me.TB_Etudiant)
         Me.Controls.Add(Me.Guna2TextBox1)
-        Me.Controls.Add(Me.Guna2ComboBox5)
-        Me.Controls.Add(Me.Guna2ComboBox4)
-        Me.Controls.Add(Me.Guna2ComboBox3)
-        Me.Controls.Add(Me.Guna2ComboBox2)
-        Me.Controls.Add(Me.Guna2ComboBox1)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.CB_Type)
+        Me.Controls.Add(Me.CB_Pourcent)
+        Me.Controls.Add(Me.CB_Note)
+        Me.Controls.Add(Me.CB_Date)
+        Me.Controls.Add(Me.CB_Ecues)
+        Me.Controls.Add(Me.Lbl_Note)
+        Me.Controls.Add(Me.Lbl_pourcent)
+        Me.Controls.Add(Me.Lbl_Type)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Lbl_Date)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Lbl_Etudiant)
         Me.Name = "Enseignant"
         Me.Text = "Enseignant"
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -398,24 +398,24 @@ Partial Class Enseignant
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lbl_Etudiant As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents Lbl_Date As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2ComboBox3 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2ComboBox4 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2ComboBox5 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Lbl_Type As Label
+    Friend WithEvents Lbl_pourcent As Label
+    Friend WithEvents Lbl_Note As Label
+    Friend WithEvents CB_Ecues As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CB_Date As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CB_Note As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CB_Pourcent As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CB_Type As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2ComboBox6 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents TB_Etudiant As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents CB_Etudiant As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents btn_Inserer As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_Ajour As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_Supprime As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_Recharge As Guna.UI2.WinForms.Guna2Button
 End Class

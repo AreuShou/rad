@@ -100,15 +100,15 @@ Public Class Enseignant
             End
         End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Lbl_Etudiant.Click
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Lbl_Date.Click
 
     End Sub
 
-    Private Sub Guna2ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2ComboBox2.SelectedIndexChanged
+    Private Sub Guna2ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CB_Date.SelectedIndexChanged
 
     End Sub
 End Class
