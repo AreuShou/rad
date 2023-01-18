@@ -59,4 +59,32 @@
             MessageBox.Show("Aucune ligne sélectionnée", "Aucune ligne sélectionné", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
+
+    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel4_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel4.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel2_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel2.Click
+
+    End Sub
+
+    Private Sub BX_LIBELLE_TextChanged(sender As Object, e As EventArgs) Handles BX_LIBELLE.TextChanged
+
+    End Sub
+
+    Private Sub BX_SIGLE_TextChanged(sender As Object, e As EventArgs) Handles BX_SIGLE.TextChanged
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel3_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel3.Click
+
+    End Sub
 End Class

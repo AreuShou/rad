@@ -479,11 +479,11 @@ Partial Class ServiceScolarite
         Me.Guna2PictureBox1.TabIndex = 42
         Me.Guna2PictureBox1.TabStop = False
         '
-        'TuitionServiceViews
+        'ServiceScolarite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DodgerBlue
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.Guna2ComboBox6)
@@ -515,7 +515,7 @@ Partial Class ServiceScolarite
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "TuitionServiceViews"
+        Me.Name = "ServiceScolarite"
         Me.Text = "TuitionServiceViews"
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
