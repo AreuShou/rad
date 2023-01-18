@@ -9,14 +9,28 @@ Public Class Administrateur
 
     Private Sub AdminView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Manager.connect()
+        usersControl = New UserControl()
+        employeesControl = New EmployeesControl()
         institutsControl = New InstitutsControl()
+        ecuesControl = New ECUEsControl()
+        uesControl = New UEsControl()
+        facutltiesControl = New FacultiesControl()
 
-
-
+        usersControl.Dock = DockStyle.Fill
+        employeesControl.Dock = DockStyle.Fill
         institutsControl.Dock = DockStyle.Fill
+        ecuesControl.Dock = DockStyle.Fill
+        uesControl.Dock = DockStyle.Fill
+        facutltiesControl.Dock = DockStyle.Fill
 
 
+        Panel_ADMIN.Controls.Add(usersControl)
+        Panel_ADMIN.Controls.Add(employeesControl)
         Panel_ADMIN.Controls.Add(institutsControl)
+        Panel_ADMIN.Controls.Add(ecuesControl)
+        Panel_ADMIN.Controls.Add(uesControl)
+        Panel_ADMIN.Controls.Add(facutltiesControl)
+
 
         btnInstitutes_Click(Nothing, Nothing)
     End Sub
@@ -25,6 +39,15 @@ Public Class Administrateur
     Private currentBtn As IconButton
     Private leflBorderBtn As Panel
     Private currentChildForm As Form
+
+    Private Sub HideControls()
+        employeesControl.Hide()
+        institutsControl.Hide()
+        usersControl.Hide()
+        ecuesControl.Hide()
+        uesControl.Hide()
+        facutltiesControl.Hide()
+    End Sub
 
     'Constructor
     Public Sub New()
@@ -93,27 +116,36 @@ Public Class Administrateur
     'Events
     Private Sub btnEmployees_Click(sender As Object, e As EventArgs) Handles btnEmployees.Click
         ActivateButton(sender, RGBColor.color1)
+        HideControls()
+        employeesControl.Show()
         'OpenChildForm(New EmployeesView)
     End Sub
 
     Private Sub btnInstitutes_Click(sender As Object, e As EventArgs) Handles btnInstitutes.Click
         ActivateButton(sender, RGBColor.color2)
+        HideControls()
         institutsControl.Show()
         'OpenChildForm(New InstitutesView)
     End Sub
 
     Private Sub btnECUEs_Click(sender As Object, e As EventArgs) Handles btnECUEs.Click
         ActivateButton(sender, RGBColor.color3)
+        HideControls()
+        ecuesControl.Show()
         'OpenChildForm(New ECUEsView)
     End Sub
 
     Private Sub btnUEs_Click(sender As Object, e As EventArgs) Handles btnUEs.Click
         ActivateButton(sender, RGBColor.color4)
+        HideControls()
+        uesControl.Show()
         'OpenChildForm(New UEsView)
     End Sub
 
     Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
         ActivateButton(sender, RGBColor.color5)
+        HideControls()
+        usersControl.Show()
         'OpenChildForm(New UserView)
     End Sub
 
@@ -136,6 +168,8 @@ Public Class Administrateur
 
     Private Sub btnFaculties_Click(sender As Object, e As EventArgs) Handles btnFaculties.Click
         ActivateButton(sender, RGBColor.color6)
+        HideControls()
+        facutltiesControl.Show()
     End Sub
 
 
