@@ -34,8 +34,10 @@ Partial Class InstitutsControl
         Me.BX_SIGLE = New Guna.UI2.WinForms.Guna2TextBox()
         Me.BX_LIBELLE = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         CType(Me.GR_View, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,7 +51,7 @@ Partial Class InstitutsControl
         Me.BTN_Supprime.FillColor = System.Drawing.Color.Red
         Me.BTN_Supprime.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Supprime.ForeColor = System.Drawing.Color.White
-        Me.BTN_Supprime.Location = New System.Drawing.Point(634, 87)
+        Me.BTN_Supprime.Location = New System.Drawing.Point(633, 141)
         Me.BTN_Supprime.Name = "BTN_Supprime"
         Me.BTN_Supprime.Size = New System.Drawing.Size(180, 45)
         Me.BTN_Supprime.TabIndex = 23
@@ -65,7 +67,7 @@ Partial Class InstitutsControl
         Me.BTN_Recharge.FillColor = System.Drawing.Color.Gray
         Me.BTN_Recharge.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Recharge.ForeColor = System.Drawing.Color.White
-        Me.BTN_Recharge.Location = New System.Drawing.Point(820, 87)
+        Me.BTN_Recharge.Location = New System.Drawing.Point(819, 141)
         Me.BTN_Recharge.Name = "BTN_Recharge"
         Me.BTN_Recharge.Size = New System.Drawing.Size(180, 45)
         Me.BTN_Recharge.TabIndex = 22
@@ -79,7 +81,7 @@ Partial Class InstitutsControl
         Me.BTN_Ajour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.BTN_Ajour.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Ajour.ForeColor = System.Drawing.Color.White
-        Me.BTN_Ajour.Location = New System.Drawing.Point(349, 87)
+        Me.BTN_Ajour.Location = New System.Drawing.Point(348, 141)
         Me.BTN_Ajour.Name = "BTN_Ajour"
         Me.BTN_Ajour.Size = New System.Drawing.Size(180, 45)
         Me.BTN_Ajour.TabIndex = 21
@@ -94,7 +96,7 @@ Partial Class InstitutsControl
         Me.BTN_Insert.FillColor = System.Drawing.Color.Green
         Me.BTN_Insert.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BTN_Insert.ForeColor = System.Drawing.Color.White
-        Me.BTN_Insert.Location = New System.Drawing.Point(163, 87)
+        Me.BTN_Insert.Location = New System.Drawing.Point(162, 141)
         Me.BTN_Insert.Name = "BTN_Insert"
         Me.BTN_Insert.Size = New System.Drawing.Size(180, 45)
         Me.BTN_Insert.TabIndex = 20
@@ -113,7 +115,7 @@ Partial Class InstitutsControl
         Me.Box_Recherche.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Box_Recherche.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Box_Recherche.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Box_Recherche.Location = New System.Drawing.Point(163, 138)
+        Me.Box_Recherche.Location = New System.Drawing.Point(163, 204)
         Me.Box_Recherche.Name = "Box_Recherche"
         Me.Box_Recherche.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Box_Recherche.PlaceholderText = "Ex: FDS"
@@ -149,10 +151,10 @@ Partial Class InstitutsControl
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.GR_View.DefaultCellStyle = DataGridViewCellStyle3
         Me.GR_View.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GR_View.Location = New System.Drawing.Point(3, 180)
+        Me.GR_View.Location = New System.Drawing.Point(3, 246)
         Me.GR_View.Name = "GR_View"
         Me.GR_View.RowHeadersVisible = False
-        Me.GR_View.Size = New System.Drawing.Size(997, 367)
+        Me.GR_View.Size = New System.Drawing.Size(997, 301)
         Me.GR_View.TabIndex = 18
         Me.GR_View.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.GR_View.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -189,7 +191,7 @@ Partial Class InstitutsControl
         Me.BX_SIGLE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BX_SIGLE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BX_SIGLE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BX_SIGLE.Location = New System.Drawing.Point(163, 45)
+        Me.BX_SIGLE.Location = New System.Drawing.Point(162, 90)
         Me.BX_SIGLE.Name = "BX_SIGLE"
         Me.BX_SIGLE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BX_SIGLE.PlaceholderText = "Ex: FDS"
@@ -210,7 +212,7 @@ Partial Class InstitutsControl
         Me.BX_LIBELLE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BX_LIBELLE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BX_LIBELLE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BX_LIBELLE.Location = New System.Drawing.Point(163, 3)
+        Me.BX_LIBELLE.Location = New System.Drawing.Point(162, 48)
         Me.BX_LIBELLE.Name = "BX_LIBELLE"
         Me.BX_LIBELLE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.BX_LIBELLE.PlaceholderText = "Ex: Faculté Des Sciences"
@@ -222,39 +224,72 @@ Partial Class InstitutsControl
         '
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(94, 6)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(93, 51)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(63, 33)
         Me.Guna2HtmlLabel2.TabIndex = 25
         Me.Guna2HtmlLabel2.Text = "Nom"
         '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(9, 42)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(148, 33)
-        Me.Guna2HtmlLabel1.TabIndex = 26
-        Me.Guna2HtmlLabel1.Text = "Accronyme"
-        '
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(3, 138)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(3, 204)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(154, 33)
         Me.Guna2HtmlLabel3.TabIndex = 27
         Me.Guna2HtmlLabel3.Text = "Rechercher"
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(88, 90)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(68, 33)
+        Me.Guna2HtmlLabel1.TabIndex = 28
+        Me.Guna2HtmlLabel1.Text = "Sigle"
+        '
+        'Guna2HtmlLabel4
+        '
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(128, 12)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(28, 33)
+        Me.Guna2HtmlLabel4.TabIndex = 30
+        Me.Guna2HtmlLabel4.Text = "Id"
+        '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.DefaultText = ""
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(162, 6)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = "Ex: FDS"
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(837, 36)
+        Me.Guna2TextBox1.TabIndex = 29
         '
         'InstitutsControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.Guna2HtmlLabel3)
+        Me.Controls.Add(Me.Guna2HtmlLabel4)
+        Me.Controls.Add(Me.Guna2TextBox1)
         Me.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Controls.Add(Me.BTN_Supprime)
         Me.Controls.Add(Me.BTN_Recharge)
@@ -281,6 +316,8 @@ Partial Class InstitutsControl
     Friend WithEvents BX_SIGLE As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents BX_LIBELLE As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
 End Class

@@ -1,6 +1,11 @@
 ﻿Imports FontAwesome.Sharp
 Public Class Administrateur
     Dim institutsControl As InstitutsControl
+    Dim employeesControl As EmployeesControl
+    Dim usersControl As UserControl
+    Dim ecuesControl As ECUEsControl
+    Dim uesControl As UEsControl
+    Dim facutltiesControl As FacultiesControl
 
     Private Sub AdminView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Manager.connect()

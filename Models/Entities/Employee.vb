@@ -7,6 +7,8 @@
     Private _gender As String
     Private _functionField As String
 
+    Public Const Teacher As String = "Teacher"
+    Public Const TuititionService As String = "TuititionService"
     Public Sub New(id As Integer, lastName As String, firstName As String, phoneNumber As String, email As String, gender As String, functionField As String)
         Me.Id = id
         Me.LastName = lastName
@@ -89,15 +91,57 @@
         End Set
     End Property
 
-    Public Overrides Function Equals(obj As Object) As Boolean
-        Dim employee = TryCast(obj, Employee)
-        Return employee IsNot Nothing AndAlso
-               _id = employee._id AndAlso
-               _lastName = employee._lastName AndAlso
-               _firstName = employee._firstName AndAlso
-               _phoneNumber = employee._phoneNumber AndAlso
-               _email = employee._email AndAlso
-               _gender = employee._gender AndAlso
-               _functionField = employee._functionField
+    Public ReadOnly Property FunctionFieldView As String
+        Get
+            Return Function_field_to_function_view_field(_functionField)
+        End Get
+    End Property
+
+    Public ReadOnly Property GenderView As String
+        Get
+            Return Gender_to_gender_view(_gender)
+        End Get
+    End Property
+
+    Public ReadOnly Property Name() As String
+        Get
+            If LastName = Nothing Then
+                Return "Non Employé"
+            Else
+                Return Id & "-" & FirstName & " - " & LastName
+            End If
+        End Get
+    End Property
+
+    Public Shared Function Function_field_to_function_view_field(function_field As String) As String
+        If function_field = TuititionService Then
+            Return "Service Scolarité"
+        Else
+            Return "Enseignant"
+        End If
+    End Function
+
+    Public Shared Function Function_view_field_to_function_field(function_view_field As String) As String
+        If function_view_field = "Service Scolarité" Then
+            Return TuititionService
+        Else
+            Return Teacher
+        End If
+    End Function
+
+    Public Shared Function Gender_to_gender_view(gender As String) As String
+        If gender = "Female" Then
+            Return "Femme"
+        Else
+            Return "Homme"
+        End If
+    End Function
+
+    Public Shared Function Gender_view_to_gender(gender_view As String) As String
+        If gender_view = "Femme" Then
+            Return "Female"
+        Else
+            Return "Male"
+        End If
     End Function
 End Class

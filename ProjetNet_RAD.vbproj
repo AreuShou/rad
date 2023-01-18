@@ -123,20 +123,27 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CareesController.vb" />
+    <Compile Include="Controllers\EmployeesController.vb" />
+    <Compile Include="Controllers\InterfacesController.vb" />
+    <Compile Include="Controllers\ECUEsController.vb" />
     <Compile Include="Controllers\InstitutesControllers.vb" />
+    <Compile Include="Controllers\UEsController.vb" />
     <Compile Include="Controllers\UsersController.vb" />
+    <Compile Include="Models\EntitiesManagers\CareersManager.vb" />
+    <Compile Include="Models\EntitiesManagers\ECUEsManager.vb" />
     <Compile Include="Models\EntitiesManagers\EmployeesManager.vb" />
     <Compile Include="Models\EntitiesManagers\InstitutesManager.vb" />
     <Compile Include="Models\EntitiesManagers\Manager.vb" />
+    <Compile Include="Models\EntitiesManagers\UEsManager.vb" />
     <Compile Include="Models\EntitiesManagers\UsersManager.vb" />
-    <Compile Include="Models\Entities\ECUEs.vb" />
+    <Compile Include="Models\Entities\Career.vb" />
+    <Compile Include="Models\Entities\ECUE.vb" />
     <Compile Include="Models\Entities\Employee.vb" />
-    <Compile Include="Models\Entities\Evaluations.vb" />
-    <Compile Include="Models\Entities\Facultites.vb" />
-    <Compile Include="Models\Entities\Institutes.vb" />
-    <Compile Include="Models\Entities\Students.vb" />
-    <Compile Include="Models\Entities\UEs.vb" />
-    <Compile Include="Models\Entities\Users.vb" />
+    <Compile Include="Models\Entities\Institute.vb" />
+    <Compile Include="Models\Entities\Student.vb" />
+    <Compile Include="Models\Entities\UE.vb" />
+    <Compile Include="Models\Entities\User.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
