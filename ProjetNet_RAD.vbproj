@@ -135,13 +135,16 @@
     <Compile Include="Models\EntitiesManagers\CareersManager.vb" />
     <Compile Include="Models\EntitiesManagers\ECUEsManager.vb" />
     <Compile Include="Models\EntitiesManagers\EmployeesManager.vb" />
+    <Compile Include="Models\EntitiesManagers\EvaluationsManager.vb" />
     <Compile Include="Models\EntitiesManagers\InstitutesManager.vb" />
     <Compile Include="Models\EntitiesManagers\Manager.vb" />
+    <Compile Include="Models\EntitiesManagers\StudentsManager.vb" />
     <Compile Include="Models\EntitiesManagers\UEsManager.vb" />
     <Compile Include="Models\EntitiesManagers\UsersManager.vb" />
     <Compile Include="Models\Entities\Career.vb" />
     <Compile Include="Models\Entities\ECUE.vb" />
     <Compile Include="Models\Entities\Employee.vb" />
+    <Compile Include="Models\Entities\Evaluations.vb" />
     <Compile Include="Models\Entities\Institute.vb" />
     <Compile Include="Models\Entities\Student.vb" />
     <Compile Include="Models\Entities\UE.vb" />
@@ -169,6 +172,12 @@
     <Compile Include="Views\Administrateur\Administrateur.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Views\Administrateur\Administrateurcontols\CareersControl.Designer.vb">
+      <DependentUpon>CareersControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrateur\Administrateurcontols\CareersControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Views\Administrateur\Administrateurcontols\ECUEsControl.Designer.vb">
       <DependentUpon>ECUEsControl.vb</DependentUpon>
     </Compile>
@@ -179,12 +188,6 @@
       <DependentUpon>EmployeesControl.vb</DependentUpon>
     </Compile>
     <Compile Include="Views\Administrateur\Administrateurcontols\EmployeesControl.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Administrateur\Administrateurcontols\EvaluationsControl.Designer.vb">
-      <DependentUpon>EvaluationsControl.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Administrateur\Administrateurcontols\EvaluationsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\Administrateur\Administrateurcontols\FacultiesControl.Designer.vb">
@@ -217,10 +220,10 @@
     <Compile Include="Views\Connexion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Enseignant\Enseignant.Designer.vb">
-      <DependentUpon>Enseignant.vb</DependentUpon>
+    <Compile Include="Views\Enseignant\Evaluations.Designer.vb">
+      <DependentUpon>Evaluations.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\Enseignant\Enseignant.vb">
+    <Compile Include="Views\Enseignant\Evaluations.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\ServiceScolarité\ServiceScolarite.Designer.vb">
@@ -240,14 +243,14 @@
     <EmbeddedResource Include="Views\Administrateur\Administrateur.resx">
       <DependentUpon>Administrateur.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\CareersControl.resx">
+      <DependentUpon>CareersControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\ECUEsControl.resx">
       <DependentUpon>ECUEsControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\EmployeesControl.resx">
       <DependentUpon>EmployeesControl.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\EvaluationsControl.resx">
-      <DependentUpon>EvaluationsControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\FacultiesControl.resx">
       <DependentUpon>FacultiesControl.vb</DependentUpon>
@@ -255,8 +258,17 @@
     <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\InstitutsControl.resx">
       <DependentUpon>InstitutsControl.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\UEsControl.resx">
+      <DependentUpon>UEsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\UserControl.resx">
+      <DependentUpon>UserControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Enseignant\Evaluations.resx">
+      <DependentUpon>Evaluations.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ServiceScolarité\ServiceScolarite.resx">
       <DependentUpon>ServiceScolarite.vb</DependentUpon>

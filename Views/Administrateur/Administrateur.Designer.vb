@@ -174,7 +174,7 @@ Partial Class Administrateur
         Me.btnFaculties.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
         Me.btnFaculties.Size = New System.Drawing.Size(230, 53)
         Me.btnFaculties.TabIndex = 6
-        Me.btnFaculties.Text = "Facultés"
+        Me.btnFaculties.Text = "Carrières"
         Me.btnFaculties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnFaculties.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnFaculties.UseVisualStyleBackColor = True

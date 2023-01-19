@@ -103,15 +103,14 @@
         End If
     End Sub
 
-    Private Sub CTS_DISPLAY_PASSWORD_CheckedChanged(sender As Object, e As EventArgs) Handles CTS_DISPLAY_PASSWORD.CheckedChanged
-        If (CTS_DISPLAY_PASSWORD.Checked) Then
+    Private Sub CTS_UPDATE_PASSWORD_CheckedChanged(sender As Object, e As EventArgs) Handles CTS_UPDATE_PASSWORD.CheckedChanged
+        If (CTS_UPDATE_PASSWORD.Checked) Then
             TB_PASSWORD_FIELD.PasswordChar = ""
         Else
             TB_PASSWORD_FIELD.PasswordChar = "*"
         End If
     End Sub
 
-    Private Sub LBL_DISPLAY_PASSWORD_Click(sender As Object, e As EventArgs) Handles LBL_DISPLAY_PASSWORD.Click
-
-    End Sub
+    'Private Sub LBL_DISPLAY_PASSWORD_Click(sender As Object, e As EventArgs) Handles LBL_DISPLAY_PASSWORD.Click
+    'End Sub
 End Class

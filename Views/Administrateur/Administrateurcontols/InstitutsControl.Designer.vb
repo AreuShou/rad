@@ -29,7 +29,7 @@ Partial Class InstitutsControl
         Me.BT_REFRESH = New Guna.UI2.WinForms.Guna2Button()
         Me.BT_UPDATE = New Guna.UI2.WinForms.Guna2Button()
         Me.BT_ADD = New Guna.UI2.WinForms.Guna2Button()
-        Me.Box_Recherche = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.TB_SEARCH = New Guna.UI2.WinForms.Guna2TextBox()
         Me.DGV_INSTITUTES = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.TB_SIGLE = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TB_LIBELLE = New Guna.UI2.WinForms.Guna2TextBox()
@@ -111,26 +111,26 @@ Partial Class InstitutsControl
         Me.BT_ADD.TabIndex = 20
         Me.BT_ADD.Text = "Insérer"
         '
-        'Box_Recherche
+        'TB_SEARCH
         '
-        Me.Box_Recherche.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.TB_SEARCH.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Box_Recherche.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Box_Recherche.DefaultText = ""
-        Me.Box_Recherche.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Box_Recherche.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Box_Recherche.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Box_Recherche.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Box_Recherche.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Box_Recherche.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Box_Recherche.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Box_Recherche.Location = New System.Drawing.Point(163, 204)
-        Me.Box_Recherche.Name = "Box_Recherche"
-        Me.Box_Recherche.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Box_Recherche.PlaceholderText = ""
-        Me.Box_Recherche.SelectedText = ""
-        Me.Box_Recherche.Size = New System.Drawing.Size(837, 36)
-        Me.Box_Recherche.TabIndex = 19
+        Me.TB_SEARCH.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TB_SEARCH.DefaultText = ""
+        Me.TB_SEARCH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TB_SEARCH.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TB_SEARCH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_SEARCH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_SEARCH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_SEARCH.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TB_SEARCH.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_SEARCH.Location = New System.Drawing.Point(163, 204)
+        Me.TB_SEARCH.Name = "TB_SEARCH"
+        Me.TB_SEARCH.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TB_SEARCH.PlaceholderText = ""
+        Me.TB_SEARCH.SelectedText = ""
+        Me.TB_SEARCH.Size = New System.Drawing.Size(837, 36)
+        Me.TB_SEARCH.TabIndex = 19
         '
         'DGV_INSTITUTES
         '
@@ -304,7 +304,7 @@ Partial Class InstitutsControl
         Me.Controls.Add(Me.BT_REFRESH)
         Me.Controls.Add(Me.BT_UPDATE)
         Me.Controls.Add(Me.BT_ADD)
-        Me.Controls.Add(Me.Box_Recherche)
+        Me.Controls.Add(Me.TB_SEARCH)
         Me.Controls.Add(Me.DGV_INSTITUTES)
         Me.Controls.Add(Me.TB_SIGLE)
         Me.Controls.Add(Me.TB_LIBELLE)
@@ -320,7 +320,7 @@ Partial Class InstitutsControl
     Friend WithEvents BT_REFRESH As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BT_UPDATE As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BT_ADD As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Box_Recherche As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents TB_SEARCH As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents DGV_INSTITUTES As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents TB_SIGLE As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TB_LIBELLE As Guna.UI2.WinForms.Guna2TextBox
