@@ -22,9 +22,9 @@ Partial Class UserControl
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -38,7 +38,7 @@ Partial Class UserControl
         Me.TB_PASSWORD_FIELD = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TB_USERNAME = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CB_EMPLOYEE = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.CTS_UPDATE_PASSWORD = New Guna.UI2.WinForms.Guna2ToggleSwitch()
+        Me.CTS_DISPLAY_PASSWORD = New Guna.UI2.WinForms.Guna2ToggleSwitch()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         CType(Me.DGV_USERS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -47,11 +47,11 @@ Partial Class UserControl
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(5, 117)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(37, 117)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(150, 27)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(118, 27)
         Me.Guna2HtmlLabel4.TabIndex = 55
-        Me.Guna2HtmlLabel4.Text = "Employees_Id"
+        Me.Guna2HtmlLabel4.Text = "Employees"
         '
         'Guna2HtmlLabel3
         '
@@ -121,6 +121,7 @@ Partial Class UserControl
         '
         'BT_UPDATE
         '
+        Me.BT_UPDATE.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BT_UPDATE.AutoRoundedCorners = True
         Me.BT_UPDATE.BorderRadius = 21
         Me.BT_UPDATE.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -138,6 +139,7 @@ Partial Class UserControl
         '
         'BT_ADD
         '
+        Me.BT_ADD.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BT_ADD.AutoRoundedCorners = True
         Me.BT_ADD.BorderRadius = 21
         Me.BT_ADD.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -178,29 +180,29 @@ Partial Class UserControl
         '
         Me.DGV_USERS.AllowUserToAddRows = False
         Me.DGV_USERS.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.DGV_USERS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DGV_USERS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGV_USERS.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_USERS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_USERS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGV_USERS.ColumnHeadersHeight = 30
         Me.DGV_USERS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_USERS.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_USERS.DefaultCellStyle = DataGridViewCellStyle3
         Me.DGV_USERS.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_USERS.Location = New System.Drawing.Point(1, 333)
         Me.DGV_USERS.Name = "DGV_USERS"
@@ -273,6 +275,8 @@ Partial Class UserControl
         '
         'CB_EMPLOYEE
         '
+        Me.CB_EMPLOYEE.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CB_EMPLOYEE.BackColor = System.Drawing.Color.Transparent
         Me.CB_EMPLOYEE.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CB_EMPLOYEE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -286,20 +290,20 @@ Partial Class UserControl
         Me.CB_EMPLOYEE.Size = New System.Drawing.Size(374, 36)
         Me.CB_EMPLOYEE.TabIndex = 58
         '
-        'CTS_UPDATE_PASSWORD
+        'CTS_DISPLAY_PASSWORD
         '
-        Me.CTS_UPDATE_PASSWORD.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CTS_UPDATE_PASSWORD.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CTS_UPDATE_PASSWORD.CheckedState.InnerBorderColor = System.Drawing.Color.White
-        Me.CTS_UPDATE_PASSWORD.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.CTS_UPDATE_PASSWORD.Location = New System.Drawing.Point(108, 214)
-        Me.CTS_UPDATE_PASSWORD.Name = "CTS_UPDATE_PASSWORD"
-        Me.CTS_UPDATE_PASSWORD.Size = New System.Drawing.Size(46, 20)
-        Me.CTS_UPDATE_PASSWORD.TabIndex = 59
-        Me.CTS_UPDATE_PASSWORD.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.CTS_UPDATE_PASSWORD.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.CTS_UPDATE_PASSWORD.UncheckedState.InnerBorderColor = System.Drawing.Color.White
-        Me.CTS_UPDATE_PASSWORD.UncheckedState.InnerColor = System.Drawing.Color.White
+        Me.CTS_DISPLAY_PASSWORD.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CTS_DISPLAY_PASSWORD.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CTS_DISPLAY_PASSWORD.CheckedState.InnerBorderColor = System.Drawing.Color.White
+        Me.CTS_DISPLAY_PASSWORD.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.CTS_DISPLAY_PASSWORD.Location = New System.Drawing.Point(108, 214)
+        Me.CTS_DISPLAY_PASSWORD.Name = "CTS_DISPLAY_PASSWORD"
+        Me.CTS_DISPLAY_PASSWORD.Size = New System.Drawing.Size(46, 20)
+        Me.CTS_DISPLAY_PASSWORD.TabIndex = 59
+        Me.CTS_DISPLAY_PASSWORD.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.CTS_DISPLAY_PASSWORD.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.CTS_DISPLAY_PASSWORD.UncheckedState.InnerBorderColor = System.Drawing.Color.White
+        Me.CTS_DISPLAY_PASSWORD.UncheckedState.InnerColor = System.Drawing.Color.White
         '
         'Guna2HtmlLabel5
         '
@@ -317,7 +321,7 @@ Partial Class UserControl
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.Controls.Add(Me.CTS_UPDATE_PASSWORD)
+        Me.Controls.Add(Me.CTS_DISPLAY_PASSWORD)
         Me.Controls.Add(Me.CB_EMPLOYEE)
         Me.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
@@ -351,6 +355,6 @@ Partial Class UserControl
     Friend WithEvents TB_PASSWORD_FIELD As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TB_USERNAME As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CB_EMPLOYEE As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents CTS_UPDATE_PASSWORD As Guna.UI2.WinForms.Guna2ToggleSwitch
+    Friend WithEvents CTS_DISPLAY_PASSWORD As Guna.UI2.WinForms.Guna2ToggleSwitch
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

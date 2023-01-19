@@ -84,5 +84,4 @@
     Private Sub TB_SEARCH_TextChanged(sender As Object, e As EventArgs) Handles TB_SEARCH.TextChanged
         DGV_EMPLOYEES.DataSource = EmployeesController.search(TB_SEARCH.Text)
     End Sub
-
 End Class

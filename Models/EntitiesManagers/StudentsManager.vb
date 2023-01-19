@@ -86,7 +86,7 @@ Public Class StudentsManager
 
     Public Shared Function store(student As Student) As Boolean
         Try
-            command = New MySqlCommand("INSERT INTO Students(last_name, first_name, birth_date, gender, email, phone_number, picture_path, career_id) VALUES(@last_name, @first_name, @gender, @email, @phone_number, @picture_path, @career_id);", Manager.connection)
+            command = New MySqlCommand("INSERT INTO Students(last_name, first_name, birth_date, gender, email, phone_number, picture_path, career_id) VALUES(@last_name, @first_name, @birth_date, @gender, @email, @phone_number, @picture_path, @career_id);", Manager.connection)
             command.Parameters.AddWithValue("@last_name", student.LastName)
             command.Parameters.AddWithValue("@first_name", student.FirstName)
             command.Parameters.AddWithValue("@birth_date", student.BirthDate)
@@ -94,7 +94,7 @@ Public Class StudentsManager
             command.Parameters.AddWithValue("@email", student.Email)
             command.Parameters.AddWithValue("@phone_number", student.PhoneNumber)
             command.Parameters.AddWithValue("@picture_path", student.PicturePath)
-            command.Parameters.AddWithValue("@career_di", student.CareerId)
+            command.Parameters.AddWithValue("@career_id", student.CareerId)
             command.ExecuteNonQuery()
             disposeManager()
             Return True
@@ -142,12 +142,12 @@ Public Class StudentsManager
     Public Shared Function deleteECUEsStudents(studentId As Integer) As Boolean
         Try
             command = New MySqlCommand("DELETE FROM ECUEsStudents WHERE student_id = @studentId;", Manager.connection)
-            command.Parameters.AddWithValue("@std", studentId)
+            command.Parameters.AddWithValue("@studentId", studentId)
             command.ExecuteNonQuery()
             disposeManager()
             Return True
         Catch ex As Exception
-            MessageBox.Show("Erreur durant la supression : " & ex.Message, "StudentsManager", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Erreur durant la désinscription dans des matières : " & ex.Message, "StudentsManager", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
         Return False
     End Function

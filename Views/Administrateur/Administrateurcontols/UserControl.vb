@@ -1,44 +1,9 @@
 ﻿Public Class UserControl
-    Private Sub ClearForm()
-        TB_USERNAME.Text = ""
-        TB_PASSWORD_FIELD.Text = ""
-        TB_PASSWORD_FIELD.Text = ""
-    End Sub
-
-    Public Sub refreshCB_EMPLOYEE()
-        CB_EMPLOYEE.Items.Clear()
-        CB_EMPLOYEE.Items.Add("Administrateur")
-        Dim employeesList As List(Of Employee) = EmployeesManager.getAll()
-        Dim usersList As List(Of User) = UsersManager.getAll()
-        For Each employee As Employee In employeesList
-            If UsersManager.getByEmployeeId(employee.Id).Username = Nothing Then
-                CB_EMPLOYEE.Items.Add(employee.Id & "-" & employee.FirstName & " - " & employee.LastName)
-            End If
-        Next
-        If (CB_EMPLOYEE.Items.Count > 0) Then
-            CB_EMPLOYEE.SelectedIndex = 0
-        Else
-            CB_EMPLOYEE.SelectedIndex = -1
-        End If
-    End Sub
-
-    Public Sub checkButtons()
-        Dim nbRowSelected = DGV_USERS.SelectedRows.Count
-        If nbRowSelected > 0 Then
-            BT_DELETE.Enabled = True
-            BT_UPDATE.Enabled = True
-        Else
-            BT_DELETE.Enabled = False
-            BT_UPDATE.Enabled = False
-        End If
-    End Sub
-
     Private Sub UsersControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         refreshCB_EMPLOYEE()
         DGV_USERS.DataSource = UsersController.getAll()
         checkButtons()
     End Sub
-
     Public Sub BT_REFRESH_Click(sender As Object, e As EventArgs) Handles BT_REFRESH.Click
         DGV_USERS.DataSource = UsersController.getAll()
         checkButtons()
@@ -59,7 +24,7 @@
             If nbRowSelected = 1 Then
                 Dim selectedRow As DataGridViewRow = DGV_USERS.SelectedRows(0)
                 Dim userId As Integer = selectedRow.Cells(0).Value
-                If (UsersController.update(TB_USERNAME.Text, TB_PASSWORD_FIELD.Text, CB_EMPLOYEE.SelectedItem.ToString(), userId, CTS_UPDATE_PASSWORD.Checked)) Then
+                If (UsersController.update(TB_USERNAME.Text, TB_PASSWORD_FIELD.Text, CB_EMPLOYEE.SelectedItem.ToString(), userId, CTS_DISPLAY_PASSWORD.Checked)) Then
                     ClearForm()
                     refreshCB_EMPLOYEE()
                     BT_REFRESH_Click(Nothing, Nothing)
@@ -103,14 +68,45 @@
         End If
     End Sub
 
-    Private Sub CTS_UPDATE_PASSWORD_CheckedChanged(sender As Object, e As EventArgs) Handles CTS_UPDATE_PASSWORD.CheckedChanged
-        If (CTS_UPDATE_PASSWORD.Checked) Then
+    Private Sub CTS_DISPLAY_PASSWORD_CheckedChanged(sender As Object, e As EventArgs) Handles CTS_DISPLAY_PASSWORD.CheckedChanged
+        If (CTS_DISPLAY_PASSWORD.Checked) Then
             TB_PASSWORD_FIELD.PasswordChar = ""
         Else
             TB_PASSWORD_FIELD.PasswordChar = "*"
         End If
     End Sub
 
-    'Private Sub LBL_DISPLAY_PASSWORD_Click(sender As Object, e As EventArgs) Handles LBL_DISPLAY_PASSWORD.Click
-    'End Sub
+
+
+    Private Sub ClearForm()
+        TB_USERNAME.Text = ""
+        TB_PASSWORD_FIELD.Text = ""
+        TB_PASSWORD_FIELD.Text = ""
+    End Sub
+    Public Sub checkButtons()
+        Dim nbRowSelected = DGV_USERS.SelectedRows.Count
+        If nbRowSelected > 0 Then
+            BT_DELETE.Enabled = True
+            BT_UPDATE.Enabled = True
+        Else
+            BT_DELETE.Enabled = False
+            BT_UPDATE.Enabled = False
+        End If
+    End Sub
+    Public Sub refreshCB_EMPLOYEE()
+        CB_EMPLOYEE.Items.Clear()
+        CB_EMPLOYEE.Items.Add("Administrateur")
+        Dim employeesList As List(Of Employee) = EmployeesManager.getAll()
+        Dim usersList As List(Of User) = UsersManager.getAll()
+        For Each employee As Employee In employeesList
+            If UsersManager.getByEmployeeId(employee.Id).Username = Nothing Then
+                CB_EMPLOYEE.Items.Add(employee.Id & "-" & employee.FirstName & " - " & employee.LastName)
+            End If
+        Next
+        If (CB_EMPLOYEE.Items.Count > 0) Then
+            CB_EMPLOYEE.SelectedIndex = 0
+        Else
+            CB_EMPLOYEE.SelectedIndex = -1
+        End If
+    End Sub
 End Class

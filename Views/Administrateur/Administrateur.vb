@@ -174,6 +174,9 @@ Public Class Administrateur
         facutltiesControl.Show()
     End Sub
 
+    Private Sub BT_LOGOUT_Click(sender As Object, e As EventArgs) Handles BT_LOGOUT.Click
+        ProjetController.Logout()
+    End Sub
 
     'Private Sub Panel_ADMIN_Paint(sender As Object, e As PaintEventArgs) Handles Panel_ADMIN.Paint
 

@@ -220,10 +220,10 @@
     <Compile Include="Views\Connexion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Enseignant\Evaluations.Designer.vb">
-      <DependentUpon>Evaluations.vb</DependentUpon>
+    <Compile Include="Views\Enseignant\Enseignant.Designer.vb">
+      <DependentUpon>Enseignant.vb</DependentUpon>
     </Compile>
-    <Compile Include="Views\Enseignant\Evaluations.vb">
+    <Compile Include="Views\Enseignant\Enseignant.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\ServiceScolarité\ServiceScolarite.Designer.vb">
@@ -267,8 +267,8 @@
     <EmbeddedResource Include="Views\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Enseignant\Evaluations.resx">
-      <DependentUpon>Evaluations.vb</DependentUpon>
+    <EmbeddedResource Include="Views\Enseignant\Enseignant.resx">
+      <DependentUpon>Enseignant.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ServiceScolarité\ServiceScolarite.resx">
       <DependentUpon>ServiceScolarite.vb</DependentUpon>

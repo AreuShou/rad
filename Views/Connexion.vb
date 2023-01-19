@@ -10,4 +10,7 @@
         Manager.connect()
     End Sub
 
+    Private Sub TB_USERNAME_TextChanged(sender As Object, e As EventArgs) Handles TB_USERNAME.TextChanged
+
+    End Sub
 End Class

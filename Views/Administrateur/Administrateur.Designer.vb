@@ -41,6 +41,7 @@ Partial Class Administrateur
         Me.PanelLogo = New Guna.UI2.WinForms.Guna2Panel()
         Me.ImageHome = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.BT_LOGOUT = New Guna.UI2.WinForms.Guna2Button()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.IconCurrentForm, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,9 +55,9 @@ Partial Class Administrateur
         Me.Panel_ADMIN.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_ADMIN.Location = New System.Drawing.Point(238, 82)
+        Me.Panel_ADMIN.Location = New System.Drawing.Point(238, 96)
         Me.Panel_ADMIN.Name = "Panel_ADMIN"
-        Me.Panel_ADMIN.Size = New System.Drawing.Size(744, 475)
+        Me.Panel_ADMIN.Size = New System.Drawing.Size(744, 461)
         Me.Panel_ADMIN.TabIndex = 0
         '
         'PanelTitleBar
@@ -64,6 +65,7 @@ Partial Class Administrateur
         Me.PanelTitleBar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelTitleBar.BackColor = System.Drawing.Color.Transparent
+        Me.PanelTitleBar.Controls.Add(Me.BT_LOGOUT)
         Me.PanelTitleBar.Controls.Add(Me.BT_MAXIMISE)
         Me.PanelTitleBar.Controls.Add(Me.BT_MINIMISE)
         Me.PanelTitleBar.Controls.Add(Me.BT_CLOSE)
@@ -72,7 +74,7 @@ Partial Class Administrateur
         Me.PanelTitleBar.Controls.Add(Me.Guna2PictureBox1)
         Me.PanelTitleBar.Location = New System.Drawing.Point(238, 1)
         Me.PanelTitleBar.Name = "PanelTitleBar"
-        Me.PanelTitleBar.Size = New System.Drawing.Size(744, 75)
+        Me.PanelTitleBar.Size = New System.Drawing.Size(744, 89)
         Me.PanelTitleBar.TabIndex = 5
         '
         'BT_MAXIMISE
@@ -313,6 +315,23 @@ Partial Class Administrateur
         Me.Guna2Elipse1.BorderRadius = 0
         Me.Guna2Elipse1.TargetControl = Me
         '
+        'BT_LOGOUT
+        '
+        Me.BT_LOGOUT.AutoRoundedCorners = True
+        Me.BT_LOGOUT.BorderRadius = 21
+        Me.BT_LOGOUT.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_LOGOUT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_LOGOUT.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_LOGOUT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_LOGOUT.FillColor = System.Drawing.Color.Red
+        Me.BT_LOGOUT.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.BT_LOGOUT.ForeColor = System.Drawing.Color.White
+        Me.BT_LOGOUT.Location = New System.Drawing.Point(592, 36)
+        Me.BT_LOGOUT.Name = "BT_LOGOUT"
+        Me.BT_LOGOUT.Size = New System.Drawing.Size(142, 45)
+        Me.BT_LOGOUT.TabIndex = 46
+        Me.BT_LOGOUT.Text = "Déconnexion"
+        '
         'Administrateur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -355,4 +374,5 @@ Partial Class Administrateur
     Friend WithEvents BT_CLOSE As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents btnFaculties As FontAwesome.Sharp.IconButton
+    Friend WithEvents BT_LOGOUT As Guna.UI2.WinForms.Guna2Button
 End Class
