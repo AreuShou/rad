@@ -22,9 +22,9 @@ Partial Class ECUEsControl
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -32,17 +32,19 @@ Partial Class ECUEsControl
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.BTN_Supprime = New Guna.UI2.WinForms.Guna2Button()
-        Me.BTN_Recharge = New Guna.UI2.WinForms.Guna2Button()
-        Me.BTN_Ajour = New Guna.UI2.WinForms.Guna2Button()
-        Me.BTN_Insert = New Guna.UI2.WinForms.Guna2Button()
-        Me.Box_Recherche = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Ecues_View = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.BX_Credit = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.BX_LIBELLE = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
+        Me.BT_DELETE = New Guna.UI2.WinForms.Guna2Button()
+        Me.BT_REFRESH = New Guna.UI2.WinForms.Guna2Button()
+        Me.BT_UPDATE = New Guna.UI2.WinForms.Guna2Button()
+        Me.BT_ADD = New Guna.UI2.WinForms.Guna2Button()
+        Me.TB_SEARCH = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.DGV_ECUES = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.TB_LIBELLE = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.CLB_UES = New System.Windows.Forms.CheckedListBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.Ecues_View, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CB_NB_CREDIT = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CB_TEACHER = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.LBL_Enseignant = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        CType(Me.DGV_ECUES, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2HtmlLabel5
@@ -137,201 +139,180 @@ Partial Class ECUEsControl
         Me.Guna2HtmlLabel2.TabIndex = 51
         Me.Guna2HtmlLabel2.Text = "Libellé"
         '
-        'BTN_Supprime
+        'BT_DELETE
         '
-        Me.BTN_Supprime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BTN_Supprime.AutoRoundedCorners = True
-        Me.BTN_Supprime.BorderRadius = 21
-        Me.BTN_Supprime.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BTN_Supprime.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BTN_Supprime.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BTN_Supprime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Supprime.FillColor = System.Drawing.SystemColors.ActiveCaption
-        Me.BTN_Supprime.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.BTN_Supprime.ForeColor = System.Drawing.Color.White
-        Me.BTN_Supprime.Location = New System.Drawing.Point(772, 139)
-        Me.BTN_Supprime.Name = "BTN_Supprime"
-        Me.BTN_Supprime.Size = New System.Drawing.Size(180, 45)
-        Me.BTN_Supprime.TabIndex = 50
-        Me.BTN_Supprime.Text = "Supprimer"
+        Me.BT_DELETE.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BT_DELETE.AutoRoundedCorners = True
+        Me.BT_DELETE.BorderRadius = 21
+        Me.BT_DELETE.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_DELETE.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_DELETE.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_DELETE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_DELETE.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BT_DELETE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BT_DELETE.ForeColor = System.Drawing.Color.White
+        Me.BT_DELETE.Location = New System.Drawing.Point(772, 139)
+        Me.BT_DELETE.Name = "BT_DELETE"
+        Me.BT_DELETE.Size = New System.Drawing.Size(180, 45)
+        Me.BT_DELETE.TabIndex = 50
+        Me.BT_DELETE.Text = "Supprimer"
         '
-        'BTN_Recharge
+        'BT_REFRESH
         '
-        Me.BTN_Recharge.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BTN_Recharge.AutoRoundedCorners = True
-        Me.BTN_Recharge.BorderRadius = 21
-        Me.BTN_Recharge.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BTN_Recharge.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BTN_Recharge.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BTN_Recharge.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Recharge.FillColor = System.Drawing.SystemColors.ActiveCaption
-        Me.BTN_Recharge.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.BTN_Recharge.ForeColor = System.Drawing.Color.White
-        Me.BTN_Recharge.Location = New System.Drawing.Point(772, 201)
-        Me.BTN_Recharge.Name = "BTN_Recharge"
-        Me.BTN_Recharge.Size = New System.Drawing.Size(180, 45)
-        Me.BTN_Recharge.TabIndex = 49
-        Me.BTN_Recharge.Text = "Recharger"
+        Me.BT_REFRESH.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BT_REFRESH.AutoRoundedCorners = True
+        Me.BT_REFRESH.BorderRadius = 21
+        Me.BT_REFRESH.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_REFRESH.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_REFRESH.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_REFRESH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_REFRESH.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BT_REFRESH.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BT_REFRESH.ForeColor = System.Drawing.Color.White
+        Me.BT_REFRESH.Location = New System.Drawing.Point(772, 201)
+        Me.BT_REFRESH.Name = "BT_REFRESH"
+        Me.BT_REFRESH.Size = New System.Drawing.Size(180, 45)
+        Me.BT_REFRESH.TabIndex = 49
+        Me.BT_REFRESH.Text = "Recharger"
         '
-        'BTN_Ajour
+        'BT_UPDATE
         '
-        Me.BTN_Ajour.AutoRoundedCorners = True
-        Me.BTN_Ajour.BorderRadius = 21
-        Me.BTN_Ajour.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BTN_Ajour.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BTN_Ajour.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BTN_Ajour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Ajour.FillColor = System.Drawing.SystemColors.ActiveCaption
-        Me.BTN_Ajour.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.BTN_Ajour.ForeColor = System.Drawing.Color.White
-        Me.BTN_Ajour.Location = New System.Drawing.Point(772, 76)
-        Me.BTN_Ajour.Name = "BTN_Ajour"
-        Me.BTN_Ajour.Size = New System.Drawing.Size(180, 45)
-        Me.BTN_Ajour.TabIndex = 48
-        Me.BTN_Ajour.Text = "Mettre à Jour"
+        Me.BT_UPDATE.AutoRoundedCorners = True
+        Me.BT_UPDATE.BorderRadius = 21
+        Me.BT_UPDATE.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_UPDATE.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_UPDATE.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_UPDATE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_UPDATE.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BT_UPDATE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BT_UPDATE.ForeColor = System.Drawing.Color.White
+        Me.BT_UPDATE.Location = New System.Drawing.Point(772, 76)
+        Me.BT_UPDATE.Name = "BT_UPDATE"
+        Me.BT_UPDATE.Size = New System.Drawing.Size(180, 45)
+        Me.BT_UPDATE.TabIndex = 48
+        Me.BT_UPDATE.Text = "Mettre à Jour"
         '
-        'BTN_Insert
+        'BT_ADD
         '
-        Me.BTN_Insert.AutoRoundedCorners = True
-        Me.BTN_Insert.BorderRadius = 21
-        Me.BTN_Insert.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BTN_Insert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BTN_Insert.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BTN_Insert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BTN_Insert.FillColor = System.Drawing.SystemColors.ActiveCaption
-        Me.BTN_Insert.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.BTN_Insert.ForeColor = System.Drawing.Color.White
-        Me.BTN_Insert.Location = New System.Drawing.Point(772, 8)
-        Me.BTN_Insert.Name = "BTN_Insert"
-        Me.BTN_Insert.Size = New System.Drawing.Size(180, 45)
-        Me.BTN_Insert.TabIndex = 47
-        Me.BTN_Insert.Text = "Insérer"
+        Me.BT_ADD.AutoRoundedCorners = True
+        Me.BT_ADD.BorderRadius = 21
+        Me.BT_ADD.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_ADD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_ADD.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_ADD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_ADD.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BT_ADD.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BT_ADD.ForeColor = System.Drawing.Color.White
+        Me.BT_ADD.Location = New System.Drawing.Point(772, 8)
+        Me.BT_ADD.Name = "BT_ADD"
+        Me.BT_ADD.Size = New System.Drawing.Size(180, 45)
+        Me.BT_ADD.TabIndex = 47
+        Me.BT_ADD.Text = "Insérer"
         '
-        'Box_Recherche
+        'TB_SEARCH
         '
-        Me.Box_Recherche.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.TB_SEARCH.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Box_Recherche.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Box_Recherche.DefaultText = ""
-        Me.Box_Recherche.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Box_Recherche.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Box_Recherche.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Box_Recherche.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Box_Recherche.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Box_Recherche.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Box_Recherche.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Box_Recherche.Location = New System.Drawing.Point(161, 280)
-        Me.Box_Recherche.Name = "Box_Recherche"
-        Me.Box_Recherche.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Box_Recherche.PlaceholderText = ""
-        Me.Box_Recherche.SelectedText = ""
-        Me.Box_Recherche.Size = New System.Drawing.Size(837, 36)
-        Me.Box_Recherche.TabIndex = 46
+        Me.TB_SEARCH.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TB_SEARCH.DefaultText = ""
+        Me.TB_SEARCH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TB_SEARCH.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TB_SEARCH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_SEARCH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_SEARCH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_SEARCH.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TB_SEARCH.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_SEARCH.Location = New System.Drawing.Point(161, 280)
+        Me.TB_SEARCH.Name = "TB_SEARCH"
+        Me.TB_SEARCH.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TB_SEARCH.PlaceholderText = ""
+        Me.TB_SEARCH.SelectedText = ""
+        Me.TB_SEARCH.Size = New System.Drawing.Size(837, 36)
+        Me.TB_SEARCH.TabIndex = 46
         '
-        'Ecues_View
+        'DGV_ECUES
         '
-        Me.Ecues_View.AllowUserToAddRows = False
-        Me.Ecues_View.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.Ecues_View.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.Ecues_View.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.DGV_ECUES.AllowUserToAddRows = False
+        Me.DGV_ECUES.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DGV_ECUES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DGV_ECUES.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Ecues_View.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Me.Ecues_View.ColumnHeadersHeight = 30
-        Me.Ecues_View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Ecues_View.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Ecues_View.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Ecues_View.Location = New System.Drawing.Point(1, 333)
-        Me.Ecues_View.Name = "Ecues_View"
-        Me.Ecues_View.RowHeadersVisible = False
-        Me.Ecues_View.Size = New System.Drawing.Size(997, 529)
-        Me.Ecues_View.TabIndex = 45
-        Me.Ecues_View.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.Ecues_View.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.Ecues_View.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.Ecues_View.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.Ecues_View.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.Ecues_View.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.Ecues_View.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Ecues_View.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Ecues_View.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Ecues_View.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Ecues_View.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.Ecues_View.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Ecues_View.ThemeStyle.HeaderStyle.Height = 30
-        Me.Ecues_View.ThemeStyle.ReadOnly = False
-        Me.Ecues_View.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.Ecues_View.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Ecues_View.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Ecues_View.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Ecues_View.ThemeStyle.RowsStyle.Height = 22
-        Me.Ecues_View.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Ecues_View.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_ECUES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGV_ECUES.ColumnHeadersHeight = 30
+        Me.DGV_ECUES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_ECUES.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DGV_ECUES.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_ECUES.Location = New System.Drawing.Point(1, 333)
+        Me.DGV_ECUES.Name = "DGV_ECUES"
+        Me.DGV_ECUES.RowHeadersVisible = False
+        Me.DGV_ECUES.Size = New System.Drawing.Size(997, 529)
+        Me.DGV_ECUES.TabIndex = 45
+        Me.DGV_ECUES.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_ECUES.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.DGV_ECUES.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.DGV_ECUES.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.DGV_ECUES.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.DGV_ECUES.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_ECUES.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_ECUES.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_ECUES.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGV_ECUES.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DGV_ECUES.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.DGV_ECUES.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.DGV_ECUES.ThemeStyle.HeaderStyle.Height = 30
+        Me.DGV_ECUES.ThemeStyle.ReadOnly = False
+        Me.DGV_ECUES.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_ECUES.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DGV_ECUES.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DGV_ECUES.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.DGV_ECUES.ThemeStyle.RowsStyle.Height = 22
+        Me.DGV_ECUES.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_ECUES.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'BX_Credit
+        'TB_LIBELLE
         '
-        Me.BX_Credit.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.TB_LIBELLE.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BX_Credit.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BX_Credit.DefaultText = ""
-        Me.BX_Credit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.BX_Credit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.BX_Credit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.BX_Credit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.BX_Credit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BX_Credit.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.BX_Credit.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BX_Credit.Location = New System.Drawing.Point(164, 121)
-        Me.BX_Credit.Name = "BX_Credit"
-        Me.BX_Credit.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.BX_Credit.PlaceholderText = ""
-        Me.BX_Credit.SelectedText = ""
-        Me.BX_Credit.Size = New System.Drawing.Size(263, 36)
-        Me.BX_Credit.TabIndex = 44
+        Me.TB_LIBELLE.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TB_LIBELLE.DefaultText = ""
+        Me.TB_LIBELLE.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TB_LIBELLE.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TB_LIBELLE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_LIBELLE.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TB_LIBELLE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_LIBELLE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TB_LIBELLE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TB_LIBELLE.Location = New System.Drawing.Point(164, 61)
+        Me.TB_LIBELLE.Name = "TB_LIBELLE"
+        Me.TB_LIBELLE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TB_LIBELLE.PlaceholderText = ""
+        Me.TB_LIBELLE.SelectedText = ""
+        Me.TB_LIBELLE.Size = New System.Drawing.Size(263, 36)
+        Me.TB_LIBELLE.TabIndex = 43
         '
-        'BX_LIBELLE
+        'CLB_UES
         '
-        Me.BX_LIBELLE.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BX_LIBELLE.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BX_LIBELLE.DefaultText = ""
-        Me.BX_LIBELLE.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.BX_LIBELLE.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.BX_LIBELLE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.BX_LIBELLE.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.BX_LIBELLE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BX_LIBELLE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.BX_LIBELLE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BX_LIBELLE.Location = New System.Drawing.Point(164, 61)
-        Me.BX_LIBELLE.Name = "BX_LIBELLE"
-        Me.BX_LIBELLE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.BX_LIBELLE.PlaceholderText = ""
-        Me.BX_LIBELLE.SelectedText = ""
-        Me.BX_LIBELLE.Size = New System.Drawing.Size(263, 36)
-        Me.BX_LIBELLE.TabIndex = 43
-        '
-        'CheckedListBox1
-        '
-        Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Location = New System.Drawing.Point(549, 46)
-        Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(120, 94)
-        Me.CheckedListBox1.TabIndex = 58
+        Me.CLB_UES.FormattingEnabled = True
+        Me.CLB_UES.Location = New System.Drawing.Point(549, 46)
+        Me.CLB_UES.Name = "CLB_UES"
+        Me.CLB_UES.Size = New System.Drawing.Size(120, 94)
+        Me.CLB_UES.TabIndex = 58
         '
         'Label1
         '
@@ -342,13 +323,56 @@ Partial Class ECUEsControl
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "UE"
         '
+        'CB_NB_CREDIT
+        '
+        Me.CB_NB_CREDIT.BackColor = System.Drawing.Color.Transparent
+        Me.CB_NB_CREDIT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_NB_CREDIT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_NB_CREDIT.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_NB_CREDIT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_NB_CREDIT.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_NB_CREDIT.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_NB_CREDIT.ItemHeight = 30
+        Me.CB_NB_CREDIT.Location = New System.Drawing.Point(164, 121)
+        Me.CB_NB_CREDIT.Name = "CB_NB_CREDIT"
+        Me.CB_NB_CREDIT.Size = New System.Drawing.Size(263, 36)
+        Me.CB_NB_CREDIT.TabIndex = 59
+        '
+        'CB_TEACHER
+        '
+        Me.CB_TEACHER.BackColor = System.Drawing.Color.Transparent
+        Me.CB_TEACHER.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_TEACHER.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_TEACHER.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_TEACHER.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_TEACHER.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_TEACHER.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_TEACHER.ItemHeight = 30
+        Me.CB_TEACHER.Location = New System.Drawing.Point(164, 226)
+        Me.CB_TEACHER.Name = "CB_TEACHER"
+        Me.CB_TEACHER.Size = New System.Drawing.Size(263, 36)
+        Me.CB_TEACHER.TabIndex = 61
+        '
+        'LBL_Enseignant
+        '
+        Me.LBL_Enseignant.BackColor = System.Drawing.Color.Transparent
+        Me.LBL_Enseignant.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBL_Enseignant.Location = New System.Drawing.Point(39, 226)
+        Me.LBL_Enseignant.Name = "LBL_Enseignant"
+        Me.LBL_Enseignant.Size = New System.Drawing.Size(121, 27)
+        Me.LBL_Enseignant.TabIndex = 60
+        Me.LBL_Enseignant.Text = "Enseignant"
+        '
         'ECUEsControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.CB_TEACHER)
+        Me.Controls.Add(Me.LBL_Enseignant)
+        Me.Controls.Add(Me.CB_NB_CREDIT)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.CheckedListBox1)
+        Me.Controls.Add(Me.CLB_UES)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Controls.Add(Me.Guna2TextBox2)
         Me.Controls.Add(Me.Guna2HtmlLabel4)
@@ -356,17 +380,16 @@ Partial Class ECUEsControl
         Me.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Controls.Add(Me.BTN_Supprime)
-        Me.Controls.Add(Me.BTN_Recharge)
-        Me.Controls.Add(Me.BTN_Ajour)
-        Me.Controls.Add(Me.BTN_Insert)
-        Me.Controls.Add(Me.Box_Recherche)
-        Me.Controls.Add(Me.Ecues_View)
-        Me.Controls.Add(Me.BX_Credit)
-        Me.Controls.Add(Me.BX_LIBELLE)
+        Me.Controls.Add(Me.BT_DELETE)
+        Me.Controls.Add(Me.BT_REFRESH)
+        Me.Controls.Add(Me.BT_UPDATE)
+        Me.Controls.Add(Me.BT_ADD)
+        Me.Controls.Add(Me.TB_SEARCH)
+        Me.Controls.Add(Me.DGV_ECUES)
+        Me.Controls.Add(Me.TB_LIBELLE)
         Me.Name = "ECUEsControl"
         Me.Size = New System.Drawing.Size(1003, 871)
-        CType(Me.Ecues_View, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_ECUES, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -379,14 +402,16 @@ Partial Class ECUEsControl
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents BTN_Supprime As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents BTN_Recharge As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents BTN_Ajour As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents BTN_Insert As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Box_Recherche As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Ecues_View As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents BX_Credit As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents BX_LIBELLE As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents CheckedListBox1 As CheckedListBox
+    Friend WithEvents BT_DELETE As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BT_REFRESH As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BT_UPDATE As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BT_ADD As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents TB_SEARCH As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents DGV_ECUES As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents TB_LIBELLE As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents CLB_UES As CheckedListBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents CB_NB_CREDIT As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CB_TEACHER As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents LBL_Enseignant As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

@@ -33,8 +33,7 @@ Partial Class Enseignant
         Me.Lbl_pourcent = New System.Windows.Forms.Label()
         Me.Lbl_Note = New System.Windows.Forms.Label()
         Me.CB_Ecues = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.CB_Date = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.CB_Note = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CB_GRADE = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CB_Pourcent = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CB_Type = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.TB_Recherche = New Guna.UI2.WinForms.Guna2TextBox()
@@ -45,6 +44,10 @@ Partial Class Enseignant
         Me.btn_Ajour = New Guna.UI2.WinForms.Guna2Button()
         Me.btn_Supprime = New Guna.UI2.WinForms.Guna2Button()
         Me.btn_Recharge = New Guna.UI2.WinForms.Guna2Button()
+        Me.BT_LOGOUT = New Guna.UI2.WinForms.Guna2Button()
+        Me.DTP_DATE = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.CB_WEIGHT = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.GRD_View, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -130,38 +133,23 @@ Partial Class Enseignant
         Me.CB_Ecues.ItemHeight = 30
         Me.CB_Ecues.Location = New System.Drawing.Point(75, 3)
         Me.CB_Ecues.Name = "CB_Ecues"
-        Me.CB_Ecues.Size = New System.Drawing.Size(848, 36)
+        Me.CB_Ecues.Size = New System.Drawing.Size(578, 36)
         Me.CB_Ecues.TabIndex = 7
         '
-        'CB_Date
+        'CB_GRADE
         '
-        Me.CB_Date.BackColor = System.Drawing.Color.Transparent
-        Me.CB_Date.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CB_Date.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CB_Date.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CB_Date.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CB_Date.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CB_Date.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CB_Date.ItemHeight = 30
-        Me.CB_Date.Location = New System.Drawing.Point(75, 105)
-        Me.CB_Date.Name = "CB_Date"
-        Me.CB_Date.Size = New System.Drawing.Size(140, 36)
-        Me.CB_Date.TabIndex = 8
-        '
-        'CB_Note
-        '
-        Me.CB_Note.BackColor = System.Drawing.Color.Transparent
-        Me.CB_Note.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CB_Note.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CB_Note.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CB_Note.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CB_Note.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CB_Note.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CB_Note.ItemHeight = 30
-        Me.CB_Note.Location = New System.Drawing.Point(857, 105)
-        Me.CB_Note.Name = "CB_Note"
-        Me.CB_Note.Size = New System.Drawing.Size(66, 36)
-        Me.CB_Note.TabIndex = 9
+        Me.CB_GRADE.BackColor = System.Drawing.Color.Transparent
+        Me.CB_GRADE.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_GRADE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_GRADE.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_GRADE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_GRADE.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_GRADE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_GRADE.ItemHeight = 30
+        Me.CB_GRADE.Location = New System.Drawing.Point(857, 105)
+        Me.CB_GRADE.Name = "CB_GRADE"
+        Me.CB_GRADE.Size = New System.Drawing.Size(66, 36)
+        Me.CB_GRADE.TabIndex = 9
         '
         'CB_Pourcent
         '
@@ -243,7 +231,7 @@ Partial Class Enseignant
         Me.CB_Etudiant.ItemHeight = 30
         Me.CB_Etudiant.Location = New System.Drawing.Point(399, 54)
         Me.CB_Etudiant.Name = "CB_Etudiant"
-        Me.CB_Etudiant.Size = New System.Drawing.Size(524, 36)
+        Me.CB_Etudiant.Size = New System.Drawing.Size(254, 36)
         Me.CB_Etudiant.TabIndex = 14
         '
         'GRD_View
@@ -364,12 +352,71 @@ Partial Class Enseignant
         Me.btn_Recharge.TabIndex = 22
         Me.btn_Recharge.Text = "Recharger"
         '
+        'BT_LOGOUT
+        '
+        Me.BT_LOGOUT.AutoRoundedCorners = True
+        Me.BT_LOGOUT.BorderRadius = 21
+        Me.BT_LOGOUT.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_LOGOUT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_LOGOUT.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_LOGOUT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_LOGOUT.FillColor = System.Drawing.Color.Red
+        Me.BT_LOGOUT.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.BT_LOGOUT.ForeColor = System.Drawing.Color.White
+        Me.BT_LOGOUT.Location = New System.Drawing.Point(767, 3)
+        Me.BT_LOGOUT.Name = "BT_LOGOUT"
+        Me.BT_LOGOUT.Size = New System.Drawing.Size(156, 45)
+        Me.BT_LOGOUT.TabIndex = 23
+        Me.BT_LOGOUT.Text = "Déconnexion"
+        '
+        'DTP_DATE
+        '
+        Me.DTP_DATE.Checked = True
+        Me.DTP_DATE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.DTP_DATE.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.DTP_DATE.Location = New System.Drawing.Point(75, 105)
+        Me.DTP_DATE.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.DTP_DATE.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.DTP_DATE.Name = "DTP_DATE"
+        Me.DTP_DATE.Size = New System.Drawing.Size(190, 36)
+        Me.DTP_DATE.TabIndex = 24
+        Me.DTP_DATE.Value = New Date(2023, 1, 19, 17, 13, 0, 522)
+        '
+        'CB_WEIGHT
+        '
+        Me.CB_WEIGHT.BackColor = System.Drawing.Color.Transparent
+        Me.CB_WEIGHT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_WEIGHT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_WEIGHT.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_WEIGHT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_WEIGHT.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_WEIGHT.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_WEIGHT.ItemHeight = 30
+        Me.CB_WEIGHT.Location = New System.Drawing.Point(785, 64)
+        Me.CB_WEIGHT.Name = "CB_WEIGHT"
+        Me.CB_WEIGHT.Size = New System.Drawing.Size(66, 36)
+        Me.CB_WEIGHT.TabIndex = 26
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(731, 73)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(48, 17)
+        Me.Label1.TabIndex = 25
+        Me.Label1.Text = "Poids"
+        '
         'Enseignant
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(927, 544)
+        Me.Controls.Add(Me.CB_WEIGHT)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.DTP_DATE)
+        Me.Controls.Add(Me.BT_LOGOUT)
         Me.Controls.Add(Me.btn_Recharge)
         Me.Controls.Add(Me.btn_Supprime)
         Me.Controls.Add(Me.btn_Ajour)
@@ -380,8 +427,7 @@ Partial Class Enseignant
         Me.Controls.Add(Me.TB_Recherche)
         Me.Controls.Add(Me.CB_Type)
         Me.Controls.Add(Me.CB_Pourcent)
-        Me.Controls.Add(Me.CB_Note)
-        Me.Controls.Add(Me.CB_Date)
+        Me.Controls.Add(Me.CB_GRADE)
         Me.Controls.Add(Me.CB_Ecues)
         Me.Controls.Add(Me.Lbl_Note)
         Me.Controls.Add(Me.Lbl_pourcent)
@@ -406,8 +452,7 @@ Partial Class Enseignant
     Friend WithEvents Lbl_pourcent As Label
     Friend WithEvents Lbl_Note As Label
     Friend WithEvents CB_Ecues As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents CB_Date As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents CB_Note As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CB_GRADE As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CB_Pourcent As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CB_Type As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents TB_Recherche As Guna.UI2.WinForms.Guna2TextBox
@@ -418,4 +463,8 @@ Partial Class Enseignant
     Friend WithEvents btn_Ajour As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btn_Supprime As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btn_Recharge As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BT_LOGOUT As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents DTP_DATE As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents CB_WEIGHT As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label1 As Label
 End Class

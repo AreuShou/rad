@@ -83,3 +83,4 @@ C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.ServiceScola
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.FacultiesControl.resources
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.ECUEsControl.resources
 C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.Connexion.resources
+C:\Users\ARLETTE\source\repos\ProjetNet_RAD\obj\Debug\ProjetNet_RAD.EvaluationsControl.resources

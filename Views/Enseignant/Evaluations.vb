@@ -94,12 +94,6 @@ Public Class Enseignant
     End Sub
 
 
-
-    Private Sub COB_CLOSE_Click(sender As Object, e As EventArgs) Handles COB_CLOSE.Click
-        Manager.Close()
-        End
-    End Sub
-
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
@@ -108,7 +102,11 @@ Public Class Enseignant
 
     End Sub
 
-    Private Sub Guna2ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CB_Date.SelectedIndexChanged
+    Private Sub Guna2ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles BT_LOGOUT.Click
 
     End Sub
 End Class

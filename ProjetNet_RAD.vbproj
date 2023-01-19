@@ -123,11 +123,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\CareesController.vb" />
+    <Compile Include="Controllers\CareersController.vb" />
     <Compile Include="Controllers\EmployeesController.vb" />
-    <Compile Include="Controllers\InterfacesController.vb" />
     <Compile Include="Controllers\ECUEsController.vb" />
-    <Compile Include="Controllers\InstitutesControllers.vb" />
+    <Compile Include="Controllers\EvaluationsController.vb" />
+    <Compile Include="Controllers\InstitutsController.vb" />
+    <Compile Include="Controllers\ProjetController.vb" />
+    <Compile Include="Controllers\StudentsController.vb" />
     <Compile Include="Controllers\UEsController.vb" />
     <Compile Include="Controllers\UsersController.vb" />
     <Compile Include="Models\EntitiesManagers\CareersManager.vb" />
@@ -177,6 +179,12 @@
       <DependentUpon>EmployeesControl.vb</DependentUpon>
     </Compile>
     <Compile Include="Views\Administrateur\Administrateurcontols\EmployeesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Administrateur\Administrateurcontols\EvaluationsControl.Designer.vb">
+      <DependentUpon>EvaluationsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrateur\Administrateurcontols\EvaluationsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\Administrateur\Administrateurcontols\FacultiesControl.Designer.vb">
@@ -237,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\EmployeesControl.resx">
       <DependentUpon>EmployeesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\EvaluationsControl.resx">
+      <DependentUpon>EvaluationsControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Administrateur\Administrateurcontols\FacultiesControl.resx">
       <DependentUpon>FacultiesControl.vb</DependentUpon>

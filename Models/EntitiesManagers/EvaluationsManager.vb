@@ -1,15 +1,16 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class EvaluationsManager
+
     Inherits Manager
-    Public Shared Function getGeneriqueList() As List(Of Evaluation)
-        Dim evaluationList As New List(Of Evaluation)()
+    Public Shared Function getGeneriqueList() As List(Of Evaluations)
+        Dim evaluationList As New List(Of Evaluations)()
         Try
             dataAdapater = New MySql.Data.MySqlClient.MySqlDataAdapter(command)
             dataTable = New DataTable
             dataAdapater.Fill(dataTable)
             For Each row As DataRow In Manager.dataTable.Rows
-                evaluationList.Add(New Evaluation(CInt(row("id")), row("grade"), row("ECUEsStudents_id"), row("date_field"), row("weight_field"), row("type_field")))
+                evaluationList.Add(New Evaluations(CInt(row("id")), row("grade"), row("ECUEsStudents_id"), row("date_field"), row("weight_field"), row("type_field")))
             Next
             disposeManager()
         Catch ex As Exception
@@ -17,7 +18,7 @@ Public Class EvaluationsManager
         End Try
         Return evaluationList
     End Function
-    Public Shared Function getAll() As List(Of Evaluation)
+    Public Shared Function getAll() As List(Of Evaluations)
         command = New MySqlCommand("SELECT * FROM Evaluations;", Manager.connection)
         Return getGeneriqueList()
     End Function
@@ -26,20 +27,20 @@ Public Class EvaluationsManager
         command.Parameters.AddWithValue("@word", "%" & word & "%")
         Return getGeneriqueList()
     End Function
-    Public Shared Function getByStudentId(studentId As Integer) As List(Of Evaluation)
+    Public Shared Function getByStudentId(studentId As Integer) As List(Of Evaluations)
         command = New MySqlCommand("SELECT * FROM Evaluations WHERE student_id = studentId;", Manager.connection)
         command.Parameters.AddWithValue("studentId", studentId)
         Return getGeneriqueList()
     End Function
-    Public Shared Function getByECUEId(ecueId As Integer) As List(Of Evaluation)
+    Public Shared Function getByECUEId(ecueId As Integer) As List(Of Evaluations)
         'ECUEs.id As id, ECUEs.grade As grade, ECUEs.ECUEsStudents_id As ECUEsStudents_id, ECUEs.date_field As date_field, ECUEs.weight_field As weight_field, ECUEs.type_field As type_field
         command = New MySqlCommand("SELECT Evaluations.id As id, Evaluations.grade As grade, Evaluations.ECUEsStudents_id As ECUEsStudents_id, Evaluations.date_field As date_field, Evaluations.weight_field As weight_field, Evaluations.type_field As type_field FROM Evaluations, ECUEsStudents WHERE ECUEsStudents.id = Evaluations.ECUEsStudents_id AND ECUEsStudents.ECUE_id = @ecueId;", Manager.connection)
         command.Parameters.AddWithValue("ecueId", ecueId)
         Return getGeneriqueList()
     End Function
 
-    Private Shared Function getGenerique() As Evaluation
-        Dim evaluation As Evaluation = New Evaluation(Nothing, Nothing, Nothing, Nothing, Nothing, Nothing)
+    Private Shared Function getGenerique() As Evaluations
+        Dim evaluation As Evaluations = New Evaluations(Nothing, Nothing, Nothing, Nothing, Nothing, Nothing)
         Try
             dataAdapater = New MySql.Data.MySqlClient.MySqlDataAdapter(command)
 
@@ -47,7 +48,7 @@ Public Class EvaluationsManager
             Manager.dataAdapater.Fill(Manager.dataTable)
 
             For Each row As DataRow In Manager.dataTable.Rows
-                evaluation = New Evaluation(CInt(row("id")), row("grade"), row("ECUEsStudents_id"), row("date_field"), row("weight_field"), row("type_field"))
+                evaluation = New Evaluations(CInt(row("id")), row("grade"), row("ECUEsStudents_id"), row("date_field"), row("weight_field"), row("type_field"))
             Next
             disposeManager()
         Catch ex As Exception
@@ -56,12 +57,12 @@ Public Class EvaluationsManager
 
         Return evaluation
     End Function
-    Public Shared Function getById(id As Integer) As Evaluation
+    Public Shared Function getById(id As Integer) As Evaluations
         command = New MySqlCommand("SELECT * FROM Evaluations WHERE id = @id;", Manager.connection)
         command.Parameters.AddWithValue("@id", id)
         Return getGenerique()
     End Function
-    Public Shared Function getByECUEsStudentsId(ecuesStudentsId As Integer) As Evaluation
+    Public Shared Function getByECUEsStudentsId(ecuesStudentsId As Integer) As Evaluations
         command = New MySqlCommand("SELECT * FROM Evaluations WHERE ECUEsStudents_id = @ecuesStudentsId;", Manager.connection)
         command.Parameters.AddWithValue("@ecuesStudentsId", ecuesStudentsId)
         Return getGenerique()
@@ -88,7 +89,7 @@ Public Class EvaluationsManager
         Return id
     End Function
 
-    Public Shared Function store(evaluation As Evaluation) As Boolean
+    Public Shared Function store(evaluation As Evaluations) As Boolean
         Try
             command = New MySqlCommand("INSERT INTO Evaluations(grade, ECUEsStudents_id, date_field, weight_field, type_field) VALUES(@grade, @ecuesStudentsId, @dateField, @weightField, @typeField);", Manager.connection)
             command.Parameters.AddWithValue("@grade", evaluation.Grade)
@@ -104,7 +105,7 @@ Public Class EvaluationsManager
         End Try
         Return False
     End Function
-    Public Shared Function update(evaluation As Evaluation, id As Integer) As Boolean
+    Public Shared Function update(evaluation As Evaluations, id As Integer) As Boolean
         Try
             command = New MySqlCommand("UPDATE Evaluations SET grade = @grade, ECUEsStudents_id = @ecuesStudentsId, date_field = @dateField, weight_field = @weightField, type_field = @typeField WHERE id = @id;", Manager.connection)
             command.Parameters.AddWithValue("@grade", evaluation.Grade)

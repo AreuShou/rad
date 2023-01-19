@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ProjetNet_RAD.Administrateur
+            Me.MainForm = Global.ProjetNet_RAD.Connexion
         End Sub
     End Class
 End Namespace
