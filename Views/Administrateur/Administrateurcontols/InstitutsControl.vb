@@ -1,90 +1,79 @@
 ﻿Public Class InstitutsControl
-    Private Sub InstitutesControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        GR_View.DataSource = InstitutesController.getAll()
-    End Sub
     Private Sub ClearForm()
-        BX_LIBELLE.Text = ""
-        BX_SIGLE.Text = ""
+        TB_LIBELLE.Text = ""
+        TB_SIGLE.Text = ""
     End Sub
 
-    Private Sub BTN_Insert_Click(sender As Object, e As EventArgs) Handles BTN_Insert.Click
-        If InstitutesController.store(BX_LIBELLE.Text, BX_SIGLE.Text) Then
-            ClearForm()
-            BTN_Insert_Click(Nothing, Nothing)
+    Private Sub CheckButtons()
+        Dim nbRowSelected = DGV_INSTITUTES.SelectedRows.Count
+        If nbRowSelected > 0 Then
+            BT_DELETE.Enabled = True
+            BT_UPDATE.Enabled = True
+        Else
+            BT_DELETE.Enabled = False
+            BT_UPDATE.Enabled = False
         End If
     End Sub
 
-    Private Sub BTN_Recharge_Click(sender As Object, e As EventArgs) Handles BTN_Recharge.Click
-        GR_View.DataSource = InstitutesController.getAll()
+    Private Sub InstitutesControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DGV_INSTITUTES.DataSource = InstitutesController.getAll()
+        CheckButtons()
     End Sub
 
-    Private Sub GR_View_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles GR_View.CellContentClick
-        BX_LIBELLE.Text = GR_View.SelectedRows(0).Cells(1).Value
-        BX_SIGLE.Text = GR_View.SelectedRows(0).Cells(2).Value
+    Public Sub BT_REFRESH_Click(sender As Object, e As EventArgs) Handles BT_REFRESH.Click
+        DGV_INSTITUTES.DataSource = InstitutesController.getAll()
+        CheckButtons()
     End Sub
 
-    Private Sub Box_Recherche_TextChanged(sender As Object, e As EventArgs) Handles Box_Recherche.TextChanged
-        GR_View.DataSource = InstitutesController.searchInstitutes(Box_Recherche.Text)
+    Private Sub BT_ADD_Click(sender As Object, e As EventArgs) Handles BT_ADD.Click
+        If InstitutesController.store(TB_LIBELLE.Text, TB_SIGLE.Text) Then
+            ClearForm()
+            BT_REFRESH_Click(Nothing, Nothing)
+        End If
+        CheckButtons()
     End Sub
 
-    Private Sub BTN_Ajour_Click(sender As Object, e As EventArgs) Handles BTN_Ajour.Click
-        Dim nbRowSelected = GR_View.SelectedRows.Count
-        If (nbRowSelected > 0) Then
+    Private Sub BT_UPDATE_Click(sender As Object, e As EventArgs) Handles BT_UPDATE.Click
+        Dim nbRowSelected = DGV_INSTITUTES.SelectedRows.Count
+        If nbRowSelected > 0 Then
             If nbRowSelected = 1 Then
-                Dim selectedRow As DataGridViewRow = GR_View.SelectedRows(0)
-                Dim institutId As Integer = selectedRow.Cells(0).Value
-                If InstitutesController.update(BX_LIBELLE.Text, BX_SIGLE.Text, institutId) Then
+                Dim selectedRow As DataGridViewRow = DGV_INSTITUTES.SelectedRows(0)
+                Dim instituteId As Integer = selectedRow.Cells(0).Value
+                If InstitutesController.update(TB_LIBELLE.Text, TB_SIGLE.Text, instituteId) Then
                     ClearForm()
-                    BTN_Recharge_Click(Nothing, Nothing)
+                    BT_REFRESH_Click(Nothing, Nothing)
                 End If
             Else
-                MessageBox.Show("Vous ne pouvez mettre à jour qu'un seul élément à la fois", "Mise à jour multiple", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Vous ne pouvez modifier qu'une ligne à la fois", "Modification multiple non permise", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Else
-            MessageBox.Show("Aucune ligne sélectionnée", "Aucune ligne sélectionné", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Aucune ligne n'a été sélectionnée.", "Ligne non selectionné", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+        CheckButtons()
     End Sub
 
-    Private Sub BTN_Supprime_Click(sender As Object, e As EventArgs) Handles BTN_Supprime.Click
-        Dim institutesIdList As New List(Of Integer)()
-        If GR_View.SelectedRows.Count > 0 Then
-            For Each selectedRow As DataGridViewRow In GR_View.SelectedRows
-                institutesIdList.Add(selectedRow.Cells(0).Value)
+    Private Sub BT_DELETE_Click(sender As Object, e As EventArgs) Handles BT_DELETE.Click
+        Dim instituteIdList As New List(Of Integer)()
+        If DGV_INSTITUTES.SelectedRows.Count > 0 Then
+            For Each selectedRow As DataGridViewRow In DGV_INSTITUTES.SelectedRows
+                Dim instituteId As Integer = selectedRow.Cells(0).Value
+                instituteIdList.Add(instituteId)
             Next
-            If InstitutesController.delete(institutesIdList) Then
-                ClearForm()
-                BTN_Recharge_Click(Nothing, Nothing)
+            If (InstitutesController.delete(instituteIdList)) Then
+                BT_REFRESH_Click(Nothing, Nothing)
             End If
         Else
-            MessageBox.Show("Aucune ligne sélectionnée", "Aucune ligne sélectionné", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Aucune ligne n'a été sélectionnée.", "Lignes non selectionné", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+        CheckButtons()
     End Sub
 
-    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox1.TextChanged
-
+    Private Sub TB_SEARCH_TextChanged(sender As Object, e As EventArgs) Handles TB_SEARCH.TextChanged
+        DGV_INSTITUTES.DataSource = InstitutesController.search(TB_SEARCH.Text)
     End Sub
 
-    Private Sub Guna2HtmlLabel4_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel4.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel2_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel2.Click
-
-    End Sub
-
-    Private Sub BX_LIBELLE_TextChanged(sender As Object, e As EventArgs) Handles BX_LIBELLE.TextChanged
-
-    End Sub
-
-    Private Sub BX_SIGLE_TextChanged(sender As Object, e As EventArgs) Handles BX_SIGLE.TextChanged
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel3_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel3.Click
-
+    Private Sub DGV_INSTITUTES_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_INSTITUTES.CellClick
+        TB_LIBELLE.Text = DGV_INSTITUTES.SelectedRows(0).Cells(1).Value
+        TB_SIGLE.Text = DGV_INSTITUTES.SelectedRows(0).Cells(2).Value
     End Sub
 End Class

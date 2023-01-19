@@ -1,4 +1,4 @@
-﻿Public Class InstitutsController
+﻿Public Class InstitutesController
     Public Shared Function getGeneriqueList(institutesList As List(Of Institute)) As DataTable
         Dim table As DataTable = New DataTable
         table.Columns.Add("id", GetType(Integer))

@@ -1,4 +1,5 @@
 ﻿Public Class CareersControl
+
     Private Sub ClearForm()
         TB_LIBELLE.Text = ""
         TB_SIGLE.Text = ""
@@ -95,5 +96,4 @@
         CB_INSTITUTE.SelectedItem = DGV_CAREERS.SelectedRows(0).Cells(3).Value
         checkButtons()
     End Sub
-
 End Class

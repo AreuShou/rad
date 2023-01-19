@@ -30,6 +30,11 @@ Public Class ECUEsManager
         command.Parameters.AddWithValue("@employee_id", employeeId)
         Return getGeneriqueList()
     End Function
+    Public Shared Function getByCareerId(careerId As Integer) As List(Of ECUE)
+        command = New MySqlCommand("SELECT * FROM ECUEs WHERE employee_id = @employee_id;", Manager.connection)
+        command.Parameters.AddWithValue("@employee_id", careerId)
+        Return getGeneriqueList()
+    End Function
 
 
     Private Shared Function getGenerique() As ECUE
