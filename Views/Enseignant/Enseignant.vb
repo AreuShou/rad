@@ -97,4 +97,8 @@ Public Class Enseignant
         CrystalView.CRV.ReportSource = report
         CrystalView.Show()
     End Sub
+
+    Private Sub DTP_DATE_ValueChanged(sender As Object, e As EventArgs) Handles DTP_DATE.ValueChanged
+
+    End Sub
 End Class

@@ -54,11 +54,11 @@ Partial Class ServiceScolarite
         Me.Label9 = New System.Windows.Forms.Label()
         Me.CB_SEMESTER = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.CD_GENDER = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.BT_LOGOUT = New Guna.UI2.WinForms.Guna2Button()
         Me.DTP_DATE = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.PB_STUDENT = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         CType(Me.DGV_STUDENTS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PB_STUDENT, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -163,7 +163,7 @@ Partial Class ServiceScolarite
         Me.TB_FIRST_NAME.AutoRoundedCorners = True
         Me.TB_FIRST_NAME.BorderRadius = 17
         Me.TB_FIRST_NAME.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TB_FIRST_NAME.DefaultText = ""
+        Me.TB_FIRST_NAME.DefaultText = "PALOU"
         Me.TB_FIRST_NAME.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.TB_FIRST_NAME.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.TB_FIRST_NAME.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -204,7 +204,7 @@ Partial Class ServiceScolarite
         Me.TB_LAST_NAME.AutoRoundedCorners = True
         Me.TB_LAST_NAME.BorderRadius = 17
         Me.TB_LAST_NAME.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TB_LAST_NAME.DefaultText = ""
+        Me.TB_LAST_NAME.DefaultText = "Arlette"
         Me.TB_LAST_NAME.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.TB_LAST_NAME.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.TB_LAST_NAME.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -225,7 +225,7 @@ Partial Class ServiceScolarite
         Me.TB_EMAIL.AutoRoundedCorners = True
         Me.TB_EMAIL.BorderRadius = 17
         Me.TB_EMAIL.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TB_EMAIL.DefaultText = ""
+        Me.TB_EMAIL.DefaultText = "palouarlette@gmail.com" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TB_EMAIL.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.TB_EMAIL.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.TB_EMAIL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -365,7 +365,7 @@ Partial Class ServiceScolarite
         Me.TB_PHONE_NUMBER.AutoRoundedCorners = True
         Me.TB_PHONE_NUMBER.BorderRadius = 20
         Me.TB_PHONE_NUMBER.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TB_PHONE_NUMBER.DefaultText = ""
+        Me.TB_PHONE_NUMBER.DefaultText = "+221 89546213"
         Me.TB_PHONE_NUMBER.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.TB_PHONE_NUMBER.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.TB_PHONE_NUMBER.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -501,23 +501,6 @@ Partial Class ServiceScolarite
         Me.Label12.TabIndex = 40
         Me.Label12.Text = "Semestre"
         '
-        'CD_GENDER
-        '
-        Me.CD_GENDER.AutoRoundedCorners = True
-        Me.CD_GENDER.BackColor = System.Drawing.Color.Transparent
-        Me.CD_GENDER.BorderRadius = 17
-        Me.CD_GENDER.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CD_GENDER.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CD_GENDER.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CD_GENDER.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CD_GENDER.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CD_GENDER.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CD_GENDER.ItemHeight = 30
-        Me.CD_GENDER.Location = New System.Drawing.Point(615, 144)
-        Me.CD_GENDER.Name = "CD_GENDER"
-        Me.CD_GENDER.Size = New System.Drawing.Size(200, 36)
-        Me.CD_GENDER.TabIndex = 44
-        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -550,7 +533,8 @@ Partial Class ServiceScolarite
         Me.DTP_DATE.AutoRoundedCorners = True
         Me.DTP_DATE.BorderRadius = 20
         Me.DTP_DATE.Checked = True
-        Me.DTP_DATE.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DTP_DATE.CustomFormat = "yyyy/MM/dd HH:mm:ii"
+        Me.DTP_DATE.FillColor = System.Drawing.Color.White
         Me.DTP_DATE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DTP_DATE.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.DTP_DATE.Location = New System.Drawing.Point(955, 28)
@@ -572,15 +556,36 @@ Partial Class ServiceScolarite
         Me.PB_STUDENT.TabIndex = 42
         Me.PB_STUDENT.TabStop = False
         '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.AutoRoundedCorners = True
+        Me.Guna2TextBox1.BorderRadius = 17
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.DefaultText = "Femme"
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(615, 144)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = ""
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(200, 36)
+        Me.Guna2TextBox1.TabIndex = 47
+        '
         'ServiceScolarite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.Controls.Add(Me.Guna2TextBox1)
         Me.Controls.Add(Me.DTP_DATE)
         Me.Controls.Add(Me.BT_LOGOUT)
-        Me.Controls.Add(Me.CD_GENDER)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.PB_STUDENT)
         Me.Controls.Add(Me.CB_SEMESTER)
@@ -648,10 +653,10 @@ Partial Class ServiceScolarite
     Friend WithEvents CB_SEMESTER As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label12 As Label
     Friend WithEvents PB_STUDENT As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents CD_GENDER As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label13 As Label
     Friend WithEvents BT_LOGOUT As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DTP_DATE As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents Identifiant As DataGridViewTextBoxColumn
     Friend WithEvents Nom As DataGridViewTextBoxColumn
+    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
 End Class

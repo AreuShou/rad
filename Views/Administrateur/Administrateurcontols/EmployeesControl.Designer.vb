@@ -77,18 +77,18 @@ Partial Class EmployeesControl
         Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox2.PlaceholderText = "Ex: FDS"
         Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(849, 36)
+        Me.Guna2TextBox2.Size = New System.Drawing.Size(366, 36)
         Me.Guna2TextBox2.TabIndex = 56
         '
         'Guna2HtmlLabel4
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(38, 182)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(18, 181)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(120, 33)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(140, 33)
         Me.Guna2HtmlLabel4.TabIndex = 55
-        Me.Guna2HtmlLabel4.Text = "Num_Tel"
+        Me.Guna2HtmlLabel4.Text = "Téléphone"
         '
         'TB_PHONE_NUMBER
         '
@@ -103,19 +103,19 @@ Partial Class EmployeesControl
         Me.TB_PHONE_NUMBER.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TB_PHONE_NUMBER.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TB_PHONE_NUMBER.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TB_PHONE_NUMBER.Location = New System.Drawing.Point(164, 182)
+        Me.TB_PHONE_NUMBER.Location = New System.Drawing.Point(163, 181)
         Me.TB_PHONE_NUMBER.Name = "TB_PHONE_NUMBER"
         Me.TB_PHONE_NUMBER.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_PHONE_NUMBER.PlaceholderText = ""
         Me.TB_PHONE_NUMBER.SelectedText = ""
-        Me.TB_PHONE_NUMBER.Size = New System.Drawing.Size(849, 36)
+        Me.TB_PHONE_NUMBER.Size = New System.Drawing.Size(367, 36)
         Me.TB_PHONE_NUMBER.TabIndex = 54
         '
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(3, 496)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(3, 421)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(154, 33)
         Me.Guna2HtmlLabel3.TabIndex = 53
@@ -153,7 +153,7 @@ Partial Class EmployeesControl
         Me.BT_DELETE.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_DELETE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_DELETE.ForeColor = System.Drawing.Color.White
-        Me.BT_DELETE.Location = New System.Drawing.Point(643, 416)
+        Me.BT_DELETE.Location = New System.Drawing.Point(604, 173)
         Me.BT_DELETE.Name = "BT_DELETE"
         Me.BT_DELETE.Size = New System.Drawing.Size(180, 45)
         Me.BT_DELETE.TabIndex = 50
@@ -171,7 +171,7 @@ Partial Class EmployeesControl
         Me.BT_REFRESH.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_REFRESH.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_REFRESH.ForeColor = System.Drawing.Color.White
-        Me.BT_REFRESH.Location = New System.Drawing.Point(829, 416)
+        Me.BT_REFRESH.Location = New System.Drawing.Point(832, 173)
         Me.BT_REFRESH.Name = "BT_REFRESH"
         Me.BT_REFRESH.Size = New System.Drawing.Size(180, 45)
         Me.BT_REFRESH.TabIndex = 49
@@ -188,7 +188,7 @@ Partial Class EmployeesControl
         Me.BT_UPDATE.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_UPDATE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_UPDATE.ForeColor = System.Drawing.Color.White
-        Me.BT_UPDATE.Location = New System.Drawing.Point(350, 416)
+        Me.BT_UPDATE.Location = New System.Drawing.Point(832, 66)
         Me.BT_UPDATE.Name = "BT_UPDATE"
         Me.BT_UPDATE.Size = New System.Drawing.Size(180, 45)
         Me.BT_UPDATE.TabIndex = 48
@@ -205,7 +205,7 @@ Partial Class EmployeesControl
         Me.BT_ADD.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_ADD.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_ADD.ForeColor = System.Drawing.Color.White
-        Me.BT_ADD.Location = New System.Drawing.Point(164, 416)
+        Me.BT_ADD.Location = New System.Drawing.Point(604, 66)
         Me.BT_ADD.Name = "BT_ADD"
         Me.BT_ADD.Size = New System.Drawing.Size(180, 45)
         Me.BT_ADD.TabIndex = 47
@@ -224,7 +224,7 @@ Partial Class EmployeesControl
         Me.TB_SEARCH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TB_SEARCH.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TB_SEARCH.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TB_SEARCH.Location = New System.Drawing.Point(163, 496)
+        Me.TB_SEARCH.Location = New System.Drawing.Point(163, 421)
         Me.TB_SEARCH.Name = "TB_SEARCH"
         Me.TB_SEARCH.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_SEARCH.PlaceholderText = ""
@@ -260,10 +260,10 @@ Partial Class EmployeesControl
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DGV_EMPLOYEES.DefaultCellStyle = DataGridViewCellStyle6
         Me.DGV_EMPLOYEES.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DGV_EMPLOYEES.Location = New System.Drawing.Point(1, 560)
+        Me.DGV_EMPLOYEES.Location = New System.Drawing.Point(0, 463)
         Me.DGV_EMPLOYEES.Name = "DGV_EMPLOYEES"
         Me.DGV_EMPLOYEES.RowHeadersVisible = False
-        Me.DGV_EMPLOYEES.Size = New System.Drawing.Size(1009, 418)
+        Me.DGV_EMPLOYEES.Size = New System.Drawing.Size(1009, 308)
         Me.DGV_EMPLOYEES.TabIndex = 45
         Me.DGV_EMPLOYEES.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.DGV_EMPLOYEES.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -305,7 +305,7 @@ Partial Class EmployeesControl
         Me.TB_LAST_NAME.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_LAST_NAME.PlaceholderText = ""
         Me.TB_LAST_NAME.SelectedText = ""
-        Me.TB_LAST_NAME.Size = New System.Drawing.Size(849, 36)
+        Me.TB_LAST_NAME.Size = New System.Drawing.Size(366, 36)
         Me.TB_LAST_NAME.TabIndex = 44
         '
         'TB_FIRST_NAME
@@ -326,14 +326,14 @@ Partial Class EmployeesControl
         Me.TB_FIRST_NAME.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_FIRST_NAME.PlaceholderText = ""
         Me.TB_FIRST_NAME.SelectedText = ""
-        Me.TB_FIRST_NAME.Size = New System.Drawing.Size(849, 36)
+        Me.TB_FIRST_NAME.Size = New System.Drawing.Size(366, 36)
         Me.TB_FIRST_NAME.TabIndex = 43
         '
         'Guna2HtmlLabel6
         '
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(41, 353)
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(41, 345)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(116, 33)
         Me.Guna2HtmlLabel6.TabIndex = 59
@@ -343,7 +343,7 @@ Partial Class EmployeesControl
         '
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(72, 299)
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(72, 291)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
         Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(83, 33)
         Me.Guna2HtmlLabel7.TabIndex = 61
@@ -353,7 +353,7 @@ Partial Class EmployeesControl
         '
         Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(80, 245)
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(80, 237)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
         Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(75, 33)
         Me.Guna2HtmlLabel8.TabIndex = 63
@@ -372,12 +372,12 @@ Partial Class EmployeesControl
         Me.TB_EMAIL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TB_EMAIL.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TB_EMAIL.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TB_EMAIL.Location = New System.Drawing.Point(164, 242)
+        Me.TB_EMAIL.Location = New System.Drawing.Point(164, 234)
         Me.TB_EMAIL.Name = "TB_EMAIL"
         Me.TB_EMAIL.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_EMAIL.PlaceholderText = ""
         Me.TB_EMAIL.SelectedText = ""
-        Me.TB_EMAIL.Size = New System.Drawing.Size(849, 36)
+        Me.TB_EMAIL.Size = New System.Drawing.Size(366, 36)
         Me.TB_EMAIL.TabIndex = 62
         '
         'CB_GENDER
@@ -390,9 +390,9 @@ Partial Class EmployeesControl
         Me.CB_GENDER.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_GENDER.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_GENDER.ItemHeight = 30
-        Me.CB_GENDER.Location = New System.Drawing.Point(164, 296)
+        Me.CB_GENDER.Location = New System.Drawing.Point(164, 288)
         Me.CB_GENDER.Name = "CB_GENDER"
-        Me.CB_GENDER.Size = New System.Drawing.Size(849, 36)
+        Me.CB_GENDER.Size = New System.Drawing.Size(366, 36)
         Me.CB_GENDER.TabIndex = 64
         '
         'CB_FUNCTION
@@ -405,9 +405,9 @@ Partial Class EmployeesControl
         Me.CB_FUNCTION.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_FUNCTION.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_FUNCTION.ItemHeight = 30
-        Me.CB_FUNCTION.Location = New System.Drawing.Point(166, 350)
+        Me.CB_FUNCTION.Location = New System.Drawing.Point(166, 342)
         Me.CB_FUNCTION.Name = "CB_FUNCTION"
-        Me.CB_FUNCTION.Size = New System.Drawing.Size(849, 36)
+        Me.CB_FUNCTION.Size = New System.Drawing.Size(364, 36)
         Me.CB_FUNCTION.TabIndex = 65
         '
         'EmployeesControl
@@ -437,7 +437,7 @@ Partial Class EmployeesControl
         Me.Controls.Add(Me.TB_LAST_NAME)
         Me.Controls.Add(Me.TB_FIRST_NAME)
         Me.Name = "EmployeesControl"
-        Me.Size = New System.Drawing.Size(1015, 981)
+        Me.Size = New System.Drawing.Size(1015, 774)
         CType(Me.DGV_EMPLOYEES, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
