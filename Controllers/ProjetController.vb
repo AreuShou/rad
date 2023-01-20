@@ -15,7 +15,12 @@ Public Class ProjetController
                         Administrateur.Show()
                     Else
                         If user.Employee.FunctionField = Employee.Teacher Then
-                            Enseignant.Show()
+                            If ECUEsManager.getByEmployeeId(user.EmployeeId).Count > 0 Then
+                                Enseignant.Show()
+                            Else
+                                MessageBox.Show("L'utilisateur '" & username & "' est un enseignant, mais il n'a pas de matière", "Aucune matière pour cet enseignant", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                Return False
+                            End If
                         Else
                             ServiceScolarite.Show()
                         End If

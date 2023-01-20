@@ -17,7 +17,7 @@ Public Class ServiceScolarite
         Reload_CB_CAREER()
     End Sub
     Private Sub BT_ADD_Click(sender As Object, e As EventArgs) Handles BT_ADD.Click
-        If StudentsController.store(TB_LAST_NAME.Text, TB_FIRST_NAME.Text, DTP_DATE.Value, CD_GENDER.SelectedItem, TB_EMAIL.Text, TB_PHONE_NUMBER.Text, PB_STUDENT.ImageLocation, CB_CAREER.SelectedItem.Split("-")(0), CInt(CB_SEMESTER.SelectedItem)) Then
+        If StudentsController.store(TB_LAST_NAME.Text, TB_FIRST_NAME.Text, DTP_DATE.Value, CB_GENDER.SelectedItem, TB_EMAIL.Text, TB_PHONE_NUMBER.Text, PB_STUDENT.ImageLocation, CB_CAREER.SelectedItem.Split("-")(0), CInt(CB_SEMESTER.SelectedItem)) Then
             ClearForm()
             BT_REFRESH_Click(Nothing, Nothing)
         End If
@@ -28,7 +28,7 @@ Public Class ServiceScolarite
             If nbRowSelected = 1 Then
                 Dim selectedRow As DataGridViewRow = DGV_STUDENTS.SelectedRows(0)
                 Dim studentId As Integer = selectedRow.Cells(1).Value
-                If StudentsController.update(TB_LAST_NAME.Text, TB_FIRST_NAME.Text, DTP_DATE.Value, CD_GENDER.SelectedItem, TB_EMAIL.Text, TB_PHONE_NUMBER.Text, PB_STUDENT.ImageLocation, CB_CAREER.SelectedItem.Split("-")(0), CInt(CB_SEMESTER.SelectedItem), studentId) Then
+                If StudentsController.update(TB_LAST_NAME.Text, TB_FIRST_NAME.Text, DTP_DATE.Value, CB_GENDER.SelectedItem, TB_EMAIL.Text, TB_PHONE_NUMBER.Text, PB_STUDENT.ImageLocation, CB_CAREER.SelectedItem.Split("-")(0), CInt(CB_SEMESTER.SelectedItem), studentId) Then
                     ClearForm()
                     BT_REFRESH_Click(Nothing, Nothing)
                 End If
@@ -61,7 +61,7 @@ Public Class ServiceScolarite
         End If
     End Sub
 
-    Private Sub CB_ADD_PICTURE_Click(sender As Object, e As EventArgs) Handles BT_ADD.Click
+    Private Sub CB_ADD_PICTURE_Click(sender As Object, e As EventArgs) Handles B_ADD_PICTURE.Click
         Dim openFileDialog As New OpenFileDialog()
         openFileDialog.InitialDirectory = "."
         openFileDialog.Filter = "Images (*.BMP;*.JPG;*.JPEG;*.PNG;*.GIF)|*.BMP;*.JPG;*.JPEG;*.PNG;*.GIF|" & "All files (*.*)|*.*"
@@ -137,6 +137,13 @@ Public Class ServiceScolarite
         CB_CAREER.SelectedItem = DGV_STUDENTS.SelectedRows(0).Cells(8).Value
     End Sub
 
+    Private Sub B_PRINT_Click(sender As Object, e As EventArgs) Handles B_PRINT.Click
+        Dim report As New StudentsReport()
+        report.SetDataSource(StudentsController.getAllFromReport())
+
+        CrystalView.CRV.ReportSource = report
+        CrystalView.Show()
+    End Sub
 
 
 End Class

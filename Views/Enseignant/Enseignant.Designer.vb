@@ -30,16 +30,19 @@ Partial Class Enseignant
         Me.Lbl_Date = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Lbl_Type = New System.Windows.Forms.Label()
-        Me.Lbl_pourcent = New System.Windows.Forms.Label()
         Me.Lbl_Note = New System.Windows.Forms.Label()
         Me.CB_Ecues = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CB_GRADE = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.CB_Pourcent = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CB_Type = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.TB_STUDENT_SEARCH = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TB_Etudiant = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CB_STUDENTS = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.DGV_EVALUATIONS = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Ecues = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BT_ADD = New Guna.UI2.WinForms.Guna2Button()
         Me.BT_UPDATE = New Guna.UI2.WinForms.Guna2Button()
         Me.BT_DELETE = New Guna.UI2.WinForms.Guna2Button()
@@ -76,7 +79,7 @@ Partial Class Enseignant
         '
         Me.Lbl_Date.AutoSize = True
         Me.Lbl_Date.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Date.Location = New System.Drawing.Point(27, 113)
+        Me.Lbl_Date.Location = New System.Drawing.Point(111, 125)
         Me.Lbl_Date.Name = "Lbl_Date"
         Me.Lbl_Date.Size = New System.Drawing.Size(42, 17)
         Me.Lbl_Date.TabIndex = 2
@@ -96,27 +99,17 @@ Partial Class Enseignant
         '
         Me.Lbl_Type.AutoSize = True
         Me.Lbl_Type.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Type.Location = New System.Drawing.Point(271, 116)
+        Me.Lbl_Type.Location = New System.Drawing.Point(521, 125)
         Me.Lbl_Type.Name = "Lbl_Type"
         Me.Lbl_Type.Size = New System.Drawing.Size(44, 17)
         Me.Lbl_Type.TabIndex = 4
         Me.Lbl_Type.Text = "Type"
         '
-        'Lbl_pourcent
-        '
-        Me.Lbl_pourcent.AutoSize = True
-        Me.Lbl_pourcent.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_pourcent.Location = New System.Drawing.Point(553, 116)
-        Me.Lbl_pourcent.Name = "Lbl_pourcent"
-        Me.Lbl_pourcent.Size = New System.Drawing.Size(100, 17)
-        Me.Lbl_pourcent.TabIndex = 5
-        Me.Lbl_pourcent.Text = "Pourcentage"
-        '
         'Lbl_Note
         '
         Me.Lbl_Note.AutoSize = True
         Me.Lbl_Note.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Note.Location = New System.Drawing.Point(809, 116)
+        Me.Lbl_Note.Location = New System.Drawing.Point(1126, 188)
         Me.Lbl_Note.Name = "Lbl_Note"
         Me.Lbl_Note.Size = New System.Drawing.Size(42, 17)
         Me.Lbl_Note.TabIndex = 6
@@ -134,7 +127,7 @@ Partial Class Enseignant
         Me.CB_Ecues.ItemHeight = 30
         Me.CB_Ecues.Location = New System.Drawing.Point(75, 3)
         Me.CB_Ecues.Name = "CB_Ecues"
-        Me.CB_Ecues.Size = New System.Drawing.Size(578, 36)
+        Me.CB_Ecues.Size = New System.Drawing.Size(1025, 36)
         Me.CB_Ecues.TabIndex = 7
         '
         'CB_GRADE
@@ -147,30 +140,12 @@ Partial Class Enseignant
         Me.CB_GRADE.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_GRADE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_GRADE.ItemHeight = 30
-        Me.CB_GRADE.Items.AddRange(New Object() {"18", "15"})
-        Me.CB_GRADE.Location = New System.Drawing.Point(857, 105)
+        Me.CB_GRADE.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
+        Me.CB_GRADE.Location = New System.Drawing.Point(1174, 177)
         Me.CB_GRADE.Name = "CB_GRADE"
         Me.CB_GRADE.Size = New System.Drawing.Size(66, 36)
         Me.CB_GRADE.StartIndex = 0
         Me.CB_GRADE.TabIndex = 9
-        '
-        'CB_Pourcent
-        '
-        Me.CB_Pourcent.AutoCompleteCustomSource.AddRange(New String() {"15%"})
-        Me.CB_Pourcent.BackColor = System.Drawing.Color.Transparent
-        Me.CB_Pourcent.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CB_Pourcent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CB_Pourcent.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CB_Pourcent.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CB_Pourcent.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CB_Pourcent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CB_Pourcent.ItemHeight = 30
-        Me.CB_Pourcent.Items.AddRange(New Object() {"15%"})
-        Me.CB_Pourcent.Location = New System.Drawing.Point(659, 105)
-        Me.CB_Pourcent.Name = "CB_Pourcent"
-        Me.CB_Pourcent.Size = New System.Drawing.Size(87, 36)
-        Me.CB_Pourcent.StartIndex = 0
-        Me.CB_Pourcent.TabIndex = 10
         '
         'CB_Type
         '
@@ -182,9 +157,10 @@ Partial Class Enseignant
         Me.CB_Type.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_Type.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_Type.ItemHeight = 30
-        Me.CB_Type.Location = New System.Drawing.Point(321, 105)
+        Me.CB_Type.Items.AddRange(New Object() {"Devoir", "Examen", "Rattrape", "Session Spécial"})
+        Me.CB_Type.Location = New System.Drawing.Point(571, 114)
         Me.CB_Type.Name = "CB_Type"
-        Me.CB_Type.Size = New System.Drawing.Size(181, 36)
+        Me.CB_Type.Size = New System.Drawing.Size(235, 36)
         Me.CB_Type.TabIndex = 11
         '
         'TB_STUDENT_SEARCH
@@ -203,11 +179,12 @@ Partial Class Enseignant
         Me.TB_STUDENT_SEARCH.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_STUDENT_SEARCH.PlaceholderText = ""
         Me.TB_STUDENT_SEARCH.SelectedText = ""
-        Me.TB_STUDENT_SEARCH.Size = New System.Drawing.Size(826, 36)
+        Me.TB_STUDENT_SEARCH.Size = New System.Drawing.Size(1224, 36)
         Me.TB_STUDENT_SEARCH.TabIndex = 12
         '
         'TB_Etudiant
         '
+        Me.TB_Etudiant.AutoCompleteCustomSource.AddRange(New String() {"AMAGLO Gildas", "DOSSOU Eugénie", "DUMEVI Sandra", "AKAKPO Vic", "DOUGLO Victor", "EBESSE Choco"})
         Me.TB_Etudiant.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_Etudiant.DefaultText = ""
         Me.TB_Etudiant.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -235,9 +212,10 @@ Partial Class Enseignant
         Me.CB_STUDENTS.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_STUDENTS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_STUDENTS.ItemHeight = 30
+        Me.CB_STUDENTS.Items.AddRange(New Object() {"AMELINA Coli", "DALMEDA Franc", "JOSHN Class"})
         Me.CB_STUDENTS.Location = New System.Drawing.Point(399, 54)
         Me.CB_STUDENTS.Name = "CB_STUDENTS"
-        Me.CB_STUDENTS.Size = New System.Drawing.Size(254, 36)
+        Me.CB_STUDENTS.Size = New System.Drawing.Size(701, 36)
         Me.CB_STUDENTS.TabIndex = 14
         '
         'DGV_EVALUATIONS
@@ -254,6 +232,7 @@ Partial Class Enseignant
         Me.DGV_EVALUATIONS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DGV_EVALUATIONS.ColumnHeadersHeight = 4
         Me.DGV_EVALUATIONS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.DGV_EVALUATIONS.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.Nom, Me.Ecues, Me.Column1, Me.Column2})
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -266,7 +245,7 @@ Partial Class Enseignant
         Me.DGV_EVALUATIONS.Location = New System.Drawing.Point(-1, 276)
         Me.DGV_EVALUATIONS.Name = "DGV_EVALUATIONS"
         Me.DGV_EVALUATIONS.RowHeadersVisible = False
-        Me.DGV_EVALUATIONS.Size = New System.Drawing.Size(924, 266)
+        Me.DGV_EVALUATIONS.Size = New System.Drawing.Size(1322, 266)
         Me.DGV_EVALUATIONS.TabIndex = 15
         Me.DGV_EVALUATIONS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.DGV_EVALUATIONS.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -289,6 +268,34 @@ Partial Class Enseignant
         Me.DGV_EVALUATIONS.ThemeStyle.RowsStyle.Height = 22
         Me.DGV_EVALUATIONS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_EVALUATIONS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'Id
+        '
+        Me.Id.DataPropertyName = "Id"
+        Me.Id.HeaderText = "Id"
+        Me.Id.Name = "Id"
+        '
+        'Nom
+        '
+        Me.Nom.DataPropertyName = "Nom"
+        Me.Nom.HeaderText = "Nom"
+        Me.Nom.Name = "Nom"
+        '
+        'Ecues
+        '
+        Me.Ecues.DataPropertyName = "Ecues"
+        Me.Ecues.HeaderText = "Ecues"
+        Me.Ecues.Name = "Ecues"
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Column1"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Column2"
+        Me.Column2.Name = "Column2"
         '
         'BT_ADD
         '
@@ -369,7 +376,7 @@ Partial Class Enseignant
         Me.BT_LOGOUT.FillColor = System.Drawing.Color.Red
         Me.BT_LOGOUT.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
         Me.BT_LOGOUT.ForeColor = System.Drawing.Color.White
-        Me.BT_LOGOUT.Location = New System.Drawing.Point(785, 3)
+        Me.BT_LOGOUT.Location = New System.Drawing.Point(1183, 3)
         Me.BT_LOGOUT.Name = "BT_LOGOUT"
         Me.BT_LOGOUT.Size = New System.Drawing.Size(138, 45)
         Me.BT_LOGOUT.TabIndex = 23
@@ -380,11 +387,11 @@ Partial Class Enseignant
         Me.DTP_DATE.AutoRoundedCorners = True
         Me.DTP_DATE.BorderRadius = 17
         Me.DTP_DATE.Checked = True
-        Me.DTP_DATE.CustomFormat = "yyyy/MM/dd HH:mm:ii"
+        Me.DTP_DATE.CustomFormat = ""
         Me.DTP_DATE.FillColor = System.Drawing.Color.White
         Me.DTP_DATE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.DTP_DATE.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.DTP_DATE.Location = New System.Drawing.Point(75, 105)
+        Me.DTP_DATE.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DTP_DATE.Location = New System.Drawing.Point(159, 114)
         Me.DTP_DATE.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DTP_DATE.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DTP_DATE.Name = "DTP_DATE"
@@ -402,7 +409,8 @@ Partial Class Enseignant
         Me.CB_WEIGHT.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_WEIGHT.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_WEIGHT.ItemHeight = 30
-        Me.CB_WEIGHT.Location = New System.Drawing.Point(785, 64)
+        Me.CB_WEIGHT.Items.AddRange(New Object() {"0%", "20%", "40%", "60%", "80%", "100%"})
+        Me.CB_WEIGHT.Location = New System.Drawing.Point(1174, 105)
         Me.CB_WEIGHT.Name = "CB_WEIGHT"
         Me.CB_WEIGHT.Size = New System.Drawing.Size(66, 36)
         Me.CB_WEIGHT.TabIndex = 26
@@ -411,7 +419,7 @@ Partial Class Enseignant
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(731, 73)
+        Me.Label1.Location = New System.Drawing.Point(1120, 114)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 17)
         Me.Label1.TabIndex = 25
@@ -428,7 +436,7 @@ Partial Class Enseignant
         Me.BT_IMPRESSION.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_IMPRESSION.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
         Me.BT_IMPRESSION.ForeColor = System.Drawing.Color.White
-        Me.BT_IMPRESSION.Location = New System.Drawing.Point(508, 136)
+        Me.BT_IMPRESSION.Location = New System.Drawing.Point(948, 105)
         Me.BT_IMPRESSION.Name = "BT_IMPRESSION"
         Me.BT_IMPRESSION.Size = New System.Drawing.Size(115, 36)
         Me.BT_IMPRESSION.TabIndex = 27
@@ -439,7 +447,7 @@ Partial Class Enseignant
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(927, 544)
+        Me.ClientSize = New System.Drawing.Size(1324, 544)
         Me.Controls.Add(Me.BT_IMPRESSION)
         Me.Controls.Add(Me.CB_WEIGHT)
         Me.Controls.Add(Me.Label1)
@@ -454,11 +462,9 @@ Partial Class Enseignant
         Me.Controls.Add(Me.TB_Etudiant)
         Me.Controls.Add(Me.TB_STUDENT_SEARCH)
         Me.Controls.Add(Me.CB_Type)
-        Me.Controls.Add(Me.CB_Pourcent)
         Me.Controls.Add(Me.CB_GRADE)
         Me.Controls.Add(Me.CB_Ecues)
         Me.Controls.Add(Me.Lbl_Note)
-        Me.Controls.Add(Me.Lbl_pourcent)
         Me.Controls.Add(Me.Lbl_Type)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Lbl_Date)
@@ -479,11 +485,9 @@ Partial Class Enseignant
     Friend WithEvents Lbl_Date As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Lbl_Type As Label
-    Friend WithEvents Lbl_pourcent As Label
     Friend WithEvents Lbl_Note As Label
     Friend WithEvents CB_Ecues As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CB_GRADE As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents CB_Pourcent As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CB_Type As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents TB_STUDENT_SEARCH As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TB_Etudiant As Guna.UI2.WinForms.Guna2TextBox
@@ -498,4 +502,9 @@ Partial Class Enseignant
     Friend WithEvents CB_WEIGHT As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents BT_IMPRESSION As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Id As DataGridViewTextBoxColumn
+    Friend WithEvents Nom As DataGridViewTextBoxColumn
+    Friend WithEvents Ecues As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
 End Class

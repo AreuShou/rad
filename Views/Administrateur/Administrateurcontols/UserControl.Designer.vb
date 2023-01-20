@@ -22,9 +22,9 @@ Partial Class UserControl
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -95,7 +95,7 @@ Partial Class UserControl
         Me.BT_DELETE.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_DELETE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_DELETE.ForeColor = System.Drawing.Color.White
-        Me.BT_DELETE.Location = New System.Drawing.Point(612, 108)
+        Me.BT_DELETE.Location = New System.Drawing.Point(605, 175)
         Me.BT_DELETE.Name = "BT_DELETE"
         Me.BT_DELETE.Size = New System.Drawing.Size(180, 45)
         Me.BT_DELETE.TabIndex = 50
@@ -113,7 +113,7 @@ Partial Class UserControl
         Me.BT_REFRESH.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_REFRESH.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_REFRESH.ForeColor = System.Drawing.Color.White
-        Me.BT_REFRESH.Location = New System.Drawing.Point(820, 108)
+        Me.BT_REFRESH.Location = New System.Drawing.Point(818, 175)
         Me.BT_REFRESH.Name = "BT_REFRESH"
         Me.BT_REFRESH.Size = New System.Drawing.Size(180, 45)
         Me.BT_REFRESH.TabIndex = 49
@@ -131,9 +131,9 @@ Partial Class UserControl
         Me.BT_UPDATE.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_UPDATE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_UPDATE.ForeColor = System.Drawing.Color.White
-        Me.BT_UPDATE.Location = New System.Drawing.Point(823, 3)
+        Me.BT_UPDATE.Location = New System.Drawing.Point(358, 175)
         Me.BT_UPDATE.Name = "BT_UPDATE"
-        Me.BT_UPDATE.Size = New System.Drawing.Size(180, 45)
+        Me.BT_UPDATE.Size = New System.Drawing.Size(168, 45)
         Me.BT_UPDATE.TabIndex = 48
         Me.BT_UPDATE.Text = "Mettre à Jour"
         '
@@ -149,9 +149,9 @@ Partial Class UserControl
         Me.BT_ADD.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_ADD.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_ADD.ForeColor = System.Drawing.Color.White
-        Me.BT_ADD.Location = New System.Drawing.Point(612, 3)
+        Me.BT_ADD.Location = New System.Drawing.Point(161, 175)
         Me.BT_ADD.Name = "BT_ADD"
-        Me.BT_ADD.Size = New System.Drawing.Size(180, 45)
+        Me.BT_ADD.Size = New System.Drawing.Size(171, 45)
         Me.BT_ADD.TabIndex = 47
         Me.BT_ADD.Text = "Insérer"
         '
@@ -180,29 +180,29 @@ Partial Class UserControl
         '
         Me.DGV_USERS.AllowUserToAddRows = False
         Me.DGV_USERS.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.DGV_USERS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.DGV_USERS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DGV_USERS.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_USERS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_USERS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DGV_USERS.ColumnHeadersHeight = 30
         Me.DGV_USERS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_USERS.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_USERS.DefaultCellStyle = DataGridViewCellStyle6
         Me.DGV_USERS.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_USERS.Location = New System.Drawing.Point(1, 333)
         Me.DGV_USERS.Name = "DGV_USERS"
@@ -247,7 +247,7 @@ Partial Class UserControl
         Me.TB_PASSWORD_FIELD.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_PASSWORD_FIELD.PlaceholderText = ""
         Me.TB_PASSWORD_FIELD.SelectedText = ""
-        Me.TB_PASSWORD_FIELD.Size = New System.Drawing.Size(375, 36)
+        Me.TB_PASSWORD_FIELD.Size = New System.Drawing.Size(840, 36)
         Me.TB_PASSWORD_FIELD.TabIndex = 44
         '
         'TB_USERNAME
@@ -266,7 +266,7 @@ Partial Class UserControl
         Me.TB_USERNAME.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_USERNAME.PlaceholderText = ""
         Me.TB_USERNAME.SelectedText = ""
-        Me.TB_USERNAME.Size = New System.Drawing.Size(374, 36)
+        Me.TB_USERNAME.Size = New System.Drawing.Size(839, 36)
         Me.TB_USERNAME.TabIndex = 43
         '
         'CB_EMPLOYEE
@@ -281,7 +281,7 @@ Partial Class UserControl
         Me.CB_EMPLOYEE.ItemHeight = 30
         Me.CB_EMPLOYEE.Location = New System.Drawing.Point(161, 117)
         Me.CB_EMPLOYEE.Name = "CB_EMPLOYEE"
-        Me.CB_EMPLOYEE.Size = New System.Drawing.Size(374, 36)
+        Me.CB_EMPLOYEE.Size = New System.Drawing.Size(842, 36)
         Me.CB_EMPLOYEE.TabIndex = 58
         '
         'CTS_DISPLAY_PASSWORD
@@ -290,7 +290,7 @@ Partial Class UserControl
         Me.CTS_DISPLAY_PASSWORD.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CTS_DISPLAY_PASSWORD.CheckedState.InnerBorderColor = System.Drawing.Color.White
         Me.CTS_DISPLAY_PASSWORD.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.CTS_DISPLAY_PASSWORD.Location = New System.Drawing.Point(108, 214)
+        Me.CTS_DISPLAY_PASSWORD.Location = New System.Drawing.Point(108, 248)
         Me.CTS_DISPLAY_PASSWORD.Name = "CTS_DISPLAY_PASSWORD"
         Me.CTS_DISPLAY_PASSWORD.Size = New System.Drawing.Size(46, 20)
         Me.CTS_DISPLAY_PASSWORD.TabIndex = 59
@@ -303,11 +303,11 @@ Partial Class UserControl
         '
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(161, 207)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(161, 241)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(240, 27)
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(219, 27)
         Me.Guna2HtmlLabel5.TabIndex = 60
-        Me.Guna2HtmlLabel5.Text = "Changer de mot passe"
+        Me.Guna2HtmlLabel5.Text = "Cacher le mot passe"
         '
         'UserControl
         '

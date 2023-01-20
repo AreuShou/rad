@@ -243,6 +243,12 @@
       <DependentUpon>NotesReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Views\Reports\StudentsReport.vb">
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentsReport.rpt</DependentUpon>
+    </Compile>
     <Compile Include="Views\ServiceScolarité\ServiceScolarite.Designer.vb">
       <DependentUpon>ServiceScolarite.vb</DependentUpon>
     </Compile>
@@ -293,6 +299,10 @@
     <EmbeddedResource Include="Views\Reports\NotesReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>NotesReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\StudentsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StudentsReport.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ServiceScolarité\ServiceScolarite.resx">
       <DependentUpon>ServiceScolarite.vb</DependentUpon>

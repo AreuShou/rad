@@ -72,14 +72,14 @@ Partial Class UEsControl
         Me.Id_TextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Id_TextBox.PlaceholderText = ""
         Me.Id_TextBox.SelectedText = ""
-        Me.Id_TextBox.Size = New System.Drawing.Size(379, 36)
+        Me.Id_TextBox.Size = New System.Drawing.Size(343, 36)
         Me.Id_TextBox.TabIndex = 56
         '
         'Faculty_Lbl
         '
         Me.Faculty_Lbl.BackColor = System.Drawing.Color.Transparent
         Me.Faculty_Lbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Faculty_Lbl.Location = New System.Drawing.Point(56, 170)
+        Me.Faculty_Lbl.Location = New System.Drawing.Point(513, 10)
         Me.Faculty_Lbl.Name = "Faculty_Lbl"
         Me.Faculty_Lbl.Size = New System.Drawing.Size(99, 33)
         Me.Faculty_Lbl.TabIndex = 55
@@ -96,7 +96,7 @@ Partial Class UEsControl
         Me.Faculty_Box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Faculty_Box.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Faculty_Box.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Faculty_Box.Location = New System.Drawing.Point(164, 170)
+        Me.Faculty_Box.Location = New System.Drawing.Point(621, 10)
         Me.Faculty_Box.Name = "Faculty_Box"
         Me.Faculty_Box.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Faculty_Box.PlaceholderText = ""
@@ -146,7 +146,7 @@ Partial Class UEsControl
         Me.BT_DELETE.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_DELETE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_DELETE.ForeColor = System.Drawing.Color.White
-        Me.BT_DELETE.Location = New System.Drawing.Point(619, 108)
+        Me.BT_DELETE.Location = New System.Drawing.Point(609, 223)
         Me.BT_DELETE.Name = "BT_DELETE"
         Me.BT_DELETE.Size = New System.Drawing.Size(180, 45)
         Me.BT_DELETE.TabIndex = 50
@@ -164,7 +164,7 @@ Partial Class UEsControl
         Me.BT_REFRESH.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_REFRESH.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_REFRESH.ForeColor = System.Drawing.Color.White
-        Me.BT_REFRESH.Location = New System.Drawing.Point(818, 108)
+        Me.BT_REFRESH.Location = New System.Drawing.Point(808, 223)
         Me.BT_REFRESH.Name = "BT_REFRESH"
         Me.BT_REFRESH.Size = New System.Drawing.Size(180, 45)
         Me.BT_REFRESH.TabIndex = 49
@@ -182,7 +182,7 @@ Partial Class UEsControl
         Me.BT_UPDATE.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_UPDATE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_UPDATE.ForeColor = System.Drawing.Color.White
-        Me.BT_UPDATE.Location = New System.Drawing.Point(823, 24)
+        Me.BT_UPDATE.Location = New System.Drawing.Point(368, 223)
         Me.BT_UPDATE.Name = "BT_UPDATE"
         Me.BT_UPDATE.Size = New System.Drawing.Size(180, 45)
         Me.BT_UPDATE.TabIndex = 48
@@ -200,7 +200,7 @@ Partial Class UEsControl
         Me.BT_ADD.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_ADD.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_ADD.ForeColor = System.Drawing.Color.White
-        Me.BT_ADD.Location = New System.Drawing.Point(619, 24)
+        Me.BT_ADD.Location = New System.Drawing.Point(164, 223)
         Me.BT_ADD.Name = "BT_ADD"
         Me.BT_ADD.Size = New System.Drawing.Size(180, 45)
         Me.BT_ADD.TabIndex = 47
@@ -298,7 +298,7 @@ Partial Class UEsControl
         Me.TB_LIBELLE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TB_LIBELLE.PlaceholderText = ""
         Me.TB_LIBELLE.SelectedText = ""
-        Me.TB_LIBELLE.Size = New System.Drawing.Size(379, 36)
+        Me.TB_LIBELLE.Size = New System.Drawing.Size(343, 36)
         Me.TB_LIBELLE.TabIndex = 43
         '
         'CB_SEMESTER
@@ -313,13 +313,13 @@ Partial Class UEsControl
         Me.CB_SEMESTER.ItemHeight = 30
         Me.CB_SEMESTER.Location = New System.Drawing.Point(164, 117)
         Me.CB_SEMESTER.Name = "CB_SEMESTER"
-        Me.CB_SEMESTER.Size = New System.Drawing.Size(379, 36)
+        Me.CB_SEMESTER.Size = New System.Drawing.Size(343, 36)
         Me.CB_SEMESTER.TabIndex = 58
         '
         'CLB_CAREERS
         '
         Me.CLB_CAREERS.FormattingEnabled = True
-        Me.CLB_CAREERS.Location = New System.Drawing.Point(630, 170)
+        Me.CLB_CAREERS.Location = New System.Drawing.Point(633, 117)
         Me.CLB_CAREERS.Name = "CLB_CAREERS"
         Me.CLB_CAREERS.Size = New System.Drawing.Size(355, 94)
         Me.CLB_CAREERS.TabIndex = 59
@@ -334,7 +334,7 @@ Partial Class UEsControl
         Me.CB_INSTITUTE.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_INSTITUTE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_INSTITUTE.ItemHeight = 30
-        Me.CB_INSTITUTE.Location = New System.Drawing.Point(164, 228)
+        Me.CB_INSTITUTE.Location = New System.Drawing.Point(621, 68)
         Me.CB_INSTITUTE.Name = "CB_INSTITUTE"
         Me.CB_INSTITUTE.Size = New System.Drawing.Size(379, 36)
         Me.CB_INSTITUTE.TabIndex = 61
@@ -343,7 +343,7 @@ Partial Class UEsControl
         '
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(65, 228)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(522, 68)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(93, 33)
         Me.Guna2HtmlLabel2.TabIndex = 60

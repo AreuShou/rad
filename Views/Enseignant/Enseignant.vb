@@ -7,6 +7,14 @@ Public Class Enseignant
         BT_REFRESH_Click(Nothing, Nothing)
     End Sub
 
+    Private Sub DGV_EVALUATIONS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_EVALUATIONS.CellClick
+        CB_STUDENTS.SelectedItem = DGV_EVALUATIONS.SelectedRows(0).Cells(1).Value
+        CB_GRADE.SelectedItem = DGV_EVALUATIONS.SelectedRows(0).Cells(2).Value
+        CB_Ecues.SelectedItem = DGV_EVALUATIONS.SelectedRows(0).Cells(3).Value
+        'DTP_DATE.Value = DGV_EVALUATIONS.SelectedRows(0).Cells(4).Value
+        CB_Type.SelectedItem = DGV_EVALUATIONS.SelectedRows(0).Cells(5).Value
+        CB_WEIGHT.SelectedItem = DGV_EVALUATIONS.SelectedRows(0).Cells(6).Value.ToString() & "%"
+    End Sub
 
     Private Sub CB_ECUES_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CB_Ecues.SelectedIndexChanged
         Reload_CB_Students("")
@@ -63,7 +71,7 @@ Public Class Enseignant
         End If
     End Sub
     Private Sub BT_ADD_Click(sender As Object, e As EventArgs) Handles BT_ADD.Click
-        If EvaluationsController.store(CInt(CB_Ecues.SelectedItem().Split("-")(0)), CInt(CB_STUDENTS.SelectedItem().Split("-")(0)), DTP_DATE.Value, CB_Type.SelectedItem, CInt(CB_WEIGHT.SelectedItem.Split("%")(0)), CInt(CB_GRADE.SelectedItem().Split("-")(0))) Then
+        If EvaluationsController.store(CInt(CB_Ecues.SelectedItem().Split("-")(0)), CInt(CB_STUDENTS.SelectedItem().Split("-")(0)), DTP_DATE.Value.ToShortDateString, CB_Type.SelectedItem, CInt(CB_WEIGHT.SelectedItem.Split("%")(0)), CInt(CB_GRADE.SelectedItem().Split("-")(0))) Then
             BT_REFRESH_Click(Nothing, Nothing)
         End If
     End Sub
@@ -93,12 +101,14 @@ Public Class Enseignant
 
     Private Sub BT_IMPRESSION_Click(sender As Object, e As EventArgs) Handles BT_IMPRESSION.Click
         Dim report As New NotesReport()
+
         report.SetDataSource(EvaluationsController.getAllFromReport(CInt(CB_Ecues.SelectedItem().Split("-")(0))))
+
         CrystalView.CRV.ReportSource = report
         CrystalView.Show()
     End Sub
 
-    Private Sub DTP_DATE_ValueChanged(sender As Object, e As EventArgs) Handles DTP_DATE.ValueChanged
+    Private Sub CB_WEIGHT_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CB_WEIGHT.SelectedIndexChanged
 
     End Sub
 End Class

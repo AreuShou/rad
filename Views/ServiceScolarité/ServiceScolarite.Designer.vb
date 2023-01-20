@@ -22,12 +22,10 @@ Partial Class ServiceScolarite
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DGV_STUDENTS = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Identifiant = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -37,7 +35,7 @@ Partial Class ServiceScolarite
         Me.TB_LAST_NAME = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TB_EMAIL = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CB_CAREER = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CB_GENDER = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.BT_REFRESH = New Guna.UI2.WinForms.Guna2Button()
         Me.BT_ADD = New Guna.UI2.WinForms.Guna2Button()
         Me.BT_UPDATE = New Guna.UI2.WinForms.Guna2Button()
@@ -58,39 +56,40 @@ Partial Class ServiceScolarite
         Me.BT_LOGOUT = New Guna.UI2.WinForms.Guna2Button()
         Me.DTP_DATE = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.PB_STUDENT = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.B_PRINT = New Guna.UI2.WinForms.Guna2Button()
+        Me.CD_GENDER = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.B_ADD_PICTURE = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.DGV_STUDENTS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PB_STUDENT, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DGV_STUDENTS
         '
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        Me.DGV_STUDENTS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_STUDENTS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.DGV_STUDENTS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_STUDENTS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DGV_STUDENTS.ColumnHeadersHeight = 4
         Me.DGV_STUDENTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.DGV_STUDENTS.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Identifiant, Me.Nom})
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_STUDENTS.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_STUDENTS.DefaultCellStyle = DataGridViewCellStyle6
         Me.DGV_STUDENTS.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_STUDENTS.Location = New System.Drawing.Point(9, 344)
         Me.DGV_STUDENTS.Name = "DGV_STUDENTS"
         Me.DGV_STUDENTS.RowHeadersVisible = False
-        Me.DGV_STUDENTS.Size = New System.Drawing.Size(1346, 384)
+        Me.DGV_STUDENTS.Size = New System.Drawing.Size(1359, 381)
         Me.DGV_STUDENTS.TabIndex = 0
         Me.DGV_STUDENTS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.DGV_STUDENTS.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -113,20 +112,6 @@ Partial Class ServiceScolarite
         Me.DGV_STUDENTS.ThemeStyle.RowsStyle.Height = 22
         Me.DGV_STUDENTS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_STUDENTS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'Identifiant
-        '
-        Me.Identifiant.DataPropertyName = "id"
-        Me.Identifiant.HeaderText = "Identifiant"
-        Me.Identifiant.Name = "Identifiant"
-        Me.Identifiant.ReadOnly = True
-        '
-        'Nom
-        '
-        Me.Nom.DataPropertyName = "lastName"
-        Me.Nom.HeaderText = "Nom"
-        Me.Nom.Name = "Nom"
-        Me.Nom.ReadOnly = True
         '
         'Label1
         '
@@ -160,8 +145,6 @@ Partial Class ServiceScolarite
         '
         'TB_FIRST_NAME
         '
-        Me.TB_FIRST_NAME.AutoRoundedCorners = True
-        Me.TB_FIRST_NAME.BorderRadius = 17
         Me.TB_FIRST_NAME.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_FIRST_NAME.DefaultText = "PALOU"
         Me.TB_FIRST_NAME.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -201,8 +184,6 @@ Partial Class ServiceScolarite
         '
         'TB_LAST_NAME
         '
-        Me.TB_LAST_NAME.AutoRoundedCorners = True
-        Me.TB_LAST_NAME.BorderRadius = 17
         Me.TB_LAST_NAME.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_LAST_NAME.DefaultText = "Arlette"
         Me.TB_LAST_NAME.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -222,8 +203,6 @@ Partial Class ServiceScolarite
         '
         'TB_EMAIL
         '
-        Me.TB_EMAIL.AutoRoundedCorners = True
-        Me.TB_EMAIL.BorderRadius = 17
         Me.TB_EMAIL.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_EMAIL.DefaultText = "palouarlette@gmail.com" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TB_EMAIL.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -243,9 +222,7 @@ Partial Class ServiceScolarite
         '
         'CB_CAREER
         '
-        Me.CB_CAREER.AutoRoundedCorners = True
         Me.CB_CAREER.BackColor = System.Drawing.Color.Transparent
-        Me.CB_CAREER.BorderRadius = 17
         Me.CB_CAREER.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CB_CAREER.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CB_CAREER.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -258,23 +235,21 @@ Partial Class ServiceScolarite
         Me.CB_CAREER.Size = New System.Drawing.Size(200, 36)
         Me.CB_CAREER.TabIndex = 15
         '
-        'Guna2ComboBox2
+        'CB_GENDER
         '
-        Me.Guna2ComboBox2.AutoRoundedCorners = True
-        Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox2.BorderRadius = 17
-        Me.Guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox2.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox2.ItemHeight = 30
-        Me.Guna2ComboBox2.Items.AddRange(New Object() {"Homme"})
-        Me.Guna2ComboBox2.Location = New System.Drawing.Point(309, 88)
-        Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
-        Me.Guna2ComboBox2.Size = New System.Drawing.Size(200, 36)
-        Me.Guna2ComboBox2.TabIndex = 16
+        Me.CB_GENDER.BackColor = System.Drawing.Color.Transparent
+        Me.CB_GENDER.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CB_GENDER.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_GENDER.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_GENDER.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CB_GENDER.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CB_GENDER.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CB_GENDER.ItemHeight = 30
+        Me.CB_GENDER.Items.AddRange(New Object() {"Homme"})
+        Me.CB_GENDER.Location = New System.Drawing.Point(309, 88)
+        Me.CB_GENDER.Name = "CB_GENDER"
+        Me.CB_GENDER.Size = New System.Drawing.Size(200, 36)
+        Me.CB_GENDER.TabIndex = 16
         '
         'BT_REFRESH
         '
@@ -362,8 +337,6 @@ Partial Class ServiceScolarite
         '
         'TB_PHONE_NUMBER
         '
-        Me.TB_PHONE_NUMBER.AutoRoundedCorners = True
-        Me.TB_PHONE_NUMBER.BorderRadius = 20
         Me.TB_PHONE_NUMBER.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_PHONE_NUMBER.DefaultText = "+221 89546213"
         Me.TB_PHONE_NUMBER.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -397,7 +370,7 @@ Partial Class ServiceScolarite
         Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox2.PlaceholderText = ""
         Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(1234, 37)
+        Me.Guna2TextBox2.Size = New System.Drawing.Size(1244, 37)
         Me.Guna2TextBox2.TabIndex = 34
         '
         'Label6
@@ -422,9 +395,7 @@ Partial Class ServiceScolarite
         '
         'Guna2ComboBox5
         '
-        Me.Guna2ComboBox5.AutoRoundedCorners = True
         Me.Guna2ComboBox5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox5.BorderRadius = 17
         Me.Guna2ComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.Guna2ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Guna2ComboBox5.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -449,9 +420,7 @@ Partial Class ServiceScolarite
         '
         'CB_INSTITUTE
         '
-        Me.CB_INSTITUTE.AutoRoundedCorners = True
         Me.CB_INSTITUTE.BackColor = System.Drawing.Color.Transparent
-        Me.CB_INSTITUTE.BorderRadius = 17
         Me.CB_INSTITUTE.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CB_INSTITUTE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CB_INSTITUTE.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -476,9 +445,7 @@ Partial Class ServiceScolarite
         '
         'CB_SEMESTER
         '
-        Me.CB_SEMESTER.AutoRoundedCorners = True
         Me.CB_SEMESTER.BackColor = System.Drawing.Color.Transparent
-        Me.CB_SEMESTER.BorderRadius = 17
         Me.CB_SEMESTER.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CB_SEMESTER.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CB_SEMESTER.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -530,8 +497,6 @@ Partial Class ServiceScolarite
         '
         'DTP_DATE
         '
-        Me.DTP_DATE.AutoRoundedCorners = True
-        Me.DTP_DATE.BorderRadius = 20
         Me.DTP_DATE.Checked = True
         Me.DTP_DATE.CustomFormat = "yyyy/MM/dd HH:mm:ii"
         Me.DTP_DATE.FillColor = System.Drawing.Color.White
@@ -556,34 +521,63 @@ Partial Class ServiceScolarite
         Me.PB_STUDENT.TabIndex = 42
         Me.PB_STUDENT.TabStop = False
         '
-        'Guna2TextBox1
+        'B_PRINT
         '
-        Me.Guna2TextBox1.AutoRoundedCorners = True
-        Me.Guna2TextBox1.BorderRadius = 17
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = "Femme"
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(615, 144)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(200, 36)
-        Me.Guna2TextBox1.TabIndex = 47
+        Me.B_PRINT.AutoRoundedCorners = True
+        Me.B_PRINT.BorderRadius = 21
+        Me.B_PRINT.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.B_PRINT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.B_PRINT.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.B_PRINT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.B_PRINT.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.B_PRINT.ForeColor = System.Drawing.Color.White
+        Me.B_PRINT.Location = New System.Drawing.Point(890, 165)
+        Me.B_PRINT.Name = "B_PRINT"
+        Me.B_PRINT.Size = New System.Drawing.Size(180, 45)
+        Me.B_PRINT.TabIndex = 48
+        Me.B_PRINT.Text = "Imprimer"
+        '
+        'CD_GENDER
+        '
+        Me.CD_GENDER.BackColor = System.Drawing.Color.Transparent
+        Me.CD_GENDER.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CD_GENDER.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CD_GENDER.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CD_GENDER.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CD_GENDER.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CD_GENDER.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CD_GENDER.ItemHeight = 30
+        Me.CD_GENDER.Items.AddRange(New Object() {"Homme"})
+        Me.CD_GENDER.Location = New System.Drawing.Point(615, 149)
+        Me.CD_GENDER.Name = "CD_GENDER"
+        Me.CD_GENDER.Size = New System.Drawing.Size(200, 36)
+        Me.CD_GENDER.TabIndex = 49
+        '
+        'B_ADD_PICTURE
+        '
+        Me.B_ADD_PICTURE.AutoRoundedCorners = True
+        Me.B_ADD_PICTURE.BorderRadius = 21
+        Me.B_ADD_PICTURE.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.B_ADD_PICTURE.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.B_ADD_PICTURE.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.B_ADD_PICTURE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.B_ADD_PICTURE.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.B_ADD_PICTURE.ForeColor = System.Drawing.Color.White
+        Me.B_ADD_PICTURE.Location = New System.Drawing.Point(9, 201)
+        Me.B_ADD_PICTURE.Name = "B_ADD_PICTURE"
+        Me.B_ADD_PICTURE.Size = New System.Drawing.Size(172, 45)
+        Me.B_ADD_PICTURE.TabIndex = 50
+        Me.B_ADD_PICTURE.Text = "Afficher L'image"
         '
         'ServiceScolarite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
-        Me.Controls.Add(Me.Guna2TextBox1)
+        Me.BackColor = System.Drawing.Color.PowderBlue
+        Me.ClientSize = New System.Drawing.Size(1370, 726)
+        Me.Controls.Add(Me.B_ADD_PICTURE)
+        Me.Controls.Add(Me.CD_GENDER)
+        Me.Controls.Add(Me.B_PRINT)
         Me.Controls.Add(Me.DTP_DATE)
         Me.Controls.Add(Me.BT_LOGOUT)
         Me.Controls.Add(Me.Label13)
@@ -604,7 +598,7 @@ Partial Class ServiceScolarite
         Me.Controls.Add(Me.BT_ADD)
         Me.Controls.Add(Me.BT_UPDATE)
         Me.Controls.Add(Me.BT_DELETE)
-        Me.Controls.Add(Me.Guna2ComboBox2)
+        Me.Controls.Add(Me.CB_GENDER)
         Me.Controls.Add(Me.CB_CAREER)
         Me.Controls.Add(Me.TB_EMAIL)
         Me.Controls.Add(Me.TB_LAST_NAME)
@@ -635,7 +629,7 @@ Partial Class ServiceScolarite
     Friend WithEvents TB_LAST_NAME As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TB_EMAIL As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CB_CAREER As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CB_GENDER As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents BT_REFRESH As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BT_ADD As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BT_UPDATE As Guna.UI2.WinForms.Guna2Button
@@ -656,7 +650,7 @@ Partial Class ServiceScolarite
     Friend WithEvents Label13 As Label
     Friend WithEvents BT_LOGOUT As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DTP_DATE As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents Identifiant As DataGridViewTextBoxColumn
-    Friend WithEvents Nom As DataGridViewTextBoxColumn
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents B_PRINT As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents CD_GENDER As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents B_ADD_PICTURE As Guna.UI2.WinForms.Guna2Button
 End Class

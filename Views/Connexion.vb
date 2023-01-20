@@ -16,9 +16,13 @@
 
     Private Sub CTS_DISPLAY_PASSWORD_CheckedChanged(sender As Object, e As EventArgs) Handles CTS_DISPLAY_PASSWORD.CheckedChanged
         If (CTS_DISPLAY_PASSWORD.Checked) Then
-            TB_PASSWORD.PasswordChar = ""
+            TB_PASSWORD.UseSystemPasswordChar = False
         Else
-            TB_PASSWORD.PasswordChar = "*"
+            TB_PASSWORD.UseSystemPasswordChar = True
         End If
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
     End Sub
 End Class

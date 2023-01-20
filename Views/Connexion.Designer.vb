@@ -32,7 +32,6 @@ Partial Class Connexion
         Me.Lbl_Password = New System.Windows.Forms.Label()
         Me.Lbl_Utilisateur = New System.Windows.Forms.Label()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
@@ -40,8 +39,7 @@ Partial Class Connexion
         '
         'Panel2
         '
-        Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.CTS_DISPLAY_PASSWORD)
@@ -51,7 +49,7 @@ Partial Class Connexion
         Me.Panel2.Controls.Add(Me.TB_USERNAME)
         Me.Panel2.Controls.Add(Me.Lbl_Password)
         Me.Panel2.Controls.Add(Me.Lbl_Utilisateur)
-        Me.Panel2.Location = New System.Drawing.Point(425, 36)
+        Me.Panel2.Location = New System.Drawing.Point(266, 53)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Panel2.Size = New System.Drawing.Size(339, 462)
@@ -124,12 +122,13 @@ Partial Class Connexion
         Me.TB_PASSWORD.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TB_PASSWORD.Location = New System.Drawing.Point(71, 234)
         Me.TB_PASSWORD.Name = "TB_PASSWORD"
-        Me.TB_PASSWORD.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TB_PASSWORD.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.TB_PASSWORD.PlaceholderText = "PASSWORD"
         Me.TB_PASSWORD.SelectedText = ""
         Me.TB_PASSWORD.Size = New System.Drawing.Size(200, 36)
         Me.TB_PASSWORD.TabIndex = 3
         Me.TB_PASSWORD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TB_PASSWORD.UseSystemPasswordChar = True
         '
         'TB_USERNAME
         '
@@ -178,38 +177,24 @@ Partial Class Connexion
         Me.Guna2Panel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.PowderBlue
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
         Me.Guna2Panel1.Controls.Add(Me.Label2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel1.Controls.Add(Me.Panel2)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(-1, 2)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(799, 528)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(848, 528)
         Me.Guna2Panel1.TabIndex = 1
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.BackgroundImage = Global.ProjetNet_RAD.My.Resources.Resources.img2
-        Me.Guna2Panel2.Location = New System.Drawing.Point(12, 36)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(380, 462)
-        Me.Guna2Panel2.TabIndex = 4
         '
         'Label2
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label2.Location = New System.Drawing.Point(305, 7)
+        Me.Label2.Location = New System.Drawing.Point(369, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(130, 26)
+        Me.Label2.Size = New System.Drawing.Size(128, 24)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "BIENVENUE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -218,11 +203,11 @@ Partial Class Connexion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 529)
+        Me.ClientSize = New System.Drawing.Size(843, 529)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Name = "Connexion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Connexion"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Guna2Panel1.ResumeLayout(False)
@@ -238,7 +223,6 @@ Partial Class Connexion
     Friend WithEvents TB_USERNAME As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Lbl_Password As Label
     Friend WithEvents Lbl_Utilisateur As Label
-    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents CTS_DISPLAY_PASSWORD As Guna.UI2.WinForms.Guna2ToggleSwitch

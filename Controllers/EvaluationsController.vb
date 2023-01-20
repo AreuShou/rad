@@ -21,8 +21,8 @@
         Dim table As DataTable = New DataTable
         table.Columns.Add("Id", GetType(Integer))
         table.Columns.Add("Grade", GetType(Integer))
-        table.Columns.Add("TypeField", GetType(String))
-        table.Columns.Add("WeightField", GetType(String))
+        table.Columns.Add("Type", GetType(String))
+        table.Columns.Add("Weight", GetType(String))
 
         For Each evaluation As Evaluations In EvaluationsManager.getByECUEId(ecuesId)
             table.LoadDataRow(New Object() {evaluation.Id, evaluation.Grade, evaluation.Type, evaluation.Weight}, True)

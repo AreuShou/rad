@@ -25,6 +25,26 @@ Public Class StudentsController
         Next
         Return table
     End Function
+
+    Public Shared Function getAllFromReport() As DataTable
+        Dim table As DataTable = New DataTable
+        table.Columns.Add("id", GetType(Integer))
+        table.Columns.Add("lastName", GetType(String))
+        table.Columns.Add("firstName", GetType(String))
+        table.Columns.Add("birthDate", GetType(String))
+        table.Columns.Add("gender", GetType(String))
+        table.Columns.Add("phoneNumber", GetType(String))
+
+
+        For Each student As Student In StudentsManager.getAll()
+            table.LoadDataRow(New Object() {student.Id, student.FirstName, student.LastName, student.BirthDate, student.Gender, student.PhoneNumber}, True)
+        Next
+        Return table
+    End Function
+
+
+
+
     Public Shared Function getAll() As DataTable
         Return getGeneriqueList(StudentsManager.getAll())
     End Function
