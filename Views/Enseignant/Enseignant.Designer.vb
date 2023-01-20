@@ -22,9 +22,9 @@ Partial Class Enseignant
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Lbl_Etudiant = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Lbl_Date = New System.Windows.Forms.Label()
@@ -48,6 +48,7 @@ Partial Class Enseignant
         Me.DTP_DATE = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.CB_WEIGHT = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BT_IMPRESSION = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.DGV_EVALUATIONS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -146,13 +147,16 @@ Partial Class Enseignant
         Me.CB_GRADE.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_GRADE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_GRADE.ItemHeight = 30
+        Me.CB_GRADE.Items.AddRange(New Object() {"18", "15"})
         Me.CB_GRADE.Location = New System.Drawing.Point(857, 105)
         Me.CB_GRADE.Name = "CB_GRADE"
         Me.CB_GRADE.Size = New System.Drawing.Size(66, 36)
+        Me.CB_GRADE.StartIndex = 0
         Me.CB_GRADE.TabIndex = 9
         '
         'CB_Pourcent
         '
+        Me.CB_Pourcent.AutoCompleteCustomSource.AddRange(New String() {"15%"})
         Me.CB_Pourcent.BackColor = System.Drawing.Color.Transparent
         Me.CB_Pourcent.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CB_Pourcent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -161,9 +165,11 @@ Partial Class Enseignant
         Me.CB_Pourcent.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.CB_Pourcent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_Pourcent.ItemHeight = 30
+        Me.CB_Pourcent.Items.AddRange(New Object() {"15%"})
         Me.CB_Pourcent.Location = New System.Drawing.Point(659, 105)
         Me.CB_Pourcent.Name = "CB_Pourcent"
         Me.CB_Pourcent.Size = New System.Drawing.Size(87, 36)
+        Me.CB_Pourcent.StartIndex = 0
         Me.CB_Pourcent.TabIndex = 10
         '
         'CB_Type
@@ -236,26 +242,26 @@ Partial Class Enseignant
         '
         'DGV_EVALUATIONS
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.DGV_EVALUATIONS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_EVALUATIONS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DGV_EVALUATIONS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_EVALUATIONS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGV_EVALUATIONS.ColumnHeadersHeight = 4
         Me.DGV_EVALUATIONS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_EVALUATIONS.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_EVALUATIONS.DefaultCellStyle = DataGridViewCellStyle3
         Me.DGV_EVALUATIONS.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_EVALUATIONS.Location = New System.Drawing.Point(-1, 276)
         Me.DGV_EVALUATIONS.Name = "DGV_EVALUATIONS"
@@ -363,9 +369,9 @@ Partial Class Enseignant
         Me.BT_LOGOUT.FillColor = System.Drawing.Color.Red
         Me.BT_LOGOUT.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
         Me.BT_LOGOUT.ForeColor = System.Drawing.Color.White
-        Me.BT_LOGOUT.Location = New System.Drawing.Point(767, 3)
+        Me.BT_LOGOUT.Location = New System.Drawing.Point(785, 3)
         Me.BT_LOGOUT.Name = "BT_LOGOUT"
-        Me.BT_LOGOUT.Size = New System.Drawing.Size(156, 45)
+        Me.BT_LOGOUT.Size = New System.Drawing.Size(138, 45)
         Me.BT_LOGOUT.TabIndex = 23
         Me.BT_LOGOUT.Text = "Déconnexion"
         '
@@ -407,12 +413,30 @@ Partial Class Enseignant
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "Poids"
         '
+        'BT_IMPRESSION
+        '
+        Me.BT_IMPRESSION.AutoRoundedCorners = True
+        Me.BT_IMPRESSION.BorderRadius = 17
+        Me.BT_IMPRESSION.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_IMPRESSION.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_IMPRESSION.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_IMPRESSION.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_IMPRESSION.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BT_IMPRESSION.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.BT_IMPRESSION.ForeColor = System.Drawing.Color.White
+        Me.BT_IMPRESSION.Location = New System.Drawing.Point(508, 136)
+        Me.BT_IMPRESSION.Name = "BT_IMPRESSION"
+        Me.BT_IMPRESSION.Size = New System.Drawing.Size(115, 36)
+        Me.BT_IMPRESSION.TabIndex = 27
+        Me.BT_IMPRESSION.Text = "Imprimer"
+        '
         'Enseignant
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(927, 544)
+        Me.Controls.Add(Me.BT_IMPRESSION)
         Me.Controls.Add(Me.CB_WEIGHT)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DTP_DATE)
@@ -437,7 +461,9 @@ Partial Class Enseignant
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Lbl_Etudiant)
         Me.Name = "Enseignant"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Enseignant"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DGV_EVALUATIONS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -467,4 +493,5 @@ Partial Class Enseignant
     Friend WithEvents DTP_DATE As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents CB_WEIGHT As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents BT_IMPRESSION As Guna.UI2.WinForms.Guna2Button
 End Class

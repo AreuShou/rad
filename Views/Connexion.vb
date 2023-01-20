@@ -13,4 +13,12 @@
     Private Sub TB_USERNAME_TextChanged(sender As Object, e As EventArgs) Handles TB_USERNAME.TextChanged
 
     End Sub
+
+    Private Sub CTS_DISPLAY_PASSWORD_CheckedChanged(sender As Object, e As EventArgs) Handles CTS_DISPLAY_PASSWORD.CheckedChanged
+        If (CTS_DISPLAY_PASSWORD.Checked) Then
+            TB_PASSWORD.PasswordChar = ""
+        Else
+            TB_PASSWORD.PasswordChar = "*"
+        End If
+    End Sub
 End Class

@@ -233,8 +233,6 @@ Partial Class UserControl
         '
         'TB_PASSWORD_FIELD
         '
-        Me.TB_PASSWORD_FIELD.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TB_PASSWORD_FIELD.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_PASSWORD_FIELD.DefaultText = ""
         Me.TB_PASSWORD_FIELD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -254,8 +252,6 @@ Partial Class UserControl
         '
         'TB_USERNAME
         '
-        Me.TB_USERNAME.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TB_USERNAME.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_USERNAME.DefaultText = ""
         Me.TB_USERNAME.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -275,8 +271,6 @@ Partial Class UserControl
         '
         'CB_EMPLOYEE
         '
-        Me.CB_EMPLOYEE.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CB_EMPLOYEE.BackColor = System.Drawing.Color.Transparent
         Me.CB_EMPLOYEE.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CB_EMPLOYEE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList

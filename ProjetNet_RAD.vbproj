@@ -51,6 +51,10 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="FontAwesome.Sharp, Version=6.2.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.6.2.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -97,6 +101,7 @@
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
@@ -226,6 +231,18 @@
     <Compile Include="Views\Enseignant\Enseignant.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Views\Reports\CrystalView.Designer.vb">
+      <DependentUpon>CrystalView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\CrystalView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\NotesReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Views\ServiceScolarité\ServiceScolarite.Designer.vb">
       <DependentUpon>ServiceScolarite.vb</DependentUpon>
     </Compile>
@@ -270,6 +287,13 @@
     <EmbeddedResource Include="Views\Enseignant\Enseignant.resx">
       <DependentUpon>Enseignant.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\CrystalView.resx">
+      <DependentUpon>CrystalView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\NotesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NotesReport.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ServiceScolarité\ServiceScolarite.resx">
       <DependentUpon>ServiceScolarite.vb</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +319,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

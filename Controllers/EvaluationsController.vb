@@ -1,4 +1,6 @@
 ﻿Public Class EvaluationsController
+
+
     Public Shared Function getGeneriqueList(evaluationsList As List(Of Evaluations)) As DataTable
         Dim table As DataTable = New DataTable
         table.Columns.Add("id", GetType(Integer))
@@ -14,6 +16,20 @@
         Next
         Return table
     End Function
+
+    Public Shared Function getAllFromReport(ecuesId As Integer) As DataTable
+        Dim table As DataTable = New DataTable
+        table.Columns.Add("Id", GetType(Integer))
+        table.Columns.Add("Grade", GetType(Integer))
+        table.Columns.Add("TypeField", GetType(String))
+        table.Columns.Add("WeightField", GetType(String))
+
+        For Each evaluation As Evaluations In EvaluationsManager.getByECUEId(ecuesId)
+            table.LoadDataRow(New Object() {evaluation.Id, evaluation.Grade, evaluation.Type, evaluation.Weight}, True)
+        Next
+        Return table
+    End Function
+
     Public Shared Function getByECUEId(ecueId As String) As DataTable
         Return getGeneriqueList(EvaluationsManager.getByECUEId(ecueId))
     End Function

@@ -22,6 +22,11 @@ ProjetNet_RAD
   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
 </summary>
 </member>
+<member name="P:ProjetNet_RAD.My.Resources.Resources.fondE">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProjetNet_RAD.My.Resources.Resources.img1">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.

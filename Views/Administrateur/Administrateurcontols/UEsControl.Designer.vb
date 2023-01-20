@@ -22,9 +22,9 @@ Partial Class UEsControl
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Id_Label = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Id_TextBox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Faculty_Lbl = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -58,8 +58,6 @@ Partial Class UEsControl
         '
         'Id_TextBox
         '
-        Me.Id_TextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Id_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Id_TextBox.DefaultText = ""
         Me.Id_TextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -81,16 +79,14 @@ Partial Class UEsControl
         '
         Me.Faculty_Lbl.BackColor = System.Drawing.Color.Transparent
         Me.Faculty_Lbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Faculty_Lbl.Location = New System.Drawing.Point(18, 170)
+        Me.Faculty_Lbl.Location = New System.Drawing.Point(56, 170)
         Me.Faculty_Lbl.Name = "Faculty_Lbl"
-        Me.Faculty_Lbl.Size = New System.Drawing.Size(140, 33)
+        Me.Faculty_Lbl.Size = New System.Drawing.Size(99, 33)
         Me.Faculty_Lbl.TabIndex = 55
-        Me.Faculty_Lbl.Text = "Faculty_Id"
+        Me.Faculty_Lbl.Text = "Faculty"
         '
         'Faculty_Box
         '
-        Me.Faculty_Box.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Faculty_Box.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Faculty_Box.DefaultText = ""
         Me.Faculty_Box.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -132,11 +128,11 @@ Partial Class UEsControl
         '
         Me.Nom_Label.BackColor = System.Drawing.Color.Transparent
         Me.Nom_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nom_Label.Location = New System.Drawing.Point(95, 69)
+        Me.Nom_Label.Location = New System.Drawing.Point(70, 69)
         Me.Nom_Label.Name = "Nom_Label"
-        Me.Nom_Label.Size = New System.Drawing.Size(63, 33)
+        Me.Nom_Label.Size = New System.Drawing.Size(88, 33)
         Me.Nom_Label.TabIndex = 51
-        Me.Nom_Label.Text = "Nom"
+        Me.Nom_Label.Text = "Libellé"
         '
         'BT_DELETE
         '
@@ -176,6 +172,7 @@ Partial Class UEsControl
         '
         'BT_UPDATE
         '
+        Me.BT_UPDATE.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BT_UPDATE.AutoRoundedCorners = True
         Me.BT_UPDATE.BorderRadius = 21
         Me.BT_UPDATE.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -193,6 +190,7 @@ Partial Class UEsControl
         '
         'BT_ADD
         '
+        Me.BT_ADD.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BT_ADD.AutoRoundedCorners = True
         Me.BT_ADD.BorderRadius = 21
         Me.BT_ADD.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -233,29 +231,29 @@ Partial Class UEsControl
         '
         Me.DGV_UES.AllowUserToAddRows = False
         Me.DGV_UES.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.DGV_UES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DGV_UES.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGV_UES.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_UES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_UES.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGV_UES.ColumnHeadersHeight = 30
         Me.DGV_UES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_UES.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_UES.DefaultCellStyle = DataGridViewCellStyle3
         Me.DGV_UES.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_UES.Location = New System.Drawing.Point(1, 338)
         Me.DGV_UES.Name = "DGV_UES"
@@ -286,8 +284,6 @@ Partial Class UEsControl
         '
         'TB_LIBELLE
         '
-        Me.TB_LIBELLE.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TB_LIBELLE.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_LIBELLE.DefaultText = ""
         Me.TB_LIBELLE.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -323,9 +319,9 @@ Partial Class UEsControl
         'CLB_CAREERS
         '
         Me.CLB_CAREERS.FormattingEnabled = True
-        Me.CLB_CAREERS.Location = New System.Drawing.Point(662, 170)
+        Me.CLB_CAREERS.Location = New System.Drawing.Point(630, 170)
         Me.CLB_CAREERS.Name = "CLB_CAREERS"
-        Me.CLB_CAREERS.Size = New System.Drawing.Size(120, 94)
+        Me.CLB_CAREERS.Size = New System.Drawing.Size(355, 94)
         Me.CLB_CAREERS.TabIndex = 59
         '
         'CB_INSTITUTE

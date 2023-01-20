@@ -59,8 +59,6 @@ Partial Class ECUEsControl
         '
         'Guna2TextBox2
         '
-        Me.Guna2TextBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Guna2TextBox2.DefaultText = ""
         Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -90,8 +88,6 @@ Partial Class ECUEsControl
         '
         'Guna2TextBox1
         '
-        Me.Guna2TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Guna2TextBox1.DefaultText = ""
         Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -151,7 +147,7 @@ Partial Class ECUEsControl
         Me.BT_DELETE.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_DELETE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_DELETE.ForeColor = System.Drawing.Color.White
-        Me.BT_DELETE.Location = New System.Drawing.Point(772, 139)
+        Me.BT_DELETE.Location = New System.Drawing.Point(620, 96)
         Me.BT_DELETE.Name = "BT_DELETE"
         Me.BT_DELETE.Size = New System.Drawing.Size(180, 45)
         Me.BT_DELETE.TabIndex = 50
@@ -169,7 +165,7 @@ Partial Class ECUEsControl
         Me.BT_REFRESH.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_REFRESH.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_REFRESH.ForeColor = System.Drawing.Color.White
-        Me.BT_REFRESH.Location = New System.Drawing.Point(772, 201)
+        Me.BT_REFRESH.Location = New System.Drawing.Point(823, 96)
         Me.BT_REFRESH.Name = "BT_REFRESH"
         Me.BT_REFRESH.Size = New System.Drawing.Size(180, 45)
         Me.BT_REFRESH.TabIndex = 49
@@ -177,6 +173,7 @@ Partial Class ECUEsControl
         '
         'BT_UPDATE
         '
+        Me.BT_UPDATE.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BT_UPDATE.AutoRoundedCorners = True
         Me.BT_UPDATE.BorderRadius = 21
         Me.BT_UPDATE.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -186,7 +183,7 @@ Partial Class ECUEsControl
         Me.BT_UPDATE.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_UPDATE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_UPDATE.ForeColor = System.Drawing.Color.White
-        Me.BT_UPDATE.Location = New System.Drawing.Point(772, 76)
+        Me.BT_UPDATE.Location = New System.Drawing.Point(823, 8)
         Me.BT_UPDATE.Name = "BT_UPDATE"
         Me.BT_UPDATE.Size = New System.Drawing.Size(180, 45)
         Me.BT_UPDATE.TabIndex = 48
@@ -194,6 +191,7 @@ Partial Class ECUEsControl
         '
         'BT_ADD
         '
+        Me.BT_ADD.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BT_ADD.AutoRoundedCorners = True
         Me.BT_ADD.BorderRadius = 21
         Me.BT_ADD.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -203,7 +201,7 @@ Partial Class ECUEsControl
         Me.BT_ADD.FillColor = System.Drawing.SystemColors.ActiveCaption
         Me.BT_ADD.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.BT_ADD.ForeColor = System.Drawing.Color.White
-        Me.BT_ADD.Location = New System.Drawing.Point(772, 8)
+        Me.BT_ADD.Location = New System.Drawing.Point(620, 8)
         Me.BT_ADD.Name = "BT_ADD"
         Me.BT_ADD.Size = New System.Drawing.Size(180, 45)
         Me.BT_ADD.TabIndex = 47
@@ -287,8 +285,6 @@ Partial Class ECUEsControl
         '
         'TB_LIBELLE
         '
-        Me.TB_LIBELLE.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TB_LIBELLE.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TB_LIBELLE.DefaultText = ""
         Me.TB_LIBELLE.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -309,15 +305,15 @@ Partial Class ECUEsControl
         'CLB_UES
         '
         Me.CLB_UES.FormattingEnabled = True
-        Me.CLB_UES.Location = New System.Drawing.Point(549, 46)
+        Me.CLB_UES.Location = New System.Drawing.Point(534, 168)
         Me.CLB_UES.Name = "CLB_UES"
-        Me.CLB_UES.Size = New System.Drawing.Size(120, 94)
+        Me.CLB_UES.Size = New System.Drawing.Size(464, 94)
         Me.CLB_UES.TabIndex = 58
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(513, 87)
+        Me.Label1.Location = New System.Drawing.Point(498, 209)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(30, 18)
         Me.Label1.TabIndex = 0

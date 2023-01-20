@@ -91,7 +91,10 @@ Public Class Enseignant
         ProjetController.Logout()
     End Sub
 
-
-
-
+    Private Sub BT_IMPRESSION_Click(sender As Object, e As EventArgs) Handles BT_IMPRESSION.Click
+        Dim report As New NotesReport()
+        report.SetDataSource(EvaluationsController.getAllFromReport(CInt(CB_Ecues.SelectedItem().Split("-")(0))))
+        CrystalView.CRV.ReportSource = report
+        CrystalView.Show()
+    End Sub
 End Class
