@@ -52,8 +52,7 @@ Public Class ServiceScolarite
             If (StudentsController.delete(studentsIdList)) Then
                 BT_REFRESH_Click(Nothing, Nothing)
                 For Each studentpicturepath As String In studentsPicturePathList
-                    MsgBox(studentpicturepath)
-                    File.Delete(studentpicturepath)
+                    'File.Delete(studentpicturepath)
                 Next
             End If
         Else
@@ -80,8 +79,8 @@ Public Class ServiceScolarite
 
 
     Private Sub ClearForm()
-        TB_LAST_NAME.Text = ""
         TB_FIRST_NAME.Text = ""
+        TB_LAST_NAME.Text = ""
         TB_EMAIL.Text = ""
         TB_PHONE_NUMBER.Text = ""
     End Sub
@@ -100,7 +99,6 @@ Public Class ServiceScolarite
     Public Sub Reload_CB_INSTITUTE()
         CB_INSTITUTE.Items.Clear()
         For Each institute As Institute In InstitutesManager.getAll()
-            MsgBox(institute.Name)
             CB_INSTITUTE.Items.Add(institute.Name)
         Next
         Dim institutesExist As Boolean = CB_INSTITUTE.Items.Count > 0
@@ -130,8 +128,8 @@ Public Class ServiceScolarite
     Private Sub DGV_STUDENTS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_STUDENTS.CellClick
         Dim student As Student = StudentsManager.getById(CInt(DGV_STUDENTS.SelectedRows(0).Cells(1).Value))
         PB_STUDENT.ImageLocation = student.PicturePath
-        TB_LAST_NAME.Text = DGV_STUDENTS.SelectedRows(0).Cells(2).Value
-        TB_FIRST_NAME.Text = DGV_STUDENTS.SelectedRows(0).Cells(3).Value
+        TB_FIRST_NAME.Text = DGV_STUDENTS.SelectedRows(0).Cells(2).Value
+        TB_LAST_NAME.Text = DGV_STUDENTS.SelectedRows(0).Cells(3).Value
         CB_CAREER.SelectedItem = DGV_STUDENTS.SelectedRows(0).Cells(5).Value
         TB_EMAIL.Text = DGV_STUDENTS.SelectedRows(0).Cells(6).Value
         TB_PHONE_NUMBER.Text = DGV_STUDENTS.SelectedRows(0).Cells(7).Value
@@ -146,5 +144,7 @@ Public Class ServiceScolarite
         CrystalView.Show()
     End Sub
 
+    Private Sub PB_STUDENT_Click(sender As Object, e As EventArgs) Handles PB_STUDENT.Click
 
+    End Sub
 End Class
