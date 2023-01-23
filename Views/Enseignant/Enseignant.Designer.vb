@@ -22,11 +22,10 @@ Partial Class Enseignant
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Lbl_Etudiant = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Lbl_Date = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Lbl_Type = New System.Windows.Forms.Label()
@@ -35,7 +34,6 @@ Partial Class Enseignant
         Me.CB_GRADE = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CB_Type = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.TB_STUDENT_SEARCH = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.TB_Etudiant = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CB_STUDENTS = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.DGV_EVALUATIONS = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -52,6 +50,7 @@ Partial Class Enseignant
         Me.CB_WEIGHT = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BT_IMPRESSION = New Guna.UI2.WinForms.Guna2Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.DGV_EVALUATIONS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -64,16 +63,6 @@ Partial Class Enseignant
         Me.Lbl_Etudiant.Size = New System.Drawing.Size(52, 17)
         Me.Lbl_Etudiant.TabIndex = 0
         Me.Lbl_Etudiant.Text = "Ecues"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(5, 64)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 17)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Etudiant"
         '
         'Lbl_Date
         '
@@ -182,26 +171,6 @@ Partial Class Enseignant
         Me.TB_STUDENT_SEARCH.Size = New System.Drawing.Size(1224, 36)
         Me.TB_STUDENT_SEARCH.TabIndex = 12
         '
-        'TB_Etudiant
-        '
-        Me.TB_Etudiant.AutoCompleteCustomSource.AddRange(New String() {"AMAGLO Gildas", "DOSSOU Eugénie", "DUMEVI Sandra", "AKAKPO Vic", "DOUGLO Victor", "EBESSE Choco"})
-        Me.TB_Etudiant.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TB_Etudiant.DefaultText = ""
-        Me.TB_Etudiant.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.TB_Etudiant.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.TB_Etudiant.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TB_Etudiant.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TB_Etudiant.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TB_Etudiant.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.TB_Etudiant.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TB_Etudiant.Location = New System.Drawing.Point(75, 54)
-        Me.TB_Etudiant.Name = "TB_Etudiant"
-        Me.TB_Etudiant.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TB_Etudiant.PlaceholderText = ""
-        Me.TB_Etudiant.SelectedText = ""
-        Me.TB_Etudiant.Size = New System.Drawing.Size(274, 36)
-        Me.TB_Etudiant.TabIndex = 13
-        '
         'CB_STUDENTS
         '
         Me.CB_STUDENTS.BackColor = System.Drawing.Color.Transparent
@@ -213,34 +182,34 @@ Partial Class Enseignant
         Me.CB_STUDENTS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CB_STUDENTS.ItemHeight = 30
         Me.CB_STUDENTS.Items.AddRange(New Object() {"AMELINA Coli", "DALMEDA Franc", "JOSHN Class"})
-        Me.CB_STUDENTS.Location = New System.Drawing.Point(399, 54)
+        Me.CB_STUDENTS.Location = New System.Drawing.Point(75, 54)
         Me.CB_STUDENTS.Name = "CB_STUDENTS"
-        Me.CB_STUDENTS.Size = New System.Drawing.Size(701, 36)
+        Me.CB_STUDENTS.Size = New System.Drawing.Size(1025, 36)
         Me.CB_STUDENTS.TabIndex = 14
         '
         'DGV_EVALUATIONS
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.DGV_EVALUATIONS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_EVALUATIONS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DGV_EVALUATIONS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_EVALUATIONS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGV_EVALUATIONS.ColumnHeadersHeight = 4
         Me.DGV_EVALUATIONS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.DGV_EVALUATIONS.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.Nom, Me.Ecues, Me.Column1, Me.Column2})
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_EVALUATIONS.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_EVALUATIONS.DefaultCellStyle = DataGridViewCellStyle3
         Me.DGV_EVALUATIONS.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_EVALUATIONS.Location = New System.Drawing.Point(-1, 276)
         Me.DGV_EVALUATIONS.Name = "DGV_EVALUATIONS"
@@ -442,6 +411,16 @@ Partial Class Enseignant
         Me.BT_IMPRESSION.TabIndex = 27
         Me.BT_IMPRESSION.Text = "Imprimer"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(5, 64)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(68, 17)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Etudiant"
+        '
         'Enseignant
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -459,7 +438,6 @@ Partial Class Enseignant
         Me.Controls.Add(Me.BT_ADD)
         Me.Controls.Add(Me.DGV_EVALUATIONS)
         Me.Controls.Add(Me.CB_STUDENTS)
-        Me.Controls.Add(Me.TB_Etudiant)
         Me.Controls.Add(Me.TB_STUDENT_SEARCH)
         Me.Controls.Add(Me.CB_Type)
         Me.Controls.Add(Me.CB_GRADE)
@@ -481,7 +459,6 @@ Partial Class Enseignant
     End Sub
 
     Friend WithEvents Lbl_Etudiant As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Lbl_Date As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Lbl_Type As Label
@@ -490,7 +467,6 @@ Partial Class Enseignant
     Friend WithEvents CB_GRADE As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CB_Type As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents TB_STUDENT_SEARCH As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents TB_Etudiant As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CB_STUDENTS As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents DGV_EVALUATIONS As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents BT_ADD As Guna.UI2.WinForms.Guna2Button
@@ -507,4 +483,5 @@ Partial Class Enseignant
     Friend WithEvents Ecues As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Label2 As Label
 End Class

@@ -22,9 +22,9 @@ Partial Class ServiceScolarite
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DGV_STUDENTS = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -45,19 +45,16 @@ Partial Class ServiceScolarite
         Me.TB_PHONE_NUMBER = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Guna2ComboBox5 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.CB_INSTITUTE = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.CB_SEMESTER = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.BT_LOGOUT = New Guna.UI2.WinForms.Guna2Button()
         Me.DTP_DATE = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.PB_STUDENT = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.B_PRINT = New Guna.UI2.WinForms.Guna2Button()
-        Me.CD_GENDER = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.B_ADD_PICTURE = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.DGV_STUDENTS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PB_STUDENT, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,26 +62,26 @@ Partial Class ServiceScolarite
         '
         'DGV_STUDENTS
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.DGV_STUDENTS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_STUDENTS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        Me.DGV_STUDENTS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_STUDENTS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.DGV_STUDENTS.ColumnHeadersHeight = 4
         Me.DGV_STUDENTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_STUDENTS.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_STUDENTS.DefaultCellStyle = DataGridViewCellStyle9
         Me.DGV_STUDENTS.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_STUDENTS.Location = New System.Drawing.Point(9, 344)
         Me.DGV_STUDENTS.Name = "DGV_STUDENTS"
@@ -383,16 +380,6 @@ Partial Class ServiceScolarite
         Me.Label6.TabIndex = 33
         Me.Label6.Text = "Recherche"
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(611, 201)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(67, 24)
-        Me.Label11.TabIndex = 39
-        Me.Label11.Text = "Filtres"
-        '
         'Guna2ComboBox5
         '
         Me.Guna2ComboBox5.BackColor = System.Drawing.Color.Transparent
@@ -468,16 +455,6 @@ Partial Class ServiceScolarite
         Me.Label12.TabIndex = 40
         Me.Label12.Text = "Semestre"
         '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(541, 150)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(68, 24)
-        Me.Label13.TabIndex = 43
-        Me.Label13.Text = "Genre"
-        '
         'BT_LOGOUT
         '
         Me.BT_LOGOUT.AutoRoundedCorners = True
@@ -537,22 +514,6 @@ Partial Class ServiceScolarite
         Me.B_PRINT.TabIndex = 48
         Me.B_PRINT.Text = "Imprimer"
         '
-        'CD_GENDER
-        '
-        Me.CD_GENDER.BackColor = System.Drawing.Color.Transparent
-        Me.CD_GENDER.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CD_GENDER.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CD_GENDER.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CD_GENDER.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CD_GENDER.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CD_GENDER.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CD_GENDER.ItemHeight = 30
-        Me.CD_GENDER.Items.AddRange(New Object() {"Homme"})
-        Me.CD_GENDER.Location = New System.Drawing.Point(615, 149)
-        Me.CD_GENDER.Name = "CD_GENDER"
-        Me.CD_GENDER.Size = New System.Drawing.Size(200, 36)
-        Me.CD_GENDER.TabIndex = 49
-        '
         'B_ADD_PICTURE
         '
         Me.B_ADD_PICTURE.AutoRoundedCorners = True
@@ -576,15 +537,12 @@ Partial Class ServiceScolarite
         Me.BackColor = System.Drawing.Color.PowderBlue
         Me.ClientSize = New System.Drawing.Size(1370, 726)
         Me.Controls.Add(Me.B_ADD_PICTURE)
-        Me.Controls.Add(Me.CD_GENDER)
         Me.Controls.Add(Me.B_PRINT)
         Me.Controls.Add(Me.DTP_DATE)
         Me.Controls.Add(Me.BT_LOGOUT)
-        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.PB_STUDENT)
         Me.Controls.Add(Me.CB_SEMESTER)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Guna2ComboBox5)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.CB_INSTITUTE)
@@ -639,7 +597,6 @@ Partial Class ServiceScolarite
     Friend WithEvents TB_PHONE_NUMBER As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label11 As Label
     Friend WithEvents Guna2ComboBox5 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents CB_INSTITUTE As Guna.UI2.WinForms.Guna2ComboBox
@@ -647,10 +604,8 @@ Partial Class ServiceScolarite
     Friend WithEvents CB_SEMESTER As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label12 As Label
     Friend WithEvents PB_STUDENT As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Label13 As Label
     Friend WithEvents BT_LOGOUT As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DTP_DATE As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents B_PRINT As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents CD_GENDER As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents B_ADD_PICTURE As Guna.UI2.WinForms.Guna2Button
 End Class

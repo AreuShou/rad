@@ -100,6 +100,7 @@ Public Class ServiceScolarite
     Public Sub Reload_CB_INSTITUTE()
         CB_INSTITUTE.Items.Clear()
         For Each institute As Institute In InstitutesManager.getAll()
+            MsgBox(institute.Name)
             CB_INSTITUTE.Items.Add(institute.Name)
         Next
         Dim institutesExist As Boolean = CB_INSTITUTE.Items.Count > 0
